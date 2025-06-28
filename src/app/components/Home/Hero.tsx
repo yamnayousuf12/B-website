@@ -4,7 +4,11 @@ import { Award } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-black text-white px-6 py-20 text-center md:text-left relative">
+    <section className="bg-black text-white px-6 py-20 text-center md:text-left relative"
+    style={{
+        backgroundImage: "url('/Hero.png')", // Optional background wave
+      }} >
+
     
 
       <div className="max-w-4xl mx-auto  ">
@@ -14,12 +18,13 @@ const Hero = () => {
       Trusted by 22+ brands
     </div>
     </div>
-
-        <h1 className="text-3xl md:text-5xl font-semibold mb-6 ">
-          Build Smarter, Scale Faster with 
-           <span className="text-Blue  "> Bitsframe</span>
-        </h1>
-
+<h1 className="text-3xl md:text-5xl font-semibold mb-6 text-pretty">
+ Build Smarter, Scale Faster with {" "}
+ 
+  <span className="text-gradient">
+    Bitsframe
+  </span>
+</h1>
         <p className="text-gray2 text-lg mb-8">
           From AI to custom apps, our innovative tech solutions help your business grow without limits.
         </p>

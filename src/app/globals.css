@@ -13,3 +13,11 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: black;
 }
+
+.text-gradient {
+  background-image: linear-gradient(to right, #ffffff, #1565EB, #4e61ca); /* same as from-Blue via-darkBlue to-white */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}

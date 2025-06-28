@@ -5,15 +5,15 @@ const StatsSection = () => {
    <section
   className="relative bg-black text-white py-20 px-6 md:px-16 bg-no-repeat bg-center bg-cover h-screen"
   style={{
-    backgroundImage: "url('/mjy15.jpg')",
+    backgroundImage: "url('/Hstats.png')",
   }}
 >
      
 
       <div className="relative z-10 max-w-2xl mx-auto ml-6 ">
         <p className="text-lg md:text-xl font-light mb-4  ">
-          Your big idea needs a partner who can make it real. At{" "}  we combine cutting-edge tech with over 8 years of expertise to build solutions that grow with you
-          <span className="font-medium">Bitsframe</span>,
+          Your big idea needs a partner who can make it real. At{" "} 
+          <span className="font-medium"> Bitsframe</span>,
            we combine cutting-edge tech with over 8 years of expertise to build solutions that grow with you.
         </p>
         <p className="text-base md:text-lg font-light mb-12 text-gray2">

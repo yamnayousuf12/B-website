@@ -6,7 +6,7 @@ import { Mail } from "lucide-react";
 const Header = () => {
   return (
     
-    <header className="flex justify-between items-center px-6 py-4 bg-black text-white  mx-8 border-b border-white  mb-6 ">
+    <header className="flex justify-between items-center px-6 py-4  text-white  mx-8 border-b border-white  mb-6 ">
      
         <div className="flex items-center space-x-20 ml-10 ">
           <Image src="/LOGIN.png" alt="Logo" width={150} height={200} />

@@ -2,9 +2,12 @@
 import Header from "./components/Header";
 import Hero from "./components/Home/Hero";
 import HFeaturesSection from "./components/Home/HFeaturesSection";
+import HProcessSteps from "./components/Home/HProcessSteps";
+import HSolutions from "./components/Home/HSolutions";
 import HStatsSection from "./components/Home/HStatsSection";
-// import HStatsSection from "./components/HStatsSection";
-// import HFeaturesSection from "./components/HFeaturesSection";
+import HTechPartners from "./components/Home/HTechPartners";
+import HDevJourneyTimeline from "./components/Home/HDevJourneyTimeline";
+
 
 export default function Home() {
   return (
@@ -13,6 +16,10 @@ export default function Home() {
       <Hero />
       <HStatsSection />
       <HFeaturesSection />
+      <HProcessSteps/>
+      <HSolutions />
+      <HTechPartners />
+      <HDevJourneyTimeline />
     </>
   );
 }

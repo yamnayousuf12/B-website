@@ -22,7 +22,7 @@ const features = [
 const FeaturesSection = () => {
   return (
     <section className="bg-black text-white py-20 px-6 md:px-16">
-       
+       <div className="bg-[#121111] py-10 px-6 md:px-16 rounded-md shadow-lg mb-12">
       <div className="max-w-6xl mx-auto text-center">
         
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -52,7 +52,7 @@ const FeaturesSection = () => {
            <section
   className="relative bg-black text-white py-20 px-6 md:px-16 bg-no-repeat bg-center bg-cover rounded-md Shadow-md"
   style={{
-    backgroundImage: "url('/hf.jpg')",
+    backgroundImage: "url('/hf.png')",
   
   }}
 >
@@ -69,7 +69,7 @@ const FeaturesSection = () => {
           </section>
         </div>
        
-     
+     </div>
     </section>
   );
 };
