@@ -23,10 +23,10 @@ const TechDrivenPartnerships: React.FC = () => {
         <h2 className="text-4xl md:text-5xl font-semibold mb-4">
           Tech-Driven Partnerships
         </h2>
-        <p className="text-gray-400 mb-1 text-base">
+        <p className="text-gray2 mb-1 text-base">
           We deliver innovative IT solutions for your success
         </p>
-        <p className="text-gray-400 mb-12 text-sm">Trusted by 22+ brands</p>
+        <p className="text-gray2 mb-12 text-sm">Trusted by 22+ brands</p>
 
         {/* Brand Cards */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
