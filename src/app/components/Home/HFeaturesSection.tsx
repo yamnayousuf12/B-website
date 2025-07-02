@@ -1,19 +1,19 @@
 import React from "react";
-import { WandSparkles, Rocket, Settings } from "lucide-react";
+import { Dumbbell, CloudUpload, RefreshCw } from "lucide-react";
 
 const features = [
   {
-    icon: <WandSparkles className="text-Blue text-2xl mb-4" />,
+    icon: <Dumbbell className="text-white  text-2xl mb-4 mt-3" />,
     title: "Tailored Innovation",
     desc: "Forget generic solutions. We design AI, chatbots, and Shopify stores that match your needs, making your challenges disappear.",
   },
   {
-    icon: <Rocket className="text-Blue text-2xl mb-4" />,
+    icon: <CloudUpload className="text-white  text-2xl mb-4 mt-3" />,
     title: "Scalable Technology",
     desc: "Your business is going places—our apps, UI/UX, and cloud solutions are built to keep up, no matter how big you get.",
   },
   {
-    icon: <Settings className="text-Blue text-2xl mb-4" />,
+    icon: <RefreshCw className="text-white  text-2xl mb-4 mt-3" />,
     title: "End-to-End Expertise",
     desc: "We take care of everything—strategy, cybersecurity, development—so you can relax knowing your projects in great hands.",
   },
@@ -38,8 +38,9 @@ const FeaturesSection = () => {
               key={index}
               className="bg-[#0b0b0b] p-6 rounded-lg shadow-md hover:shadow-Blue transition-shadow"
             >
-              {feature.icon}
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <div className="w-10 h-10 mb-4 rounded-full bg-Blue flex items-center justify-center">
+             {feature.icon}
+              </div>
               <p className="text-sm text-gray2">{feature.desc}</p>
             </div>
           ))}
