@@ -4,6 +4,8 @@ import "./globals.css";
 
 
 import { ThemeProvider } from "next-themes"
+import Footer from "./components/Home/Footer";
+import Header from "./components/Header";
 
 
 
@@ -23,13 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}> 
-        
+        <Header/>
        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 
            
         
         {children}
-        {/* <Footer/> */}
+        <Footer/>
       
         </ThemeProvider>
       </body>

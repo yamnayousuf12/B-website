@@ -48,14 +48,14 @@ export default function ContactCTA() {
   return (
     <div className="relative bg-black text-white">
       {/* Background Image */}
-      {/* <div
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: "url('/co.png')" }}
-      /> */}
+      <div
+        className="absolute inset-0 bg-cover z-10 object-contain w-full h-auto  "
+        style={{ backgroundImage: "url('/96.png')" }}
+      />
 
       {/* Gradient Overlay Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
-        <div className="rounded-xl bg-gradient-to-br from-Blue/10 to-Blue/90 p-10 space-y-6 backdrop-blur-md">
+        
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
             <div className="flex items-center gap-2 text-sm text-white/80 border border-gray rounded-full py-2 px-3 ">
               <Award className="text-white" />
@@ -87,6 +87,6 @@ export default function ContactCTA() {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }
