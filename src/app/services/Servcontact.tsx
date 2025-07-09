@@ -1,4 +1,3 @@
-
 "use client";
 import { Phone, Mail, Star, Award } from "lucide-react";
 
@@ -26,11 +25,11 @@ export default function ContactCTA() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
-            We Deliver Smarter, Faster Success
+            Protect Your Business Now
           </h2>
 
           <p className="text-white/80">
-            Let&apos;s create something extraordinary with our AI, app, and cybersecurity expertise.
+            We’ll secure your data with expert solutions—get a free audit today! 
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
