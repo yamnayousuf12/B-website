@@ -1,6 +1,7 @@
 
 "use client";
-import { Phone, Mail, Star, Award } from "lucide-react";
+import Link from "next/link";
+import { Phone, Star, Award } from "lucide-react";
 
 export default function ContactCTA() {
   return (
@@ -26,22 +27,24 @@ export default function ContactCTA() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
-            We Deliver Smarter, Faster Success
+           Unlock Potential With Our IT Solutions
+
           </h2>
 
           <p className="text-white/80">
-            Let&apos;s create something extraordinary with our AI, app, and cybersecurity expertise.
-          </p>
+          Ready to elevate your business with custom IT services and solutions? Contact BitsFrame today to get started! </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <div className="flex items-center gap-2">
-              <Mail className="text-xl" />
-              <span>hey@bitsframe.com</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="text-xl" />
-              <span>+92 309 2074390</span>
-            </div>
+         
+          <div className="flex justify-center m-auto mt-8">
+  <Link href="/contact-us">
+    <button className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-Blue flex items-center gap-2">
+      <Phone className="text-xl" />
+      Contact Us
+    </button>
+  </Link>
+</div>
+
           </div>
         </div>
       </div>

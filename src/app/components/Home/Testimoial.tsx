@@ -69,11 +69,12 @@ const Testimonials = () => {
   return (
     <section className="bg-black text-white py-16 px-4 md:px-12">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
+        <h2 className="text-3xl md:text-4xl font-bold mb-3">
           What Our Clients Say About Us
         </h2>
+        <h3 className="mb-3">Testimonials/Reviews</h3>
         <p className="text-gray2">
-          Hear from businesses who turned their visions into reality with Bitsframe.
+         Hear from businesses who turned their visions into reality with Bitsframe
         </p>
       </div>
 

@@ -3,7 +3,8 @@ import Abouthero from './Abouthero'
 import Aboutus from './Aboutus'
 import AJourney from './AJourney'
 import MissionTrust from './MissionTrust'
-import ContactCTA from '../components/Home/ContactCTA'
+
+import Acontact from './Acontact'
 
 
 const page = () => {
@@ -13,7 +14,7 @@ const page = () => {
      <AJourney/>
      <MissionTrust/>
      <Aboutus/>
-     <ContactCTA/>
+     <Acontact/>
      
     </div>
   )

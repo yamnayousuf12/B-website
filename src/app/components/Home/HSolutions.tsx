@@ -1,92 +1,88 @@
-'use client';
+"use client";
+
 import { ArrowRight } from "lucide-react";
 
 const solutions = [
   {
     id: "01",
-    title: "CyberSecurity",
-    desc: "Protect your business with robust security solutions, from threat detection to compliance, keeping your data and users safe.",
+    title: "Cybersecurity Solutions",
+    desc: "Protects your data with Bitsframe as a trusted IT services provider and streamlines your operations effectively.",
   },
   {
     id: "02",
-    title: "Custom Chatbots",
-    desc: "Engage your customers 24/7 with AI-powered chatbots tailored to your brand, boosting satisfaction and efficiency.",
+    title: "AI Chatbots",
+    desc: "Engage your customer 24/7 with AI-powered chatbots tailored to your brand, enhancing customer experience and technical support.",
   },
   {
     id: "03",
     title: "Custom Web Development",
-    desc: "Launch stunning, high-performance websites that captivate users and drive results, built to your exact specifications.",
+    desc: "Launch stunning, high-performance websites designed to your specifications by our expert development team.",
   },
   {
     id: "04",
-    title: "Custom App Solution",
-    desc: "Turn your idea into a powerful app with our end-to-end mobile and web app development, designed for impact.",
+    title: "Innovative App Solution",
+    desc: "Transform your business ideas into intuitive applications with expert design and deployment.",
   },
   {
     id: "05",
-    title: "Artificial Intelligence",
-    desc: "Harness AI to transform your business, from predictive analytics to intelligent automation, tailored to your goals.",
+    title: "Cloud Architect",
+    desc: "With our creative IT solutions, you can build secure cloud systems, keeping your organisation agile and ready for the future.",
   },
   {
     id: "06",
-    title: "Business Consultation",
-    desc: "Get strategic insights to grow smarter. Our experts guide you through tech decisions to maximize your success.",
-  },
-   {
-    id: "07",
     title: "Cloud Architecture",
-    desc: "Build scalable, secure cloud systems that keep your business agile and ready for the future.",
+    desc: "With our ManagedIT solutions, you can build scalable, secure cloud systems, keeping your organisation agile and ready for the future.",
   },
-   {
-    id: "08",
+  {
+    id: "07",
     title: "Staff Augmentation",
     desc: "Scale your team with our skilled developers and designers, seamlessly integrated to accelerate your projects.",
   },
-   {
-    id: "09",
-    title: "Shopify",
-    desc: "Create a standout e-commerce store with our Shopify expertise, from design to optimization, to boost your sales.",
-  },
-   {
-    id: "10",
+  {
+    id: "08",
     title: "UI/UX",
     desc: "Craft intuitive, beautiful interfaces that delight users and keep them coming back for more.",
   },
-   
 ];
 
 const Solutions = () => {
   return (
-    <section className="bg-black text-white px-6 py-20">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-10">
-          <h2 className="text-3xl md:text-5xl font-semibold mb-4">
-            Solutions That Drive Your Success
-          </h2>
-          <p className="text-gray2 text-lg">
-            Explore our full range of services, crafted to meet your business needs and fuel growth.
-          </p>
-        </div>
-
-        <div className="space-y-8">
-          {solutions.map((solution) => (
-            <div key={solution.id} className="flex items-start justify-between border-b border-gray/30 pb-6">
-              <div className="flex gap-4">
-                <div className="text-white text-lg font-medium w-10">{solution.id}</div>
-                <div>
-                  <h3 className="text-xl font-semibold">{solution.title}</h3>
-                  <p className="text-gray2 max-w-xl text-sm mt-1">{solution.desc}</p>
-                </div>
-              </div>
-              <div className="mt-2">
-                <button className="rounded-full border border-white w-10 h-10 flex items-center justify-center hover:bg-white hover:text-black transition">
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+    <section className="bg-[#0c0c0c] text-white px-6 md:px-12 py-16 rounded-2xl max-w-6xl mx-auto shadow-lg">
+      <div className="mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+          Our Dedicated Managed IT Solutions
+        </h2>
+        <p className="text-gray-400 text-sm md:text-base">
+          Explore our full range of services crafted to meet your business goals and fuel growth.
+        </p>
       </div>
+
+      <div className="space-y-6">
+  {solutions.map((solution) => (
+    <div
+      key={solution.id}
+      className="flex items-center justify-between border-b border-white/10 pb-5"
+    >
+      {/* Left section: ID + Title */}
+      <div className="flex items-center gap-4 min-w-[30%]">
+        <span className="w-6 font-semibold text-white">{solution.id}</span>
+        <h3 className="text-white font-semibold text-base md:text-lg whitespace-nowrap">
+          {solution.title}
+        </h3>
+      </div>
+
+      {/* Center: Description */}
+      <p className="text-gray2 max-w-sm text-sm flex-1 ml-8">{solution.desc}</p>
+
+      {/* Right: Arrow Button */}
+      <div className="ml-4">
+        <button className="w-8 h-8 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+          <ArrowRight className="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  ))}
+</div>
     </section>
   );
 };

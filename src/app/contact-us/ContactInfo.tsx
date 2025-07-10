@@ -4,31 +4,31 @@ import { Phone, Mail, } from "lucide-react";
 const StatsSection = () => {
   return (
    <section
-  className="relative py-14 px-6 md:px-16 bg-no-repeat bg-center bg-cover h-screen  "
+  className="relative py-14 px-6 md:px-16 bg-no-repeat bg-center bg-cover min-h-screen "
   style={{
     backgroundImage: "url('/Hstats.png')",
   }}
 >
      
 
-      <div className="relative z-10 max-w-5xl mx-auto ml-6 ">
+      <div className="relative z-10 max-w-5xl mx-auto ml-6">
         {/* <h1 className="text-7xl font-extrabold md:text-xl mb-4 text-justify text-white ">
          Our Journey at Bitsframe
         </h1> */}
-        <p className="text-base md:text-lg font-light mb-4 text-white/80">
+        <p className="text-sm md:text-lg font-light mb-4 text-white/80">
         Struggling with an unresolved tech challenge? Or want to transform your ideas into reality?
 
 
         </p>
-        <p className="text-base md:text-lg font-light mb-4 text-white/80">We hear you! Let&apos;s collaborate to find managed IT solutions for your business IT queries. Our team is ready to craft custom apps, AI solutions, or secure Shopify stores that drive your success.</p>
-        <p className="text-base md:text-lg font-light mb-4 text-white/80">
+        <p className="text-sm md:text-lg font-light mb-4 text-white/80">We hear you! Let&apos;s collaborate to find  <span className="text-white font-medium">managed IT solutions </span>for your business IT queries. Our team is ready to craft custom apps, AI solutions, or secure Shopify stores that drive your success.</p>
+        <p className="text-sm md:text-lg font-light mb-4 text-white/80">
 Fill out the form, drop us an email, or give us a call. We are ready to turn your vision into reality today.</p>
         
   
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold mb-4 text-white">Contact Info</h2>
+            <h2 className="md:text-2xl text-lg font-bold mb-4 text-white">Contact Info</h2>
             <div className="flex items-center gap-4 text-white/80  ">
              <button
       className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300"
@@ -36,7 +36,7 @@ Fill out the form, drop us an email, or give us a call. We are ready to turn you
       <Mail className=" hover:text-black text-white w-4 h-4" />
        </button>
             
-              <span>hey@bitsframe.com</span>
+              <span className="md:text-base text-sm">hey@bitsframe.com</span>
             </div>
             <div className="flex items-center gap-4 text-white/80">
              <button
@@ -45,11 +45,11 @@ Fill out the form, drop us an email, or give us a call. We are ready to turn you
       <Phone className=" hover:text-black text-white w-4 h-4" />
        </button>
               
-              <span>+92 336 2042506</span>
+              <span className="md:text-base text-sm">+92 336 2042506</span>
             </div>
           </div>
           {/* Contact Form */}
-          <div>
+          <div className="max-w-2xl md:max-w-6xl">
             <h2 className="text-2xl font-bold mb-4 text-white">Send a Message</h2>
             <form className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

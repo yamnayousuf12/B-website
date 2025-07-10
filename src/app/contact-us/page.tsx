@@ -5,6 +5,7 @@ import ContactInfo from './ContactInfo'
 const page = () => {
   return (
     <div>
+      
         <Contacthero/>
         <ContactInfo/>
     </div>

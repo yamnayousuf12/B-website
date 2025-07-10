@@ -4,18 +4,22 @@ import { Dumbbell, CloudUpload, RefreshCw } from "lucide-react";
 const features = [
   {
     icon: <Dumbbell className="text-white  text-2xl mb-4 mt-3" />,
-    title: "Tailored Innovation",
-    desc: "Forget generic solutions. We design AI, chatbots, and Shopify stores that match your needs, making your challenges disappear.",
+    title: "Tailored IT Solutions",
+    desc: "Let's transform generic solutions. At Bitsframe, we design AI, Custom Chatbots, Websites and Apps to meet clients' requirements. We prioritise customer support and satisfaction. ",
   },
   {
     icon: <CloudUpload className="text-white  text-2xl mb-4 mt-3" />,
     title: "Scalable Technology",
-    desc: "Your business is going places—our apps, UI/UX, and cloud solutions are built to keep up, no matter how big you get.",
+    desc: "Bitsframe delivers high-end tech solutions to meet modern technology standards. Our IT engineers develop integrated solutions that generate growth and add value to integrated digital systems.",
   },
   {
     icon: <RefreshCw className="text-white  text-2xl mb-4 mt-3" />,
-    title: "End-to-End Expertise",
-    desc: "We take care of everything—strategy, cybersecurity, development—so you can relax knowing your projects in great hands.",
+    title: "End-to-End IT Provider Expertise",
+    desc: (
+      <>
+        As one of the top <span className="text-white font-bold">managed IT services</span>  providers, our experts handle complex tech problems with strategic planning and execution. Whether cyber threats or data breaches, our tech guards help enterprises protect their data and develop up-to-date technology solutions.
+      </>
+    ),
   },
 ];
 
@@ -26,24 +30,26 @@ const FeaturesSection = () => {
       <div className="max-w-6xl mx-auto text-center">
         
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          We’re Your Go-To Tech Partner
+         WHY CHOOSE OUR MANAGED IT SOLUTIONS
         </h2>
-        <p className="text-gray2 mb-12 text-base md:text-lg">
-          Discover the strengths that set Bitsframe apart in delivering tech solutions that work.
+        <p className="text-gray2 mb-12 text-base md:text-base">
+         Discover the strengths that set Bitsframe apart in delivering tech solutions that work.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 ">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#0b0b0b] p-6 rounded-lg shadow-md hover:shadow-Blue transition-shadow"
+              className="bg-[#0b0b0b] p-6 rounded-lg shadow-md hover:shadow-Blue transition-shadow "
             >
               <div className="w-10 h-10 mb-4 rounded-full bg-Blue flex items-center justify-center">
              {feature.icon}
               </div>
-              <p className="text-sm text-gray2">{feature.desc}</p>
+              <h1 className="text-sm font-bold mb-3">{feature.title}</h1>
+              <p className="text-xs text-gray2">{feature.desc}</p>
             </div>
           ))}
+          
         </div>
 
         {/* CTA Banner */}
@@ -58,14 +64,13 @@ const FeaturesSection = () => {
   }}
 >
           <h3 className="text-xl md:text-2xl font-semibold mb-2">
-            Struggling with Tech Challenges?
+            Struggling with IT  Challenges?
           </h3>
-          <p className="text-gray2 mb-4 text-sm md:text-base">
-            Our expert team delivers AI, custom apps, and cybersecurity solutions that work—
-            start with a consultation today!
+          <p className="text-gray2 mb-4 text-sm md:text-base text-center max-w-2xl ml-20">
+           Our expert delivers AI, custom apps, and cybersecurity solutions that dervive results Get Your Free IT Consulting Session With Our Experts
           </p>
           <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-Blue transition">
-            Let’s Build Together →
+            Boook  Now →
           </button>
           </section>
         </div>

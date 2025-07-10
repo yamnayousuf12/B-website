@@ -18,15 +18,22 @@ const Hero = () => {
       Trusted by 22+ brands
     </div>
     </div>
-<h1 className="text-3xl md:text-5xl font-semibold mb-6 text-pretty">
- Build Smarter, Scale Faster with {" "}
+<h1 className="text-2xl md:text-4xl font-semibold mb-2 text-pretty">
+Dominate Your Market With  
  
-  <span className="text-gradient">
+  {/* <span className="text-gradient">
     Bitsframe
-  </span>
+  </span> */}
 </h1>
-        <p className="text-gray2 text-lg mb-8">
-          From AI to custom apps, our innovative tech solutions help your business grow without limits.
+<h1 className="text-2xl md:text-4xl font-semibold mb-6 text-pretty">
+Scalable Managed IT Solutions
+ 
+  {/* <span className="text-gradient">
+    Bitsframe
+  </span> */}
+</h1>
+        <p className="text-gray2 text-sm mb-8">
+         Your dedicated IT services provider, delivering managed IT solutions from AI to Custom Web Development
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
