@@ -38,27 +38,51 @@ const Header = () => {
             >
               <Link
                 href="/Services/Cybersecurity"
-                className="block px-4 py-2 hover:bg-gray-200"
+                className="block px-4 py-2 hover:bg-gray2"
               >
                Cybersecurity
               </Link>
               <Link
-                href="/services/cv-profile"
-                className="block px-4 py-2 hover:bg-gray-200"
+                href="/services/AI Chatbots"
+                className="block px-4 py-2 hover:bg-gray2"
               >
-                CV & Profile Services
+             AI Chatbots
               </Link>
               <Link
-                href="/services/counseling"
-                className="block px-4 py-2 hover:bg-gray-200"
+                href="/services/ Custom Web Development"
+                className="block px-4 py-2 hover:bg-gray2"
               >
-                Career Counseling
+                Custom Web Development
+                </Link>
+              <Link
+                href="/services/Innovative App Solution"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+                Innovative App Solution
               </Link>
               <Link
-                href="/services/job-support"
-                className="block px-4 py-2 hover:bg-gray-200"
+                href="/services/ Cloud Architect"
+                className="block px-4 py-2 hover:bg-gray2"
               >
-                Job Support Services
+                Cloud Architect
+              </Link>
+              <Link
+                href="/services/ Cloud Architecture"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+                 Cloud Architecture
+              </Link>
+              <Link
+                href="/services/Staff Augmentation"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+                Staff Augmentation
+              </Link>
+              <Link
+                href="/services/Innovative App Solution"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+               UI/UX
               </Link>
             </div>
           </div>
@@ -90,8 +114,9 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
+      <div className=" border-b border-white md:hidden"></div>
       {menuOpen && (
-        <div className="md:hidden mt-4 space-y-2">
+        <div className="md:hidden mt-4 space-y-2 bg-darkBlue ">
           <Link href="/" className="block">Home</Link>
 
           {/* Mobile Dropdown */}
@@ -104,10 +129,59 @@ const Header = () => {
             </button>
             {dropdownOpen && (
               <div className="ml-4 mt-2 space-y-1 text-sm">
-                <Link href="/services/self-discovery" className="block">Self Discovery</Link>
+                {/* <Link href="/services/self-discovery" className="block">Self Discovery</Link>
                 <Link href="/services/cv-profile" className="block">CV & Profile Services</Link>
                 <Link href="/services/counseling" className="block">Career Counseling</Link>
-                <Link href="/services/job-support" className="block">Job Support Services</Link>
+                <Link href="/services/job-support" className="block">Job Support Services</Link> */}
+
+                <Link
+                href="/Services/Cybersecurity"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+               Cybersecurity
+              </Link>
+              <Link
+                href="/services/AI Chatbots"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+             AI Chatbots
+              </Link>
+              <Link
+                href="/services/ Custom Web Development"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+                Custom Web Development
+                </Link>
+              <Link
+                href="/services/Innovative App Solution"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+                Innovative App Solution
+              </Link>
+              <Link
+                href="/services/ Cloud Architect"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+                Cloud Architect
+              </Link>
+              <Link
+                href="/services/ Cloud Architecture"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+                 Cloud Architecture
+              </Link>
+              <Link
+                href="/services/Staff Augmentation"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+                Staff Augmentation
+              </Link>
+              <Link
+                href="/services/Innovative App Solution"
+                className="block px-4 py-2 hover:bg-gray2"
+              >
+               UI/UX
+              </Link>
               </div>
             )}
           </div>
