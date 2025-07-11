@@ -64,7 +64,7 @@ const Solutions = () => {
       className="flex items-center justify-between border-b border-white/10 pb-5"
     >
       {/* Left section: ID + Title */}
-      <div className="flex items-center gap-4 min-w-[30%]">
+      <div className="flex items-center gap-2 md:gap-4 md:min-w-[30%] min-w-[20%]">
         <span className="w-6 font-semibold text-white">{solution.id}</span>
         <h3 className="text-white font-semibold text-xs md:text-lg md:whitespace-nowrap">
           {solution.title}
