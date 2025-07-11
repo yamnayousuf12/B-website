@@ -1,75 +1,99 @@
-import React from "react";
 
-const StatsSection = () => {
+
+
+"use client";
+import Image from "next/image";
+
+const SmartITSolutions = () => {
   return (
-   <section
-  className="relative bg-black text-white py-20 px-6 md:px-16 bg-no-repeat bg-center bg-cover h-screen"
-  style={{
-    backgroundImage: "url('/Hstats.png')",
-  }}
->
-     
+    <section
+      className="md:py-10 py-7 px-6 md:px-20 relative text-white bg-no-repeat bg-center bg-cover h-screen"
+      style={{ backgroundImage: "url('/Hstats.png')" }}
+    >
+      <div className="max-w-6xl mx-auto">
+        <div className="flex items-start gap-4">
+          <Image src="/icons/Vector (3).png" alt="Vector" width={40} height={40} />
+          <div>
+            <h2 className="text-xl md:text-4xl font-bold mb-2">
+              How Do We Deliver Smart <br /> IT Solutions?
+            </h2>
+            <p className="text-white/80 mb-10 md:max-w-2xl md:text-base text-xs">
+              As your trusted <span className="font-semibold text-white">IT services provider</span>, we
+              combine cutting-edge technology with 8+ years of expertise to:
+            </p>
 
-      <div className="relative z-10 max-w-3xl mx-auto ml-6 ">
-        <h1 className="text-lg md:text-3xl font-extrabold mb-2">
-          How Do We Deliver Smart IT Solutions?
-        </h1>
-        <p className="text-base md:text-lg font-light mb-6 text-gray2">
-         As your trusted  <span className="font-medium text-white"> IT services provider</span>, we combine cutting-edge technology
- with 8+ years of expertise to:
-        </p>
-        <h1 className="text-lg md:text-xl font-light mb-2  ">
-         Automate Operations with Managed IT Solutions
-        </h1>
-        <p className="text-base md:text-lg font-light mb-6 text-gray2">
-         Streamline workflows using AI-driven tools tailored to your enterprise needs.
-        </p>
-          <h1 className="text-lg md:text-xl font-light mb-2">
-         
-Provide 24/7 IT Services Provider Monitoring
-        </h1>
-        <p className="text-base md:text-lg font-light mb-6 text-gray2">
-         Proactively safeguard networks and data with security solutions.
-        </p>
-          <h1 className="text-lg md:text-xl font-light mb-2">
-        Deploy Smart  IT Solutions
-        </h1>
-        <p className="text-base md:text-lg font-light mb-6 text-gray2">
-        We cover every tech aspect, from custom AI applications to cloud architecture.
-        </p>
-          <h1 className="text-lg md:text-xl font-light mb-2">
-         Transform Your Digital Journey 
-        </h1>
-        <p className="text-base md:text-lg font-light mb-6 text-gray2">
-         Our certified    
-         <span className="font-medium text-white"> IT services providers</span>, deliver strategic guidance and technical execution.
-        </p>
-         </div>
+            {/* Features Section */}
+            <div className="space-y-5 ">
+              <div className="flex items-start gap-2">
+                <Image src="/icons/Group (1).png" alt="Group" width={40} height={40} />
+                <div>
+                  <h3 className="md:text-xl text-sm font-semibold">
+                    Automate Operations with Managed IT Solutions
+                  </h3>
+                  <p className="text-white/80 md:text-base text-xs">
+                    Streamline workflows using AI-driven tools tailored to your enterprise needs.
+                  </p>
+                </div>
+              </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div>
-            <p className="text-3xl font-bold">50+</p>
-            <p className="text-sm opacity-80 mt-1 text-gray2">Projects Delivered</p>
-          </div>
-          <div>
-            <p className="text-3xl font-bold">22+</p>
-            <p className="text-sm opacity-80 mt-1 text-gray2">Trusted Partners</p>
-          </div>
-          <div>
-            <p className="text-3xl font-bold">04+</p>
-            <p className="text-sm opacity-80 mt-1 text-gray2">Years of Innovation</p>
-          </div>
-          <div>
-            <p className="text-3xl font-bold">95%</p>
-            <p className="text-sm opacity-80 mt-1 text-gray2">Client Satisfaction</p>
+              <div className="flex items-start gap-4">
+                <Image src="/icons/Group.png" alt="Group" width={40} height={40} />
+                <div>
+                  <h3 className="md:text-xl text-sm font-semibold">
+                    Provide 24/7 IT Services Provider Monitoring
+                  </h3>
+                  <p className="text-white/80 md:text-base text-xs">
+                    Proactively safeguard networks and data with security solutions.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Image src="/icons/Vector (2).png" alt="Deploy" width={40} height={40} />
+                <div>
+                  <h3 className="md:text-xl text-sm font-semibold">Deploy Smart IT Solutions</h3>
+                  <p className="text-white/80 md:text-base text-xs">
+                    We cover every tech aspect, from custom AI applications to cloud architecture.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Image src="/icons/Vector (1).png" alt="Transform" width={40} height={40} />
+                <div>
+                  <h3 className="md:text-xl text-sm font-semibold">Transform Your Digital Journey</h3>
+                  <p className="text-white/80 md:text-base text-xs">
+                    Our certified <span className="font-semibold text-white ">IT services providers</span>{' '}
+                    deliver strategic guidance and technical execution.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats Section */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mt-10">
+              <div>
+                <p className="text-3xl font-bold text-blue-500">50+</p>
+                <p className="text-gray-400">Projects Delivered</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-blue-500">22+</p>
+                <p className="text-gray-400">Trusted Partners</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-blue-500">04+</p>
+                <p className="text-gray-400">Years of Innovation</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-blue-500">95%</p>
+                <p className="text-gray-400">Client Satisfaction</p>
+              </div>
+            </div>
           </div>
         </div>
-     
-
- 
-     
+      </div>
     </section>
   );
 };
 
-export default StatsSection;
+export default SmartITSolutions;
