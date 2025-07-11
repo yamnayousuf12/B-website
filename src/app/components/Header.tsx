@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import Link from "next/link";
@@ -114,9 +112,8 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className=" border-b border-white md:hidden"></div>
       {menuOpen && (
-        <div className="md:hidden mt-4 space-y-2 bg-darkBlue ">
+        <div className="md:hidden mt-4 space-y-2">
           <Link href="/" className="block">Home</Link>
 
           {/* Mobile Dropdown */}
@@ -129,11 +126,6 @@ const Header = () => {
             </button>
             {dropdownOpen && (
               <div className="ml-4 mt-2 space-y-1 text-sm">
-                {/* <Link href="/services/self-discovery" className="block">Self Discovery</Link>
-                <Link href="/services/cv-profile" className="block">CV & Profile Services</Link>
-                <Link href="/services/counseling" className="block">Career Counseling</Link>
-                <Link href="/services/job-support" className="block">Job Support Services</Link> */}
-
                 <Link
                 href="/Services/Cybersecurity"
                 className="block px-4 py-2 hover:bg-gray2"
