@@ -21,7 +21,7 @@ export default function DevJourney() {
 
   return (
     
-    <section className="relative min-h-screen bg-black text-white px-6 md:px-20 py-24 flex flex-col md:flex-row gap-12 overflow-hidden" 
+    <section className="relative min-h-screen bg-black text-white px-8 md:px-20 py-6 flex flex-col md:flex-row md:gap-12 gap-14 overflow-hidden" 
     >
       <div className="absolute -inset-16 -z-1 bg-cover bg-center bg-no-repeat h-full w-full"
        style={{
@@ -33,18 +33,18 @@ export default function DevJourney() {
         
        
       >
-        <h1 className="text-xl md:text-4xl font-bold mb-4"
+        <h1 className="text-xl md:text-4xl font-bold mb-2"
         >From Spark to Software</h1>
-        <p className="text-white/85 md:text-lg">Bitsframe Dev Journey</p>
+        <p className="text-white/85 md:text-lg text-sm">Bitsframe Dev Journey</p>
         
       </motion.div>
 
       {/* Right Timeline */}
       <motion.div className="md:w-1/2  relative pr-4" style={{ y: rightY }}>
-        <div className="absolute md:left-24 left-28 md:top-0 top-16 bottom-0 w-1 bg-white/10" />
+        <div className="absolute md:left-24 left-28 md:top-0 top-16 bottom-0 w-1 bg-white/10 " />
         
 
-        <div className="md:ml-10 ml-12 space-y-10">
+        <div className="md:ml-10 ml-12 md:space-y-10 space-y-2">
           {steps.map((step, idx) => (
             <motion.div
               key={idx}
@@ -66,14 +66,14 @@ export default function DevJourney() {
 
               {/* Card */}
               <div
-                className={`rounded-lg md:px-6 md:py-4 px-3 py-2 md:w-full w-48 md:max-w-sm max-w-xs transition-all duration-300 md:mt-0 mt-14  ${
+                className={`rounded-lg md:px-6 md:py-4 px-1 py-2 md:w-full w-44 md:max-w-sm max-w-xs transition-all duration-300 md:mt-16 mt-14  ${
                   idx === 0
                     ? "bg-gradient-to-r from-Blue/40 to-Blue/10 border border-Blue"
                     : "bg-white/5 border border-white/10"
                 }`}
               >
                 <h3 className="md:text-xl text-sm font-semibold text-white flex gap-2 items-center">
-                  <span className="text-whit/70 font-bold">{step.number}</span>
+                  <span className="text-white/95 font-bold">{step.number}</span>
                   {step.title}
                 </h3>
                 <p className="md:text-sm text-xs text-white/80 mt-1">{step.desc}</p>
