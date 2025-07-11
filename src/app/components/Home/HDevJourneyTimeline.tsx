@@ -29,26 +29,26 @@ export default function DevJourney() {
   }}/>
       {/* Left Floating Panel */}
       <motion.div
-        className="md:w-1/2 flex flex-col  z-10"
+        className="md:w-1/2 flex flex-col z-10"
         
        
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4"
+        <h1 className="text-xl md:text-4xl font-bold mb-4"
         >From Spark to Software</h1>
-        <p className="text-gray text-lg">Bitsframe Dev Journey</p>
+        <p className="text-white/85 md:text-lg">Bitsframe Dev Journey</p>
         
       </motion.div>
 
       {/* Right Timeline */}
-      <motion.div className="md:w-1/2 relative pr-4" style={{ y: rightY }}>
-        <div className="absolute left-4 top-0 bottom-0 w-1 bg-white/10" />
+      <motion.div className="md:w-1/2  relative pr-4" style={{ y: rightY }}>
+        <div className="absolute md:left-24 left-28 md:top-0 top-16 bottom-0 w-1 bg-white/10" />
         
 
-        <div className="ml-10 space-y-10">
+        <div className="md:ml-10 ml-12 space-y-10">
           {steps.map((step, idx) => (
             <motion.div
               key={idx}
-              className="relative"
+              className="relative ml-20"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
@@ -56,7 +56,7 @@ export default function DevJourney() {
             >
               {/* Dot */}
               <div
-                className={`absolute -left-6 top-3 w-4 h-4 rounded-full border transition-all duration-300 ${
+                className={`absolute -left-6 md:top-3 top-8  w-4 h-4 rounded-full border transition-all duration-300 ${
                   idx === 0
                     ? "bg-Blue shadow-md border-Blue animate-pulse"
                     : "bg-white/10 border-white/20"
@@ -66,17 +66,17 @@ export default function DevJourney() {
 
               {/* Card */}
               <div
-                className={`rounded-lg px-6 py-4 w-full max-w-sm transition-all duration-300 ${
+                className={`rounded-lg md:px-6 md:py-4 px-3 py-2 md:w-full w-48 md:max-w-sm max-w-xs transition-all duration-300 md:mt-0 mt-14  ${
                   idx === 0
                     ? "bg-gradient-to-r from-Blue/40 to-Blue/10 border border-Blue"
                     : "bg-white/5 border border-white/10"
                 }`}
               >
-                <h3 className="text-xl font-semibold text-white flex gap-2 items-center">
-                  <span className="text-gray font-bold">{step.number}</span>
+                <h3 className="md:text-xl text-sm font-semibold text-white flex gap-2 items-center">
+                  <span className="text-whit/70 font-bold">{step.number}</span>
                   {step.title}
                 </h3>
-                <p className="text-sm text-gray mt-1">{step.desc}</p>
+                <p className="md:text-sm text-xs text-white/80 mt-1">{step.desc}</p>
               </div>
               
             </motion.div>
