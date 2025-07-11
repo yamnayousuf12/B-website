@@ -49,10 +49,10 @@ const Solutions = () => {
   return (
     <section className="bg-[#0c0c0c] text-white px-6 md:px-12 py-16 rounded-2xl max-w-6xl mx-auto shadow-lg">
       <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+        <h2 className="text-xl md:text-4xl font-bold mb-3">
           Our Dedicated Managed IT Solutions
         </h2>
-        <p className="text-gray-400 text-sm md:text-base">
+        <p className="text-white/85 text-xs md:text-base">
           Explore our full range of services crafted to meet your business goals and fuel growth.
         </p>
       </div>
@@ -66,13 +66,13 @@ const Solutions = () => {
       {/* Left section: ID + Title */}
       <div className="flex items-center gap-4 min-w-[30%]">
         <span className="w-6 font-semibold text-white">{solution.id}</span>
-        <h3 className="text-white font-semibold text-base md:text-lg whitespace-nowrap">
+        <h3 className="text-white font-semibold text-xs md:text-lg md:whitespace-nowrap">
           {solution.title}
         </h3>
       </div>
 
       {/* Center: Description */}
-      <p className="text-gray2 max-w-sm text-sm flex-1 ml-8">{solution.desc}</p>
+      <p className="text-white/85 text-xs md:max-w-sm max-w-xs md:text-sm md:flex-1 md:ml-8 ml-16">{solution.desc}</p>
 
       {/* Right: Arrow Button */}
       <div className="ml-4">
