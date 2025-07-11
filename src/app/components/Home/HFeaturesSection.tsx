@@ -29,14 +29,14 @@ const FeaturesSection = () => {
        <div className="bg-[#121111] py-10 px-6 md:px-16 rounded-md shadow-lg mb-12">
       <div className="max-w-6xl mx-auto text-center">
         
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-xl md:text-4xl font-bold mb-4">
          WHY CHOOSE OUR MANAGED IT SOLUTIONS
         </h2>
-        <p className="text-gray2 mb-12 text-base md:text-base">
+        <p className="text-gray2 mb-12 text-sm md:text-base">
          Discover the strengths that set Bitsframe apart in delivering tech solutions that work.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 ">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -57,19 +57,18 @@ const FeaturesSection = () => {
 
        
            <section
-  className="relative bg-black text-white py-20 px-6 md:px-16 bg-no-repeat bg-center bg-cover rounded-md Shadow-md"
+  className="relative text-white py-3 px-4 md:px-16 bg-no-repeat md:bg-center md:bg-cover rounded-md Shadow-md"
   style={{
     backgroundImage: "url('/hf.png')",
-  
-  }}
+   }}
 >
           <h3 className="text-xl md:text-2xl font-semibold mb-2">
             Struggling with IT  Challenges?
           </h3>
-          <p className="text-gray2 mb-4 text-sm md:text-base text-center max-w-2xl ml-20">
+          <p className="text-white/85 mb-4 text-sm md:text-base text-center max-w-2xl md:ml-20">
            Our expert delivers AI, custom apps, and cybersecurity solutions that dervive results Get Your Free IT Consulting Session With Our Experts
           </p>
-          <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-Blue transition">
+          <button className="text-sm px-2 py-1 bg-white text-black font-medium md:px-6 md:py-2 rounded-md hover:bg-Blue transition">
             Boook  Now →
           </button>
           </section>
