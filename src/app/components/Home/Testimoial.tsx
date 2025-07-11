@@ -63,34 +63,34 @@ const testimonials: Testimonial[] = [
 
 // Split testimonials
 const firstRow = testimonials.slice(0, 3); // For lg:grid-cols-3
-const secondRow = testimonials.slice(0,4);   // For lg:grid-cols-4
+// const secondRow = testimonials.slice(0,4);   // For lg:grid-cols-4
 
 const Testimonials = () => {
   return (
     <section className="bg-black text-white py-16 px-4 md:px-12">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+        <h2 className="text-xl md:text-4xl font-bold mb-3">
           What Our Clients Say About Us
         </h2>
-        <h3 className="mb-3">Testimonials/Reviews</h3>
-        <p className="text-gray2">
+        <h3 className="mb-3 text-xs md:text-xl">Testimonials/Reviews</h3>
+        <p className="text-white/85 text-sm md:text-sm ">
          Hear from businesses who turned their visions into reality with Bitsframe
         </p>
       </div>
 
       {/* First Row - 3 columns on large screens */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-4xl max-w-xl mx-auto mb-10">
         {firstRow.map((item, index) => (
           <TestimonialCard key={index} {...item} />
         ))}
       </div>
 
       {/* Second Row - 4 columns on large screens */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {secondRow.map((item, index) => (
           <TestimonialCard key={index} {...item} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
