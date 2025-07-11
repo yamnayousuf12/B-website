@@ -73,20 +73,20 @@ const SmartITSolutions = () => {
             {/* Stats Section */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mt-10">
               <div>
-                <p className="text-3xl font-bold text-blue-500">50+</p>
-                <p className="text-gray-400">Projects Delivered</p>
+                <p className="md:text-3xl text-lg font-bold">50+</p>
+                <p className="text-white/80 md:text-xl text-sm">Projects Delivered</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-blue-500">22+</p>
-                <p className="text-gray-400">Trusted Partners</p>
+                <p className="md:text-3xl text-lg font-bold ">22+</p>
+                <p className="text-white/80 md:text-xl text-sm">Trusted Partners</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-blue-500">04+</p>
-                <p className="text-gray-400">Years of Innovation</p>
+                <p className="md:text-3xl text-lg font-bold ">04+</p>
+                <p className="text-white/80 md:text-xl text-sm">Years of Innovation</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-blue-500">95%</p>
-                <p className="text-gray-400">Client Satisfaction</p>
+                <p className="md:text-3xl font-bold ">95%</p>
+                <p className="text-white/80 md:text-xl text-sm">Client Satisfaction</p>
               </div>
             </div>
           </div>
