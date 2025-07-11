@@ -71,7 +71,7 @@ const SmartITSolutions = () => {
             </div>
 
             {/* Stats Section */}
-            <div className="grid grid-cols-2 md:grid-cols-4 md:gap-9 gap-2 text-center md:mt-10 mt-10 md:m-24 mr-14 bg-Red">
+            <div className="grid grid-cols-2 md:grid-cols-4 md:gap-9 gap-2 text-center md:mt-10 mt-10 md:m-24 mr-14">
               <div>
                 <p className="md:text-3xl text-lg font-bold">50+</p>
                 <p className="text-white/80 md:text-xl text-sm">Projects Delivered</p>
