@@ -21,10 +21,10 @@ const caseStudies = [
 
 export default function CaseStudies() {
   return (
-    <section className="bg-black text-white py-20 px-4">
+    <section className="bg-black text-white md:py-20 md:px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold mb-2">Real Results, Real Impact</h2>
-        <p className="text-gray2">
+        <h2 className="md:text-4xl text-xl font-bold mb-2">Real Results, Real Impact</h2>
+        <p className="text-white/90">
           See how we’ve helped businesses like yours succeed with innovative tech solutions.
         </p>
       </div>
