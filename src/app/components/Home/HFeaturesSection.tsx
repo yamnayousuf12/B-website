@@ -25,14 +25,14 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-16">
-       <div className="bg-[#121111] py-10 px-6 md:px-16 rounded-md shadow-lg mb-12">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="bg-black text-white py-4 px-6 md:px-16">
+       <div className="bg-[#121111] py-10 px-6 md:px-16 rounded-md shadow-lg md:mb-12 mb-2">
+      <div className="max-w-6xl mx-auto text-center ">
         
-        <h2 className="text-xl md:text-4xl font-bold mb-4">
+        <h2 className="text-xl md:text-4xl font-bold mb-3">
          WHY CHOOSE OUR MANAGED IT SOLUTIONS
         </h2>
-        <p className="text-gray2 mb-12 text-sm md:text-base">
+        <p className="text-gray2 md:mb-12 mb-7 text-sm md:text-base">
          Discover the strengths that set Bitsframe apart in delivering tech solutions that work.
         </p>
 
