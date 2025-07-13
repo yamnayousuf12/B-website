@@ -129,29 +129,31 @@ const services = [
 
 export default function SmartITSolutions() {
   return (
-    <section className="md:py-10 py-7 px-6 md:px-20 relative text-white bg-no-repeat bg-center bg-cover h-screen"
+    <section className="md:py-10 py-7 px-6 md:px-20  relative text-white bg-no-repeat bg-center bg-cover md:h-screen"
 style={{ backgroundImage: "url('/Hstats.png')" }}
      >
       <div className="text-center mb-12">
         <h2 className="text-xl md:text-4xl font-bold mb-2">
           How do We Deliver Smart IT Solutions?
         </h2>
-        <p className="text-white/80 max-w-2xl mx-auto">
-          As your trusted <span className="text-white font-semibold">IT services provider</span>, we combine cutting-edge technology with 4+ years of expertise to
+        <p className="text-white/80 max-w-2xl mx-auto text-xs md:text-xl">
+          As your trusted <span className="text-white font-normal">IT services provider</span>, we combine cutting-edge technology with 4+ years of expertise to
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:gap-6 gap-3 md:mb-12 mb-4 -hue-rotate-15 ">
         {services.map((service, idx) => (
           <div
             key={idx}
-            className="bg-[#0F0F0F] p-6 border border-gray rounded-lg shadow hover:shadow-Blue/20"
+            className="bg-[#0F0F0F] md:p-6 p-2 border border-gray rounded-lg shadow hover:shadow-Blue"
           >
-            <div className="mb-4 rounded-b ">
-              <Image src={service.imgSrc} alt={service.title} width={40} height={40} />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-            <p className="text-sm text-gray-400">{service.description}</p>
+           <div className="mb-2">
+  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
+    <Image src={service.imgSrc} alt={service.title} width={30} height={30} />
+  </div>
+</div>
+            <h3 className="md:text-lg text-sm font-semibold mb-2 text-center">{service.title}</h3>
+            <p className="md:text-sm text-xs text-white text-center">{service.description}</p>
           </div>
         ))}
       </div>
