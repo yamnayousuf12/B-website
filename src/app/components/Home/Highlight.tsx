@@ -8,13 +8,15 @@ const Highlight: React.FC = () => {
     <div className="md:w-full flex flex-col items-center text-center mb-1 bg-black"
     >
       <div className="mb-4 md:px-4 md:py-3 px-2 py-2 rounded-full bg-white/10 md:text-xs text-xs font-semibold text-white tracking-widest">
-        OUR COMMUNITY
+       testimonials/reviews
       </div>
 
       {/* Main Sentence */}
-      <p className="text-xs md:text-2xl text-white font-medium leading-relaxed md:max-w-sm max-w-xs ">companies and their employees to set-up, contribute and manage complex benefits
+      <p className="text-sm md:text-3xl text-gradient font-medium leading-relaxed md:max-w-4xl max-w-64 mb-5 ">We make it easy for companies and their employees to
+ setup, contribute to and manage complex benefits
        
       </p>
+      <p className="md:text-sm text-xs text-white/80  md:max-w-4xl max-w-84 ">Hear from businesses who turned their visions into reality with Bitsframe</p>
 
     
     </div>

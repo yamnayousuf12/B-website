@@ -68,7 +68,7 @@ const firstRow = testimonials.slice(0, 3); // For lg:grid-cols-3
 const Testimonials = () => {
   return (
     <section className="bg-black text-white py-16 px-4 md:px-12">
-      <div className="text-center mb-12">
+      {/* <div className="text-center mb-12">
         <h2 className="text-xl md:text-4xl font-bold mb-3">
           What Our Clients Say About Us
         </h2>
@@ -76,7 +76,7 @@ const Testimonials = () => {
         <p className="text-white/85 text-sm md:text-sm ">
          Hear from businesses who turned their visions into reality with Bitsframe
         </p>
-      </div>
+      </div> */}
 
       {/* First Row - 3 columns on large screens */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-4xl max-w-xl mx-auto mb-10">

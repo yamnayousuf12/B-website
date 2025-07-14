@@ -20,7 +20,7 @@ const TechDrivenPartnerships: React.FC = () => {
     <section className="text-white py-24 px-6">
       <div className="max-w-7xl mx-auto text-center">
         {/* Headings */}
-        <h2 className="text-xl md:text-5xl font-semibold mb-4">
+        <h2 className="text-xl md:text-5xl font-semibold mb-4 ">
           Tech-Driven Partnerships
         </h2>
         <p className="text-white/85 mb-1 md:text-base text-sm">
