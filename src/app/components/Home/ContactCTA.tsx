@@ -5,10 +5,10 @@ import { Phone, Star, Award } from "lucide-react";
 
 export default function ContactCTA() {
   return (
-    <div className="relative bg-black text-white">
+    <div className="relative overflow-hidden md:rounded-xl text-white p-2 md:p-1 md:max-w-6xl max-w-50 mx-auto mt-10 shadow-lg bg-black ">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover z-10 object-contain w-full h-auto  "
+        className="absolute inset-0 md:bg-cover md:bg-center z-0 opacity-80  "
         style={{ backgroundImage: "url('/96.png')" }}
       />
 
@@ -16,14 +16,14 @@ export default function ContactCTA() {
       <div className="relative z-10 md:max-w-6xl mx-auto m:px-6 md:py-20 px-2 py-14 max-w-lg">
         
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-10">
-            <div className="flex items-center md:gap-2  text-white/80 border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-40 md:w-60 md:text-sm text-xs">
+            <div className="flex items-center md:gap-2  text-white/80 border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-40 md:w-60 md:text-sm text-xs  ">
               <Award className="text-white w-3 md:w-6" />
               <p className="text-xs md:text-sm"></p>
               Trusted by 22+ brands
             </div>
-            <div className="flex items-center md:gap-2 text-sm text-white/80 border border-gray rounded-full md:py-2 md:px-3 md:mr-auto md:w-72 w-56 py-1 px-1 md:mt-0 -mt-12 md:ml-0 ml-32">
+            <div className="flex items-center md:gap-2 text-white/80 border border-gray rounded-full md:py-2 md:px-3 md:mr-auto md:w-72 w-56 py-1 px-1 ">
               <Star className="text-white w-3 md:w-6" />
-              <p className="text-xs md:text-sm">
+              <p className="text-xs md:text-sm ">
               &quot;Bitsframe transformed our app!&quot;</p>
             </div>
           </div>
