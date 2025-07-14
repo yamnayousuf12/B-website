@@ -46,18 +46,18 @@ export default function BlogSection() {
   return (
     <section className="bg-black text-white py-20 px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold mb-2">Our Blogs</h2>
-        <p className="text-gray2">
+        <h2 className="md:text-4xl text-2xl font-bold mb-2">Our Blogs</h2>
+        <p className="text-white/80 text-xs md:text-lg">
           Explore expert tips and trends to grow smarter with Bitsframe.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:max-w-6xl max-w-xl mx-auto">
         {blogs.map((blog, index) => (
           <div
             key={index}
             className="bg-white/5 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 p-4"
-          >
+          >                  
             <div className="relative w-full h-48 bg-black rounded-lg mb-4">
               <Image
                 src={blog.image}
@@ -67,18 +67,18 @@ export default function BlogSection() {
               />
             </div>
 
-            <p className="text-sm text-gray2 mb-1">{blog.category}</p>
-            <h3 className="text-lg font-semibold leading-snug mb-3">
+            <p className="text-sm text-white/80 mb-1">{blog.category}</p>
+            <h3 className="md:text-lg text-base font-semibold leading-snug mb-3">
               {blog.title}
             </h3>
 
-            <ul className="text-sm text-gray2 mb-4 list-disc list-inside space-y-1">
+            <ul className="md:text-sm text-xs text-white/80 mb-4 list-disc list-inside space-y-1">
               {blog.points.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
             </ul>
 
-            <button className="px-4 py-2 text-sm rounded-md border border-gray text-white hover:bg-white/10 transition">
+            <button className="md:px-4 md:py-2 px-2 py-1 text-sm rounded-md border border-gray text-white hover:bg-white/10 transition">
               Read Now →
             </button>
           </div>

@@ -13,15 +13,15 @@ export default function ContactCTA() {
       />
 
       {/* Gradient Overlay Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-6xl mx-auto m:px-6 md:py-20 px-2 py-14">
         
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-10">
-            <div className="flex items-center gap-2 text-sm text-white/80 border border-gray rounded-full py-2 px-3 ">
-              <Award className="text-white" />
+            <div className="flex items-center md:gap-2  text-white/80 border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-40 md:text-sm text-xs">
+              <Award className="text-white w-5 md:w-0" />
               Trusted by 22+ brands
             </div>
-            <div className="flex items-center gap-2 text-sm text-white/80 border border-gray rounded-full py-2 px-3 mr-auto">
-              <Star className="text-white" />
+            <div className="flex items-center md:gap-2  text-white/80 border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-56 md:text-sm text-xs">
+              <Star className="text-white w-4 md:w-0" />
               &quot;Bitsframe transformed our app!&quot;
             </div>
           </div>
