@@ -7,7 +7,7 @@ export default function Footer() {
        <div className="relative mt-1 ">
   {/* Background image */}
   <div
-    className="absolute inset-0 bg-cover bg-center z-10 opacity-90"
+    className="absolute md:inset-20 inset-0 mt-96 md:mt-2 bg-cover bg-center z-0 h-44 opacity-80"
     style={{ backgroundImage: "url('/footer.png')" }}
   ></div>
       <div className="max-w-6xl mx-auto px-6 py-12">
