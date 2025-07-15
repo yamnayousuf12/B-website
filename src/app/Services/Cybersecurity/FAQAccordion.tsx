@@ -47,8 +47,8 @@ export default function FAQAccordion() {
       <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
         {/* Left Side */}
         <div>
-          <h2 className="text-4xl font-bold mb-2">FAQs</h2>
-          <p className="text-white/80">Your Frequently Questions Answered</p>
+          <h2 className="md:text-4xl text-2xl font-bold mb-2">FAQs</h2>
+          <p className="text-white/80 text-xs md:text-sm">Your Frequently Questions Answered</p>
         </div>
 
         {/* Right Side */}
@@ -59,7 +59,7 @@ export default function FAQAccordion() {
               className="bg-[#111] rounded-lg p-5 transition-all duration-300"
             >
               <button
-                className="flex justify-between items-center w-full text-left text-lg font-medium"
+                className="flex justify-between items-center w-full text-left md:text-lg text-xs font-medium"
                 onClick={() => toggle(index)}
               >
                 {faq.question}
@@ -70,7 +70,7 @@ export default function FAQAccordion() {
                 )}
               </button>
               {openIndex === index && (
-                <p className="mt-3 text-gray2 text-sm">{faq.answer}</p>
+                <p className="mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
               )}
             </div>
           ))}

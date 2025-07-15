@@ -18,8 +18,8 @@ export default function ContactCTA() {
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-10">
             <div className="flex items-center md:gap-2  text-white/80 border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-40 md:w-60 md:text-sm text-xs  ">
               <Award className="text-white w-3 md:w-6" />
-              <p className="text-xs md:text-sm"></p>
-              Trusted by 22+ brands
+              <p className="text-xs md:text-sm"> Trusted by 22+ brands</p>
+             
             </div>
             <div className="flex items-center md:gap-2 text-white/80 border border-gray rounded-full md:py-2 md:px-3 md:mr-auto md:w-72 w-56 py-1 px-1 ">
               <Star className="text-white w-3 md:w-6" />

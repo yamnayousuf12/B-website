@@ -3,11 +3,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Menu, X, ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const pathname = usePathname(); // ✅ used to detect route changes
+
+  // Automatically close dropdown and mobile menu when route changes
+  useEffect(() => {
+    setDropdownOpen(false);
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="bg-black text-white px-6 py-4 border-b border-white mb-6">
@@ -32,62 +40,22 @@ const Header = () => {
             <div
               className={`absolute left-0 mt-2 bg-white text-black rounded shadow-lg py-2 w-48 z-50 ${
                 dropdownOpen ? "block" : "hidden"
-              } group-hover:block`}
+              }`}
             >
-              <Link
-                href="/Services/Cybersecurity"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-               Cybersecurity
-              </Link>
-              <Link
-                href="/services/AI Chatbots"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-             AI Chatbots
-              </Link>
-              <Link
-                href="/services/ Custom Web Development"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                Custom Web Development
-                </Link>
-              <Link
-                href="/services/Innovative App Solution"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                Innovative App Solution
-              </Link>
-              <Link
-                href="/services/ Cloud Architect"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                Cloud Architect
-              </Link>
-              <Link
-                href="/services/ Cloud Architecture"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                 Cloud Architecture
-              </Link>
-              <Link
-                href="/services/Staff Augmentation"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                Staff Augmentation
-              </Link>
-              <Link
-                href="/services/Innovative App Solution"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-               UI/UX
-              </Link>
+              <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-gray">Cybersecurity</Link>
+              <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-gray">AI Chatbots</Link>
+              <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-gray">Custom Web Development</Link>
+              <Link href="/services/innovative-app-solution" className="block px-4 py-2 hover:bg-gray">Innovative App Solution</Link>
+              <Link href="/services/cloud-architect" className="block px-4 py-2 hover:bg-gray">Cloud Architect</Link>
+              <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-gray">Cloud Architecture</Link>
+              <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-gray">Staff Augmentation</Link>
+              <Link href="/services/ui-ux" className="block px-4 py-2 hover:bg-gray">UI/UX</Link>
             </div>
           </div>
 
           <Link href="/case-studies">Case Studies</Link>
           <Link href="/blogs">Blogs</Link>
-          <Link href="/About-us">About Us</Link>
+          <Link href="/about-us">About Us</Link>
           <Link href="/contact-us">Contact Us</Link>
         </nav>
 
@@ -97,7 +65,7 @@ const Header = () => {
             <Mail className="text-white hover:text-black w-4 h-4" />
           </button>
           <Link href="/contact-us">
-            <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-Blue">
+            <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-500">
               Contact Us →
             </button>
           </Link>
@@ -126,61 +94,21 @@ const Header = () => {
             </button>
             {dropdownOpen && (
               <div className="ml-4 mt-2 space-y-1 text-sm">
-                <Link
-                href="/Services/Cybersecurity"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-               Cybersecurity
-              </Link>
-              <Link
-                href="/services/AI Chatbots"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-             AI Chatbots
-              </Link>
-              <Link
-                href="/services/ Custom Web Development"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                Custom Web Development
-                </Link>
-              <Link
-                href="/services/Innovative App Solution"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                Innovative App Solution
-              </Link>
-              <Link
-                href="/services/ Cloud Architect"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                Cloud Architect
-              </Link>
-              <Link
-                href="/services/ Cloud Architecture"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                 Cloud Architecture
-              </Link>
-              <Link
-                href="/services/Staff Augmentation"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-                Staff Augmentation
-              </Link>
-              <Link
-                href="/services/Innovative App Solution"
-                className="block px-4 py-2 hover:bg-gray2"
-              >
-               UI/UX
-              </Link>
+                <Link href="/Services/Cybersecurity" className="block px-4 py-2 hover:bg-gray">Cybersecurity</Link>
+                <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-gray">AI Chatbots</Link>
+                <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-gray">Custom Web Development</Link>
+                <Link href="/services/innovative-app-solution" className="block px-4 py-2 hover:bg-gray">Innovative App Solution</Link>
+                <Link href="/Services/cloud-architect" className="block px-4 py-2 hover:bg-gray">Cloud Architect</Link>
+                <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-gray">Cloud Architecture</Link>
+                <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-gray">Staff Augmentation</Link>
+                <Link href="/services/ui-ux" className="block px-4 py-2 hover:bg-gray">UI/UX</Link>
               </div>
             )}
           </div>
 
           <Link href="/case-studies" className="block">Case Studies</Link>
           <Link href="/blogs" className="block">Blogs</Link>
-          <Link href="/About-us" className="block">About Us</Link>
+          <Link href="/about-us" className="block">About Us</Link>
           <Link href="/contact-us" className="block">Contact Us</Link>
         </div>
       )}

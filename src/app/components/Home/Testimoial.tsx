@@ -79,7 +79,7 @@ const Testimonials = () => {
       </div> */}
 
       {/* First Row - 3 columns on large screens */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-4xl max-w-xl mx-auto mb-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-4xl max-w-xl mx-auto mb-10 ">
         {firstRow.map((item, index) => (
           <TestimonialCard key={index} {...item} />
         ))}
@@ -96,7 +96,7 @@ const Testimonials = () => {
 };
 
 const TestimonialCard = ({ name, title, image, feedback }: Testimonial) => (
-  <div className="bg-white/5 border-white/10 p-2 md:p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 ">
+  <div className="bg-white/5 border-white/10 p-2 md:p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300  ">
     <div className=" text-lg mb-4">★★★★★</div>
     <p className=" md:text-sm text-xs text-white mb-6">“{feedback}”</p>
     <div className="flex items-center gap-3">
