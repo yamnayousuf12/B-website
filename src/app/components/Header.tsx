@@ -94,7 +94,7 @@ const Header = () => {
             </button>
             {dropdownOpen && (
               <div className="ml-4 mt-2 space-y-1 text-sm">
-                <Link href="/Services/Cybersecurity" className="block px-4 py-2 hover:bg-gray">Cybersecurity</Link>
+                <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-gray">Cybersecurity</Link>
                 <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-gray">AI Chatbots</Link>
                 <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-gray">Custom Web Development</Link>
                 <Link href="/services/innovative-app-solution" className="block px-4 py-2 hover:bg-gray">Innovative App Solution</Link>
