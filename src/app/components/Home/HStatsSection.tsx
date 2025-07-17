@@ -123,7 +123,9 @@ const services = [
   {
     imgSrc: "/icons/Vector (1).png",
     title: "Transform Your Digital Journey",
-    description: "Our certified IT services providers deliver strategic guidance and technical execution.",
+    description: (
+    <> Our certified <span className="text-white font-bold">IT services providers </span>  deliver strategic guidance and technical execution.
+    </>)
   },
 ];
 
@@ -133,11 +135,11 @@ export default function SmartITSolutions() {
 style={{ backgroundImage: "url('/Hstats.png')" }}
      >
       <div className="text-center mb-12">
-        <h2 className="text-xl md:text-4xl font-bold mb-2">
+        <h2 className=" text-gray1 text-xl md:text-4xl font-bold mb-2">
           How do We Deliver Smart IT Solutions?
         </h2>
-        <p className="text-white/80 max-w-2xl mx-auto text-xs md:text-xl">
-          As your trusted <span className="text-white font-normal">IT services provider</span>, we combine cutting-edge technology with 4+ years of expertise to
+        <p className="text-gray1 max-w-2xl mx-auto text-xs md:text-xl">
+          As your trusted <span className="text-gray1 font-normal">IT services provider</span>, we combine cutting-edge technology with 4+ years of expertise to
         </p>
       </div>
 
@@ -152,28 +154,28 @@ style={{ backgroundImage: "url('/Hstats.png')" }}
     <Image src={service.imgSrc} alt={service.title} width={30} height={30} />
   </div>
 </div>
-            <h3 className="md:text-lg text-sm font-semibold mb-2 text-center">{service.title}</h3>
-            <p className="md:text-sm text-xs text-white text-center">{service.description}</p>
+            <h3 className="md:text-lg text-sm font-semibold mb-2 text-center text-white">{service.title}</h3>
+            <p className="md:text-sm text-xs text-gray2 text-center">{service.description}</p>
           </div>
         ))}
       </div>
 
-      <div className="flex flex-wrap justify-center gap-8 text-center text-white">
+      <div className="flex flex-wrap justify-center gap-8 text-center text-gray1">
         <div>
           <p className="text-3xl font-bold">50+</p>
-          <p className="text-sm text-gray-400">Projects Delivered</p>
+          <p className="text-sm text-gray2">Projects Delivered</p>
         </div>
         <div>
           <p className="text-3xl font-bold">22+</p>
-          <p className="text-sm text-gray-400">Trusted Partners</p>
+          <p className="text-sm text-gray2">Trusted Partners</p>
         </div>
         <div>
           <p className="text-3xl font-bold">04+</p>
-          <p className="text-sm text-gray-400">Years of Innovation</p>
+          <p className="text-sm text-gray2">Years of Innovation</p>
         </div>
         <div>
           <p className="text-3xl font-bold">95%</p>
-          <p className="text-sm text-gray-400">Client Satisfaction</p>
+          <p className="text-sm text-gray2">Client Satisfaction</p>
         </div>
       </div>
     </section>

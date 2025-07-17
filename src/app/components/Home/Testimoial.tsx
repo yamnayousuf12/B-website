@@ -98,7 +98,7 @@ const Testimonials = () => {
 const TestimonialCard = ({ name, title, image, feedback }: Testimonial) => (
   <div className="bg-white/5 border-white/10 p-2 md:p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300  ">
     <div className=" text-lg mb-4">★★★★★</div>
-    <p className=" md:text-sm text-xs text-white mb-6">“{feedback}”</p>
+    <p className=" md:text-sm text-xs text-gray1 mb-6">“{feedback}”</p>
     <div className="flex items-center gap-3">
       <Image
         src={image}

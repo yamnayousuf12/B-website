@@ -1,6 +1,6 @@
 // components/BlogSection.tsx
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 
 type Blog = {
   category: string;
@@ -46,8 +46,8 @@ export default function BlogSection() {
   return (
     <section className="bg-black text-white py-20 px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="md:text-4xl text-2xl font-bold mb-2">Our Blogs</h2>
-        <p className="text-white/80 text-xs md:text-lg">
+        <h2 className="md:text-4xl text-2xl font-bold mb-2 text-white">Our Blogs</h2>
+        <p className="text-gray text-xs md:text-lg">
           Explore expert tips and trends to grow smarter with Bitsframe.
         </p>
       </div>
@@ -58,27 +58,27 @@ export default function BlogSection() {
             key={index}
             className="bg-white/5 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 p-4"
           >                  
-            <div className="relative w-full h-48 bg-black rounded-lg mb-4">
-              <Image
+            <div className="relative w-full h-48 bg-black/15 rounded-lg mb-4">
+              {/* <Image
                 src={blog.image}
                 alt={blog.title}
                 fill
                 className="object-cover rounded-lg"
-              />
+              /> */}
             </div>
 
-            <p className="text-sm text-white/80 mb-1">{blog.category}</p>
-            <h3 className="md:text-lg text-base font-semibold leading-snug mb-3">
+            <p className="text-sm text-gray2 mb-1">{blog.category}</p>
+            <h3 className="md:text-lg text-base font-semibold leading-snug mb-3 text-gray">
               {blog.title}
             </h3>
 
-            <ul className="md:text-sm text-xs text-white/80 mb-4 list-disc list-inside space-y-1">
+            <ul className="md:text-sm text-xs text-gray2 mb-4 list-disc list-inside space-y-1">
               {blog.points.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
             </ul>
 
-            <button className="md:px-4 md:py-2 px-2 py-1 text-sm rounded-md border border-gray text-white hover:bg-white/10 transition">
+            <button className="md:px-4 md:py-2 px-2 py-1 text-sm rounded-md border border-gray text-white hover:bg-white/5 bg-white/10 transition">
               Read Now →
             </button>
           </div>

@@ -5,7 +5,7 @@ const features = [
   {
     icon: <Dumbbell className="text-white  text-2xl mb-4 mt-3" />,
     title: "Tailored IT Solutions",
-    desc: "Let's transform generic solutions. At Bitsframe, we design AI, Custom Chatbots, Websites and Apps to meet clients' requirements. We prioritise customer support and satisfaction. ",
+    desc: "Let's transform generic solutions. At Bitsframe, we design AI, custom chatbots, websites and apps to meet client’s requirements. We prioritise customer support and satisfaction.  ",
   },
   {
     icon: <CloudUpload className="text-white  text-2xl mb-4 mt-3" />,
@@ -29,10 +29,10 @@ const FeaturesSection = () => {
        <div className="bg-[#121111] py-10 px-6 md:px-16 rounded-md shadow-lg md:mb-12 mb-2">
       <div className="max-w-6xl mx-auto text-center ">
         
-        <h2 className="text-xl md:text-4xl font-bold mb-3">
+        <h2 className="text-xl md:text-4xl font-bold mb-3 text-white">
          WHY CHOOSE OUR MANAGED IT SOLUTIONS
         </h2>
-        <p className="text-gray2 md:mb-12 mb-7 text-sm md:text-base">
+        <p className="text-gray md:mb-12 mb-7 text-sm md:text-base">
          Discover the strengths that set Bitsframe apart in delivering tech solutions that work.
         </p>
 
@@ -45,7 +45,7 @@ const FeaturesSection = () => {
               <div className="w-10 h-10 mb-4 rounded-full bg-Blue flex items-center justify-center">
              {feature.icon}
               </div>
-              <h1 className="text-sm font-bold mb-3">{feature.title}</h1>
+              <h1 className="text-sm font-bold mb-3 text-white">{feature.title}</h1>
               <p className="text-xs text-gray2">{feature.desc}</p>
             </div>
           ))}
@@ -62,14 +62,14 @@ const FeaturesSection = () => {
     backgroundImage: "url('/hf.png')",
    }}
 >
-          <h3 className="text-xl md:text-2xl font-semibold mb-2">
+          <h3 className="text-xl md:text-2xl font-semibold mb-2 text-white">
             Struggling with IT  Challenges?
           </h3>
-          <p className="text-white/85 mb-4 text-sm md:text-base text-center max-w-2xl md:ml-20">
-           Our expert delivers AI, custom apps, and cybersecurity solutions that dervive results Get Your Free IT Consulting Session With Our Experts
+          <p className="text-white mb-4 text-sm md:text-base text-center max-w-2xl md:ml-20">
+           Our expert delivers AI, custom apps, and cybersecurity solutions that dervive results Get your free IT consulting session with our experts
           </p>
           <button className="text-sm px-2 py-1 bg-white text-black font-medium md:px-6 md:py-2 rounded-md hover:bg-Blue transition">
-            Boook  Now →
+            Book Now →
           </button>
           </section>
         </div>

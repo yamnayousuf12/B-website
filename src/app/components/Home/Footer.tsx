@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white/80">
+    <footer className="bg-black text-gray">
        <div className="relative mt-1 ">
   {/* Background image */}
   <div
@@ -19,30 +19,30 @@ export default function Footer() {
                       </div>
            
           </div>
-          <div className="space-y-1 md:text-lg text-sm">
-            <h3 className="font-semibold md:text-xl text-lg ">Contact</h3>
-            <p>hey@bitsframe.com</p>
-            <p>+92 309 2074390</p>
+          <div className="space-y-1 md:text-lg text-sm md:ml-72">
+            <h3 className="font-semibold md:text-xl text-lg text-gray1">Contact</h3>
+            <p className="text-gray">hey@bitsframe.com</p>
+            <p className="text-gray">+92 309 2074390</p>
+          </div>
+          <div className="space-y-1 md:text-lg text-sm ">
+            <h3 className="font-semibold md:text-xl text-lg text-gray1">Socials</h3>
+            <p className="text-gray">Facebook</p>
+            <p className="text-gray">Instagram</p>
+            <p className="text-gray">LinkedIn</p>
           </div>
           <div className="space-y-1 md:text-lg text-sm">
-            <h3 className="font-semibold md:text-xl text-lg">Socials</h3>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>LinkedIn</p>
-          </div>
-          <div className="space-y-1 md:text-lg text-sm">
-            <h3 className="font-semibold md:text-xl text-lg ">Company</h3>
-            <p>About Us</p>
-            <p>Careers</p>
-            <p>Blog</p>
-            <p>Contact Us</p>
+            <h3 className="font-semibold md:text-xl text-lg text-gray1">Company</h3>
+            <p className="text-gray">About Us</p>
+            <p className="text-gray">Careers</p>
+            <p className="text-gray">Blog</p>
+            <p className="text-gray">Contact Us</p>
           </div>
         </div>
        
        
 
   {/* Footer Content */}
-  <div className="relative z-10 border-t border-gray pt-6 px-6 flex flex-col md:flex-row justify-between text-xs text-white/80 backdrop-blur-sm">
+  <div className="relative z-10 border-t border-white pt-6 px-6 flex flex-col md:flex-row justify-between text-xs text-gray1 backdrop-blur-sm">
     <p>© 2024 Bitsframe. All Rights Reserved.</p>
     <div className="flex gap-4 mt-2 md:mt-0 text-xs md:sm">
       <a href="#">Privacy Policy</a>

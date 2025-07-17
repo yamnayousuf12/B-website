@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Manrope";
   background-color: black;
 }
 
@@ -20,4 +20,8 @@ body {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+}
+select option {
+  background-color: black;
+  color: white;
 }
