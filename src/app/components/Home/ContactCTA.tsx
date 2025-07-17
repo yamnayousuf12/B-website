@@ -1,7 +1,7 @@
 
 "use client";
 import Link from "next/link";
-import { Phone, Star, Award } from "lucide-react";
+import { PhoneCall, Star, Award } from "lucide-react";
 
 export default function ContactCTA() {
   return (
@@ -41,7 +41,7 @@ export default function ContactCTA() {
           <div className="flex justify-center m-auto mt-8">
   <Link href="/contact-us">
     <button className="bg-Blue/30 text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ">
-      <Phone className="md:text-xl text-sm md:w-7 w-4" />
+      <PhoneCall className="md:text-xl text-sm md:w-7 w-4" />
       Contact Us
     </button>
   </Link>
