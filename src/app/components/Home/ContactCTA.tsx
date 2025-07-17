@@ -8,12 +8,12 @@ export default function ContactCTA() {
     <div className="relative overflow-hidden md:rounded-3xl md:rounded-b text-white p-2 md:p-1 md:max-w-6xl max-w-50 mx-auto mt-10 shadow-lg bg-black ">
       {/* Background Image */}
       <div
-        className="absolute inset-1 md:bg-cover md:bg-center z-0 opacity-80  "
+        className="absolute inset-1 md:bg-cover md:bg-center z-0 opacity-80 md:border-b-customBlue md:rounded-3xl "
         style={{ backgroundImage: "url('/96.png')" }}
       />
 
       {/* Gradient Overlay Content */}
-      <div className="relative z-10 md:max-w-6xl mx-auto m:px-6 md:py-20 px-2 py-14 max-w-lg inset-0 bg-gradient-to-b from-black to-[#1359D1] opacity-80 rounded-xl rounded-s ">
+      <div className="relative z-10 md:max-w-6xl mx-auto m:px-6 md:py-20 px-2 py-14 max-w-lg inset-0 opacity-80 ">
         
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-10">
             <div className="flex items-center md:gap-2  text-gray border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-40 md:w-60 md:text-sm text-xs  ">

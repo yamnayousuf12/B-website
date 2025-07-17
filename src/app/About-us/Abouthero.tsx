@@ -26,7 +26,7 @@ const Hero = () => {
 
         <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start md:ml-10">
           <Link href="/contact-us">
-            <button className="bg-Blue/30 text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ">
+            <button className="bg-Blue/30 text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ml-24  md:ml-0">
                <PhoneCall className="md:text-xl text-sm md:w-7 w-4" />
               Contact Now 
             </button>

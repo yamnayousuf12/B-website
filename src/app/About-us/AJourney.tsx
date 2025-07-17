@@ -3,7 +3,7 @@ import React from "react";
 const StatsSection = () => {
   return (
    <section
-  className="relative py-20 px-6 md:px-16 bg-no-repeat bg-center bg-cover h-screen"
+  className="relative bg-black md:py-20 py-9 px-6 md:px-16 bg-no-repeat bg-center bg-cover md:h-screen"
   style={{
     backgroundImage: "url('/Hstats.png')",
   }}

@@ -10,34 +10,34 @@ type Testimonial = {
 };
 
 const testimonials: Testimonial[] = [
-  {
-    name: "Sarah T.",
-    title: "CTO, TechScale Solutions",
-    image: "/Ellipse 12(1).png",
-    feedback:
-      "Bitsframe’s custom chatbot transformed how we engage customers. Their team was fast, creative, and a true partner.",
-  },
-  {
-    name: "Mark R.",
-    title: "Founder, Innovate App",
-    image: "/Ellipse 12.png",
-    feedback:
-      "Their AI solution gave us a competitive edge. Bitsframe delivered beyond expectations, on time and on budget.",
-  },
-  {
-    name: "Priya S.",
-    title: "CEO, Global Retail Co.",
-    image: "/Ellipse 12(1).png",
-    feedback:
-      "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
-  },
-  {
-    name: "Sarah T.",
-    title: "CTO, TechScale Solutions",
-    image: "/Ellipse 12(1).png",
-    feedback:
-      "Bitsframe’s custom chatbot transformed how we engage customers. Their team was fast, creative, and a true partner.",
-  },
+  // {
+  //   name: "Sarah T.",
+  //   title: "CTO, TechScale Solutions",
+  //   image: "/Ellipse 12(1).png",
+  //   feedback:
+  //     "Bitsframe’s custom chatbot transformed how we engage customers. Their team was fast, creative, and a true partner.",
+  // },
+  // {
+  //   name: "Mark R.",
+  //   title: "Founder, Innovate App",
+  //   image: "/Ellipse 12.png",
+  //   feedback:
+  //     "Their AI solution gave us a competitive edge. Bitsframe delivered beyond expectations, on time and on budget.",
+  // },
+  // {
+  //   name: "Priya S.",
+  //   title: "CEO, Global Retail Co.",
+  //   image: "/Ellipse 12(1).png",
+  //   feedback:
+  //     "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
+  // },
+  // {
+  //   name: "Sarah T.",
+  //   title: "CTO, TechScale Solutions",
+  //   image: "/Ellipse 12(1).png",
+  //   feedback:
+  //     "Bitsframe’s custom chatbot transformed how we engage customers. Their team was fast, creative, and a true partner.",
+  // },
   {
     name: "Mark R.",
     title: "Founder, Innovate App",
@@ -63,16 +63,16 @@ const testimonials: Testimonial[] = [
 
 // Split testimonials
 const firstRow = testimonials.slice(0, 3); // For lg:grid-cols-3
-const secondRow = testimonials.slice(0,4);   // For lg:grid-cols-4
+// const secondRow = testimonials.slice(0,4);   // For lg:grid-cols-4
 
 const Testimonials = () => {
   return (
     <section className="bg-black text-white py-16 px-4 md:px-12">
       <div className="text-center mb-12">
-        <h2 className="text-xl md:text-4xl font-bold mb-2">
+        <h2 className="text-xl md:text-4xl font-Medium mb-2 text-white">
           What Our Clients Say About Us
         </h2>
-        <p className="text-gray2 text-sm md:text-xl">
+        <p className="text-white text-xs md:text-xl">
           Hear from businesses who turned their visions into reality with Bitsframe.
         </p>
       </div>
@@ -85,11 +85,11 @@ const Testimonials = () => {
       </div>
 
       {/* Second Row - 4 columns on large screens */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {secondRow.map((item, index) => (
           <TestimonialCard key={index} {...item} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
