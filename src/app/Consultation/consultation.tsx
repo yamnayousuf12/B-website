@@ -1,6 +1,6 @@
 
 'use client';
-import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '@headlessui/react';
+// import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '@headlessui/react';
 import { useState } from 'react';
 
 const timings = [
@@ -56,7 +56,7 @@ export default function ConsultationModal() {
             />
           </div>
 
-          <div>
+          {/* <div>
             <label htmlFor="timing" className="block mb-1">Timing</label>
             <Listbox value={timing} onChange={setTiming}>
               <div className="relative">
@@ -64,7 +64,7 @@ export default function ConsultationModal() {
                   {timing}
                 </ListboxButton>
                
-                <ListboxOptions className="absolute mt-1 w-full bg-Red  border border-Blue rounded-md z-10 max-h-60 overflow-auto">
+                <ListboxOptions className="absolute mt-1 w-full bg-black  border border-Blue rounded-md z-10 max-h-60 overflow-auto">
   {timings.map((time) => (
     <ListboxOption
       key={time}
@@ -76,9 +76,26 @@ export default function ConsultationModal() {
   ))}
 </ListboxOptions>
 
-              </div>
-            </Listbox>
-          </div>
+              </div> */}
+
+              <label htmlFor="timing" className="block mb-1">Timing</label>
+<select
+  id="timing"
+  name="timing"
+  value={timing}
+  onChange={(e) => setTiming(e.target.value)}
+  className="w-full px-4 py-2 rounded-md border border-Blue bg-black text-white "
+>
+  {timings.map((time) => (
+    <option key={time} value={time} 
+     className="bg-black text-white hover:bg-darkBlue">
+      {time}
+    </option>
+  ))}
+</select>
+
+            {/* </Listbox>
+          </div> */}
 
           <button
             type="submit"
