@@ -8,7 +8,7 @@ const Highlight: React.FC = () => {
     <div className="md:w-full flex flex-col items-center text-center mb-1 bg-black"
     >
       <div className="mb-4 md:px-4 md:py-3 px-2 py-2 rounded-full bg-white/10 md:text-xs text-xs font-semibold text-white tracking-widest">
-       testimonials/reviews
+       Testimonials/Reviews
       </div>
 
       {/* Main Sentence */}

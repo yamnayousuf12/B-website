@@ -33,7 +33,7 @@ const FeaturesSection = () => {
          WHY CHOOSE OUR MANAGED IT SOLUTIONS
         </h2>
         <p className="text-gray md:mb-12 mb-7 text-sm md:text-base">
-         Discover the strengths that set Bitsframe apart in delivering tech solutions that work.
+         Discover the strengths that set Bitsframe apart in delivering tech solutions that work
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 ">
@@ -65,8 +65,12 @@ const FeaturesSection = () => {
           <h3 className="text-xl md:text-2xl font-semibold mb-2 text-white">
             Struggling with IT  Challenges?
           </h3>
-          <p className="text-white mb-4 text-sm md:text-base text-center max-w-2xl md:ml-20">
-           Our expert delivers AI, custom apps, and cybersecurity solutions that dervive results Get your free IT consulting session with our experts
+          <p className="text-white mb-1 text-sm md:text-base text-center max-w-2xl md:ml-20">
+           Our expert delivers AI, custom apps, and cybersecurity solutions that derive results
+
+          </p>
+           <p className="text-white mb-4 text-sm md:text-base text-center max-w-2xl md:ml-20">
+           get  your free IT consulting session with our experts
           </p>
           <button className="text-sm px-2 py-1 bg-white text-black font-medium md:px-6 md:py-2 rounded-md hover:bg-Blue transition">
             Book Now →

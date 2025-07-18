@@ -35,7 +35,7 @@ export default function DevJourney() {
       >
         <h1 className="text-xl md:text-4xl font-bold mb-2 text-white"
         >From Spark to Software</h1>
-        <p className="text-gray md:text-lg text-sm">Bitsframe Dev Journey</p>
+        <p className="text-gray md:text-lg text-sm">Bitsframe  Development Journey</p>
         
       </motion.div>
 

@@ -15,21 +15,21 @@ const StatsSection = () => {
         {/* <h1 className="text-7xl font-extrabold md:text-xl mb-4 text-justify text-white ">
          Our Journey at Bitsframe
         </h1> */}
-        <p className="text-sm md:text-lg font-light mb-4 text-white/80">
+        <p className="text-sm md:text-lg font-light mb-4 text-gray1">
         Struggling with an unresolved tech challenge? Or want to transform your ideas into reality?
 
 
         </p>
-        <p className="text-sm md:text-lg font-light mb-4 text-white/80">We hear you! Let&apos;s collaborate to find  <span className="text-white font-medium">managed IT solutions </span>for your business IT queries. Our team is ready to craft custom apps, AI solutions, or secure Shopify stores that drive your success.</p>
-        <p className="text-sm md:text-lg font-light mb-4 text-white/80">
-Fill out the form, drop us an email, or give us a call. We are ready to turn your vision into reality today.</p>
+        <p className="text-sm md:text-lg font-light mb-4 text-gray1">We hear you! Let&apos;s collaborate to find  <span className="text-white font-medium">managed IT solutions </span>for your business IT queries. Our team is ready to craft custom apps, AI solutions, or secure Shopify stores that drive your success.</p>
+        <p className="text-sm md:text-lg font-light mb-4 text-gray1">
+Complete the form or send us an email.</p>
         
   
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-6">
             <h2 className="md:text-2xl text-lg font-bold mb-4 text-white">Contact Info</h2>
-            <div className="flex items-center gap-4 text-white/80  ">
+            <div className="flex items-center gap-4 text-gray1  ">
              <button
       className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300"
     >

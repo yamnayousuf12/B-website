@@ -33,13 +33,13 @@ Scalable Managed IT Solutions
   </span> */}
 </h1>
         <p className="text-gray1 md:text-base text-xs mb-8">
-         Your dedicated IT services provider, delivering managed IT solutions from AI to custom Web development
+         Your dedicated IT services provider, delivering managed IT solutions from AI to custom web development
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
           <Link href="/Consultation ">
             <button className="bg-Blue text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-medium hover:bg-black text-xs md:text-base ">
-            Book a free consultatio →
+            Book a free consultation →
             </button>
           </Link>
           <Link href="/services">

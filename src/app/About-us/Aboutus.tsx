@@ -31,34 +31,34 @@ const testimonials: Testimonial[] = [
   //   feedback:
   //     "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
   // },
-  // {
-  //   name: "Sarah T.",
-  //   title: "CTO, TechScale Solutions",
-  //   image: "/Ellipse 12(1).png",
-  //   feedback:
-  //     "Bitsframe’s custom chatbot transformed how we engage customers. Their team was fast, creative, and a true partner.",
-  // },
+  {
+    name: "Sarah T.",
+    title: "CTO, TechScale Solutions",
+    image: "/ell.png",
+    feedback:
+      "Bitsframe’s custom chatbot transformed how we engage customers. Their team was fast, creative, and a true partner.",
+  },
   {
     name: "Mark R.",
     title: "Founder, Innovate App",
-    image: "/Ellipse 12.png",
+    image: "/Mark.png",
     feedback:
       "Their AI solution gave us a competitive edge. Bitsframe delivered beyond expectations, on time and on budget.",
   },
   {
     name: "Priya S.",
     title: "CEO, Global Retail Co.",
-    image: "/Ellipse 12(1).png",
+    image: "/priya.png",
     feedback:
       "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
   },
-  {
-    name: "Priya S.",
-    title: "CEO, Global Retail Co.",
-    image: "/Ellipse (2).png",
-    feedback:
-      "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
-  },
+  // {
+  //   name: "Priya S.",
+  //   title: "CEO, Global Retail Co.",
+  //   image: "/Ellipse (2).png",
+  //   feedback:
+  //     "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
+  // },
 ];
 
 // Split testimonials
@@ -73,7 +73,7 @@ const Testimonials = () => {
           What Our Clients Say About Us
         </h2>
         <p className="text-white text-xs md:text-xl">
-          Hear from businesses who turned their visions into reality with Bitsframe.
+          Hear from businesses who turned their visions into reality with Bitsframe
         </p>
       </div>
 

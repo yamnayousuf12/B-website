@@ -20,14 +20,14 @@ const testimonials: Testimonial[] = [
   {
     name: "Mark R.",
     title: "Founder, Innovate App",
-    image: "/Mark.png",
+    image: "/ell.png",
     feedback:
       "Their AI solution gave us a competitive edge. Bitsframe delivered beyond expectations, on time and on budget.",
   },
   {
     name: "Priya S.",
     title: "CEO, Global Retail Co.",
-    image: "/Mark.png",
+    image: "/priya.png",
     feedback:
       "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
   },

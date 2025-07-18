@@ -48,7 +48,7 @@ export default function BlogSection() {
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="md:text-4xl text-2xl font-bold mb-2 text-white">Our Blogs</h2>
         <p className="text-gray text-xs md:text-lg">
-          Explore expert tips and trends to grow smarter with Bitsframe.
+          Explore expert tips and trends to grow smarter with Bitsframe
         </p>
       </div>
 

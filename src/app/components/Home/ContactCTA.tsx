@@ -8,7 +8,7 @@ export default function ContactCTA() {
     <div className="relative overflow-hidden md:rounded-3xl md:rounded-b text-white p-2 md:p-1 md:max-w-6xl max-w-50 mx-auto mt-10 shadow-lg bg-black ">
       {/* Background Image */}
       <div
-        className="absolute inset-1 md:bg-cover md:bg-center z-0 opacity-80 md:border-b-customBlue md:rounded-3xl "
+        className="absolute inset-1 md:bg-cover md:bg-center z-0 opacity-60 md:border-b-customBlue md:rounded-3xl "
         style={{ backgroundImage: "url('/96.png')" }}
       />
 
@@ -34,7 +34,7 @@ export default function ContactCTA() {
           </h2>
 
           <p className="text-white text-xs md:text-lg">
-          Ready to elevate your business with custom IT services and solutions? Contact BitsFrame today to get started!</p>
+          Ready to elevate your business with custom IT services and solutions? Contact Bitsframe today to get started!</p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
          

@@ -53,7 +53,7 @@ const Solutions = () => {
           Our Dedicated Managed IT Solutions
         </h2>
         <p className="text-gray text-xs md:text-base">
-          Explore our full range of services crafted to meet your business goals and fuel growth.
+          Explore our full range of services crafted to meet your business goals and fuel growth
         </p>
       </div>
 

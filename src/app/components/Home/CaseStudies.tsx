@@ -25,7 +25,7 @@ export default function CaseStudies() {
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="md:text-4xl text-lg font-bold mb-2 text-white">Real Results, Real Impact</h2>
         <p className="text-gray md:text-lg text-xs">
-          See how we’ve helped businesses like yours succeed with innovative tech solutions.
+          See how we’ve helped businesses like yours succeed with innovative tech solutions
         </p>
       </div>
 
