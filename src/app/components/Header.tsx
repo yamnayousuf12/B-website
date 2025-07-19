@@ -18,11 +18,13 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <header className="bg-black text-white px-6 py-4 border-b border-white mb-6">
+    // <header className="bg-black text-white px-6 py-4 border-b border-white mb-6">
+    <header className="bg-transparent text-white px-6 py-4 fixed top-0 left-0 w-full z-50 border border-white ">
+
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center space-x-4">
-          <Image src="/LOGIN.png" alt="Logo" width={120} height={60} />
+          <Image src="/logo.png" alt="Logo" width={120} height={60} />
         </div>
 
         {/* Desktop Nav */}
