@@ -91,7 +91,7 @@ export default function SmartITSolutions() {
       
       <div
         key={idx}
-        className="bg-blur-lg  bg-black/30 md:p-6 p-2 border border-gray rounded-xl shadow-md  shadow-customBlue hover:shadow-Blue"
+        className="bg-blur-lg  bg-black/60 md:p-6 p-2 border border-gray rounded-xl shadow-md  shadow-customBlue hover:shadow-Blue"
       >
         <div className="mb-2">
           <div className="w-12 h-12  rounded-full flex items-center justify-center">
