@@ -20,12 +20,13 @@ const Header = () => {
   return (
     <div>
     {/* // <header className="bg-black text-white px-6 py-4 border-b border-white mb-6"> */}
-    <header className=" absolute bg-transparent text-white px-6 py-4 top-0 left-0 w-full z-50   ">
- <div className="absolute top-[70px] w-[1200px] border-b border-white/20 z-20 "></div>
+    <header className=" absolute bg-transparent text-white px-6 py-4 top-0 left-0 w-full z-50">
+ <div className="absolute top-[70px] md:w-[1200px] w-80 border-b border-white/20 z-20 "></div>
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
-        <div className="flex items-center space-x-4">
-          <Image src="/logo.png" alt="Logo" width={120} height={60} />
+        <div className="flex items-center space-x-2">
+          <Image src="/logo.svg" alt="Logo" width={30} height={60} />
+          <h1>BITSFRAME</h1>
         </div>
 
         {/* Desktop Nav */}

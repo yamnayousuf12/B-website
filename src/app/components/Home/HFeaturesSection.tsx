@@ -3,17 +3,17 @@ import { Dumbbell, CloudUpload, RefreshCw } from "lucide-react";
 
 const features = [
   {
-    icon: <Dumbbell className="text-white  text-2xl mb-4 mt-3" />,
+    icon: <Dumbbell className="text-white mb-4 w-4 h-4 mt-4" />,
     title: "Tailored IT Solutions",
     desc: "Let's transform generic solutions. At Bitsframe, we design AI, custom chatbots, websites and apps to meet client’s requirements. We prioritise customer support and satisfaction.  ",
   },
   {
-    icon: <CloudUpload className="text-white  text-2xl mb-4 mt-3" />,
+    icon: <CloudUpload className="text-white mb-4  w-4 h-4 mt-4" />,
     title: "Scalable Technology",
     desc: "Bitsframe delivers high-end tech solutions to meet modern technology standards. Our IT engineers develop integrated solutions that generate growth and add value to integrated digital systems.",
   },
   {
-    icon: <RefreshCw className="text-white  text-2xl mb-4 mt-3" />,
+    icon: <RefreshCw className="text-white mb-4 w-4 h-4 mt-4" />,
     title: "End-to-End IT Provider Expertise",
     desc: (
       <>
@@ -25,14 +25,14 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-black text-white py-4 px-6 md:px-16">
-       <div className="bg-[#121111] py-10 px-6 md:px-16 rounded-md shadow-lg md:mb-12 mb-2">
+    <section className="bg-black text-white py-2 px-6 md:px-16 ">
+       <div className=" border-collapse border border-white/10 rounded-2xl py-10 px-6 md:px-16 shadow-lg md:mb-12 mb-2">
       <div className="max-w-6xl mx-auto text-center ">
         
-        <h2 className="text-xl md:text-4xl font-bold mb-3 text-white">
+        <h2 className="text-lg md:text-4xl font-bold mb-3 text-white">
          WHY CHOOSE OUR MANAGED IT SOLUTIONS
         </h2>
-        <p className="text-gray md:mb-12 mb-7 text-sm md:text-base">
+        <p className="text-gray md:mb-12 mb-7 text-[10px] md:text-base">
          Discover the strengths that set Bitsframe apart in delivering tech solutions that work
         </p>
 
@@ -42,44 +42,20 @@ const FeaturesSection = () => {
               key={index}
               className="bg-[#0b0b0b] p-6 rounded-lg shadow-md hover:shadow-Blue transition-shadow "
             >
-              <div className="w-10 h-10 mb-4 rounded-full bg-Blue flex items-center justify-center">
+              <div className="md:w-10 md:h-10 w-8 h-8 mb-4 rounded-full bg-Blue flex items-center justify-center">
              {feature.icon}
               </div>
-              <h1 className="text-sm font-bold mb-3 text-white">{feature.title}</h1>
-              <p className="text-xs text-gray2">{feature.desc}</p>
+              <h1 className="md:text-sm text-xs font-bold mb-3 text-left text-white">{feature.title}</h1>
+              <p className="md:text-xs text-[9px] text-gray2 text-left">{feature.desc}</p>
             </div>
           ))}
           
         </div>
-
-        {/* CTA Banner */}
-        
-
-       
-           <section
-  className="relative text-white py-3 px-4 md:px-16 bg-no-repeat md:bg-center md:bg-cover rounded-md Shadow-md"
-  style={{
-    backgroundImage: "url('/hf.png')",
-   }}
->
-          <h3 className="text-xl md:text-2xl font-semibold mb-2 text-white">
-            Struggling with IT  Challenges?
-          </h3>
-          <p className="text-white mb-1 text-sm md:text-base text-center max-w-2xl md:ml-20">
-           Our expert delivers AI, custom apps, and cybersecurity solutions that derive results
-
-          </p>
-           <p className="text-white mb-4 text-sm md:text-base text-center max-w-2xl md:ml-20">
-           get  your free IT consulting session with our experts
-          </p>
-          <button className="text-sm px-2 py-1 bg-white text-black font-medium md:px-6 md:py-2 rounded-md hover:bg-Blue transition">
-            Book Now →
-          </button>
-          </section>
         </div>
        
      </div>
     </section>
+    
   );
 };
 

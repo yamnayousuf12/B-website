@@ -62,7 +62,7 @@ import { Award } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative h-[700px] w-full text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left overflow-hidden  ">
+    <section className="relative md:h-[700px] md:w-full h-[600px] text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left overflow-hidden  ">
 
       {/* Background Video */}
       <video
@@ -70,7 +70,7 @@ const Hero = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-20 "
+        className="absolute inset-0 w-full h-full object-cover z-20  "
       >
         <source src="/Untitled design.mp4" type="video/mp4" />
         Your browser does not support the video tag.
