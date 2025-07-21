@@ -39,22 +39,22 @@ import React from 'react';
 
 const ProcessSteps: React.FC = () => {
   return (
-    <section className="relative rounded-xl overflow-hidden text-white px-4 py-8 md:py-12 md:px-10 max-w-6xl mx-auto my-10">
+    <section className="relative md:rounded-xl  overflow-hidden text-white px-4 py-8 md:py-12 md:px-10 max-w-6xl mx-auto my-10">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 md:bg-cover md:bg-center"
         style={{ backgroundImage: "url('/hf.svg')" }} // use your background image path
       ></div>
 
       {/* Overlay content */}
-      <div className="relative z-10 text-center space-y-2">
-        <h3 className="text-xs md:text-3xl font-Medium">
+      <div className="relative z-10 text-center space-y-1">
+        <h3 className="text-sm md:text-3xl font-Medium">
           Struggling with IT Challenges?
         </h3>
-        <p className="text-[10px] max-w-52 md:text-base ml-14">
+        <p className="text-[10px] max-w-52 md:max-w-2xl md:text-base ml-14 md:ml-52 ">
           Our expert delivers AI, custom apps, and cybersecurity solutions that derive results
         </p>
-        <p className="text-sm md:text-base">
+        <p className="text-[10px] md:text-base">
           Get your free IT consulting session with our experts
         </p>
 
