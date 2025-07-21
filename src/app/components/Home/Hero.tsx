@@ -91,7 +91,7 @@ const Hero = () => {
         <h1 className="text-gray1 text-xl md:text-4xl font-Medium mb-2 text-pretty">
           Dominate Your Market with
         </h1>
-        <h1 className="text-gray1 text-[64px] md:text-4xl font-Medium mb-3 text-pretty">
+        <h1 className="text-gray1 text-xl md:text-4xl font-Medium mb-3 text-pretty">
           Scalable Managed IT Solutions
         </h1>
         <p className="text-gray1 md:text-sm text-xs mb-6">
