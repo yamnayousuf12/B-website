@@ -86,10 +86,12 @@ export default function SmartITSolutions() {
 >
   {/* Services Grid */}
   <div className="grid grid-cols-2 md:grid-cols-4 md:gap-6 gap-3 md:mb-12 mb-4 -hue-rotate-15">
+    
     {services.map((service, idx) => (
+      
       <div
         key={idx}
-        className="bg-blur-md md:p-6 p-2 border border-gray rounded-lg shadow hover:shadow-Blue"
+        className="bg-blur-lg  bg-black/30 md:p-6 p-2 border border-gray rounded-xl shadow-md  shadow-customBlue hover:shadow-Blue"
       >
         <div className="mb-2">
           <div className="w-12 h-12  rounded-full flex items-center justify-center">

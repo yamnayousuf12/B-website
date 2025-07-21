@@ -42,7 +42,7 @@ const ProcessSteps: React.FC = () => {
     <section className="relative rounded-xl overflow-hidden text-white px-4 py-8 md:py-12 md:px-10 max-w-6xl mx-auto my-10">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-90"
+        className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/hf.svg')" }} // use your background image path
       ></div>
 
