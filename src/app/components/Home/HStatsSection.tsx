@@ -33,7 +33,7 @@ export default function SmartITSolutions() {
     <section className="md:py-10 py-32 px-6 md:px-20 relative h-[550px] text-white md:h-screen    "
 // style={{ backgroundImage: "url('/Hstats.png')" }}
      >
-       <section className=" border-collapse border border-white/10 rounded-2xl p-6 md:p-10 bg-transparent z-20 relative -mt-72 md:-mt-48 ">
+       <section className=" border-collapse border border-white/10 border-b-black rounded-2xl p-6 md:p-10 bg-transparent z-20 relative -mt-72 md:-mt-48 ">
       <div className="text-center md:mb-12 mb-16 bg-transparent z-20 relative">
         
         <h2 className=" text-gray1 text-xl md:text-4xl font-bold mb-2 md:-mt-6 -mt-2 ">

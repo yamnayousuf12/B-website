@@ -17,16 +17,16 @@ const brands = [
 
 const TechDrivenPartnerships: React.FC = () => {
   return (
-    <section className="text-white py-24 px-6">
+    <section className="text-white py-14 px-6 ">
       <div className="max-w-7xl mx-auto text-center">
         {/* Headings */}
-        <h2 className="text-xl md:text-5xl font-semibold mb-4 text-white">
+        <h2 className="text-xl md:text-5xl font-Medium mb-3 text-white">
           Tech-Driven Partnerships
         </h2>
-        <p className="text-gray mb-1 md:text-base text-sm">
+        <p className="text-gray mb-1 md:text-base text-xs">
           We deliver innovative IT solutions for your success
         </p>
-        <p className="text-gray mb-12 md:text-xs text-xs">Trusted by 22+ brands</p>
+        <p className="text-gray mb-8 md:mb-12 md:text-xs text-xs">Trusted by 22+ brands</p>
 
         {/* Brand Cards */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
