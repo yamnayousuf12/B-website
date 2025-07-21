@@ -18,9 +18,10 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    // <header className="bg-black text-white px-6 py-4 border-b border-white mb-6">
-    <header className="bg-transparent text-white px-6 py-4 fixed top-0 left-0 w-full z-50 border border-white ">
-
+    <div>
+    {/* // <header className="bg-black text-white px-6 py-4 border-b border-white mb-6"> */}
+    <header className=" absolute bg-transparent text-white px-6 py-4 top-0 left-0 w-full z-50   ">
+ <div className="absolute top-[70px] w-[1200px] border-b border-white/20 z-20 "></div>
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center space-x-4">
@@ -115,6 +116,7 @@ const Header = () => {
         </div>
       )}
     </header>
+    </div>
   );
 };
 

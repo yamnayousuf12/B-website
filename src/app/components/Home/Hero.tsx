@@ -62,7 +62,7 @@ import { Award } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left overflow-hidden">
+    <section className="relative h-[700px] w-full text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left overflow-hidden  ">
 
       {/* Background Video */}
       <video
@@ -70,9 +70,9 @@ const Hero = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-screen object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-20 "
       >
-        <source src="/hero-video.mp4" type="video/mp4" />
+        <source src="/Untitled design.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -81,8 +81,8 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-20 max-w-4xl mx-auto">
-        <div className="mb-8 flex justify-center md:justify-start">
-          <div className="inline-flex items-center md:gap-2 gap-0 md:px-4 px-1 py-1 md:py-1.5 rounded-full bg-Blue text-white1 md:text-sm text-xs font-medium shadow-sm mt-16">
+        <div className="mb-8 flex justify-center md:justify-start mt-32">
+          <div className="inline-flex items-center md:gap-2 gap-0 md:px-4 px-1 py-1 md:py-1.5 rounded-full bg-Blue text-white1 md:text-sm text-xs font-medium shadow-sm ">
             <Award className="w-4 h-4" />
             Trusted by 22+ brands
           </div>
@@ -100,7 +100,7 @@ const Hero = () => {
 
         <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
           <Link href="/Consultation">
-            <button className="bg-Blue text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-medium hover:bg-black text-xs md:text-base ">
+            <button className="bg-Blue text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-medium hover:bg-black text-xs md:text-base">
               Book a free consultation →
             </button>
           </Link>
@@ -109,7 +109,18 @@ const Hero = () => {
               Explore our services →
             </button>
           </Link>
+        
+
         </div>
+          {/* <div className="text-center mb-12 ">
+        <h2 className=" text-gray1 text-xl md:text-4xl font-bold mb-2">
+          How do We Deliver Smart IT Solutions?
+        </h2>
+        <p className="text-gray1 max-w-2xl mx-auto text-xs md:text-xl">
+          As your trusted <span className="text-gray1 font-normal">IT services provider</span>, we combine cutting-edge technology with 4+ years of expertise to
+        </p>
+      </div> */}
+      
       </div>
     </section>
   );
