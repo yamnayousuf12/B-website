@@ -66,6 +66,7 @@ export default function DevJourney() {
               />
               
 
+
               {/* Card */}
               <div
                 className={`rounded-lg md:px-6 md:py-4 px-1 py-2 md:w-full w-44 md:max-w-sm max-w-xs transition-all duration-300 md:mt-16 mt-14  ${
