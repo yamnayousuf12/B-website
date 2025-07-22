@@ -19,9 +19,9 @@ Our Solution
     </div>
     </div>
 <h1 className="md:text-3xl text-xl fount-semibold md:text-justify">
-AI Development Services</h1>
+Staff Augmentation Services</h1>
         <p className="text-gray2 md:text-lg text-sm mb-8 ">
-          Automate your business process with AI-driven software and technologies
+         Access skilled professionals and scale quickly with our managed IT staff
         </p>
 {/* 
         <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
