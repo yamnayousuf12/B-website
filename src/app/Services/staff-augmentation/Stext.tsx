@@ -23,7 +23,7 @@ const Uitext = () => {
          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
           <Link href="/contact-us">
             <button className="bg-white text-black md:px-6 md:py-3 py-1 px-2 rounded-lg font-medium hover:bg-Blue md:text-sm text-xs ml-16">
-          Get Started with a Free Consultation →
+          Hire Talent Now →
             </button>
           </Link>
           
