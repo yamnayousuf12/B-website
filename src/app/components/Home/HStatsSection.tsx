@@ -30,7 +30,7 @@ const services = [
 export default function SmartITSolutions() {
   return (
     
-    <section className="md:py-10 py-32 px-6 md:px-20 relative h-[550px] text-white md:h-screen    "
+    <section className="md:py-1 py-32 px-6 md:px-20 relative h-[550px] text-white md:h-[500px]  "
 // style={{ backgroundImage: "url('/Hstats.png')" }}
      >
        <section className=" border-collapse border border-white/10 border-b-black rounded-2xl p-6 md:p-10 bg-transparent z-20 relative -mt-72 md:-mt-48 ">
@@ -81,7 +81,7 @@ export default function SmartITSolutions() {
         </div>
       </div> */}
       <div
-  className="md:bg-cover md:bg-center md:bg-no-repeat md:py-12 md:px-4 py-2 px-1 "
+  className="md:bg-cover  md:bg-center md:bg-no-repeat md:py-12 md:px-4 py-2 px-1 "
   style={{ backgroundImage: "url('/Hstats.png')" }}
 >
   {/* Services Grid */}
