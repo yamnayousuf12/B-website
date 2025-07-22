@@ -21,21 +21,21 @@ const caseStudies = [
 
 export default function CaseStudies() {
   return (
-    <section className="bg-black text-white md:py-20 md:px-4">
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="md:text-4xl text-lg font-bold mb-2 text-white">Real Results, Real Impact</h2>
-        <p className="text-gray md:text-lg text-xs">
+    <section className="bg-black text-white md:py-2 md:px-4">
+      <div className="max-w-7xl mx-auto text-center mb-6 ">
+        <h2 className="md:text-3xl text-lg font-Medium mb-2 text-white">Real Results, Real Impact</h2>
+        <p className="text-gray md:text-sm text-[12px]">
           See how we’ve helped businesses like yours succeed with innovative tech solutions
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:max-w-5xl max-w-xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:max-w-3xl max-w-xs mx-auto bg-black ">
         {caseStudies.map((study, index) => (
           <div
             key={index}
-            className="bg-white/5 rounded-xl text-xs md:text-sm overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 p-4"
+            className="bg-black w-80 md:w-96 rounded-xl text-xs md:text-sm overflow-hidden shadow-md border-white/20 border hover:shadow-xl transition-shadow duration-300 p-4"
           >
-            <div className="relative w-full h-56 bg-black rounded-lg mb-4">
+            <div className="relative w-72 md:w-84 h-56 m-auto bg-[#1A1A1A] rounded-lg mb-4 ">
              
              
               <div className="absolute rounded-md top-2 right-2 bg-Blue text-white1 text-xs px-3 py-1 ">
@@ -43,16 +43,16 @@ export default function CaseStudies() {
               </div>
             </div>
 
-            <span className="inline-block text-xs bg-white/10 text-gray px-3 py-1 rounded-full mb-2">
+            <span className="inline-block [12px] bg-white/10 text-gray px-3 py-1 rounded-full mb-2">
               {study.client}
             </span>
 
-            <h3 className="md:text-lg  text-sm font-semibold leading-snug mb-2">{study.title}</h3>
+            <h3 className="md:text-lg  [12px] font-semibold leading-snug mb-2">{study.title}</h3>
 
-            <p className="md:text-sm text-xs text-gray1">
+            <p className="md:text-sm text-[10px] text-gray1">
               {study.description.split("**").map((part, i) =>
                 i % 2 === 1 ? (
-                  <strong key={i} className="text-xs md:text-sm text-white font-medium">
+                  <strong key={i} className="[10px] md:text-sm text-white font-medium">
                     {part}
                   </strong>
                 ) : (

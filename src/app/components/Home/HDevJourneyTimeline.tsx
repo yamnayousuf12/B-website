@@ -21,21 +21,22 @@ export default function DevJourney() {
 
   return (
     
-    <section className="relative min-h-screen bg-black text-white px-8 md:px-20 py-6 flex flex-col md:flex-row md:gap-12 gap-14 overflow-hidden" 
+    <section className="relative min-h-screen bg-black text-white px-8 md:px-20 py-0 md:py-4 flex flex-col md:flex-row md:gap-12 gap-14 overflow-hidden" 
     >
-      <div className="absolute -inset-16 -z-1 bg-cover bg-center bg-no-repeat h-full w-full"
+      <div className="absolute -mt-56 -z-1 bg-cover bg-center bg-no-repeat h-full w-full "
        style={{
-    backgroundImage: "url('/Hstats.png')",
+    backgroundImage: "url('/Hstats.svg')",
   }}/>
+  
       {/* Left Floating Panel */}
       <motion.div
         className="md:w-1/2 flex flex-col z-10"
         
        
       >
-        <h1 className="text-xl md:text-4xl font-bold mb-2 text-white"
+        <h1 className="text-lg md:text-3xl mb-2 font-medium text-white mt-20"
         >From Spark to Software</h1>
-        <p className="text-gray md:text-lg text-sm">Bitsframe  Development Journey</p>
+        <p className="text-gray md:text-sm text-[8px]">Bitsframe  Development Journey</p>
         
       </motion.div>
 
@@ -61,6 +62,7 @@ export default function DevJourney() {
                     ? "bg-Blue shadow-md border-Blue animate-pulse"
                     : "bg-white/10 border-white/20"
                 }`}
+                
               />
               
 
@@ -69,7 +71,7 @@ export default function DevJourney() {
                 className={`rounded-lg md:px-6 md:py-4 px-1 py-2 md:w-full w-44 md:max-w-sm max-w-xs transition-all duration-300 md:mt-16 mt-14  ${
                   idx === 0
                     ? "bg-gradient-to-r from-Blue/40 to-Blue/10 border border-Blue"
-                    : "bg-white/5 border border-white/10"
+                    : "bg-white/5 border border-white/10 "
                 }`}
               >
                 <h3 className="md:text-xl text-sm font-semibold text-gray flex gap-2 items-center">
@@ -82,7 +84,9 @@ export default function DevJourney() {
             </motion.div>
           ))}
           
+          
         </div>
+        
         
       </motion.div>
       

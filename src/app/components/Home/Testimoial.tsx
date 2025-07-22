@@ -67,7 +67,7 @@ const firstRow = testimonials.slice(0, 3); // For lg:grid-cols-3
 
 const Testimonials = () => {
   return (
-    <section className="bg-black text-white py-16 px-4 md:px-12">
+    <section className="bg-black text-white py-2 px-4 md:px-12">
       {/* <div className="text-center mb-12">
         <h2 className="text-xl md:text-4xl font-bold mb-3">
           What Our Clients Say About Us
@@ -97,8 +97,8 @@ const Testimonials = () => {
 
 const TestimonialCard = ({ name, title, image, feedback }: Testimonial) => (
   <div className="bg-white/5 border-white/10 p-2 md:p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300  ">
-    <div className=" text-lg mb-4">★★★★★</div>
-    <p className=" md:text-sm text-xs text-gray1 mb-6">“{feedback}”</p>
+    <div className=" text-sm mb-4">★★★★★</div>
+    <p className=" md:text-xs text-[12px] text-gray1 mb-6 ">“{feedback}”</p>
     <div className="flex items-center gap-3">
       <Image
         src={image}
@@ -108,8 +108,8 @@ const TestimonialCard = ({ name, title, image, feedback }: Testimonial) => (
         className="rounded-full"
       />
       <div>
-        <p className="font-semibold">{name}</p>
-        <p className="text-xs text-gray2">{title}</p>
+        <p className="font-semibold text-[10px] ">{name}</p>
+        <p className="text-[10px] text-gray2">{title}</p>
       </div>
     </div>
   </div>

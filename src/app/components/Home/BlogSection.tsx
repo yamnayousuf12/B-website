@@ -44,10 +44,10 @@ const blogs: Blog[] = [
 
 export default function BlogSection() {
   return (
-    <section className="bg-black text-white py-20 px-4">
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="md:text-4xl text-2xl font-bold mb-2 text-white">Our Blogs</h2>
-        <p className="text-gray text-xs md:text-lg">
+    <section className="bg-black text-white py-7 md:py-10 px-4">
+      <div className="max-w-7xl mx-auto text-center md:mb-12 mb-3 ">
+        <h2 className="md:text-4xl text-xl font-medium mb-2 text-white">Our Blogs</h2>
+        <p className="text-gray text-[10px] md:text-sm">
           Explore expert tips and trends to grow smarter with Bitsframe
         </p>
       </div>
@@ -56,9 +56,9 @@ export default function BlogSection() {
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="bg-white/5 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 p-4"
+            className="bg-[#141414] rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 p-4 border-white/20 border"
           >                  
-            <div className="relative w-full h-48 bg-black/15 rounded-lg mb-4">
+            <div className="relative w-full h-48 bg-[#1A1A1A] rounded-lg mb-4">
               {/* <Image
                 src={blog.image}
                 alt={blog.title}
@@ -67,12 +67,12 @@ export default function BlogSection() {
               /> */}
             </div>
 
-            <p className="text-sm text-gray2 mb-1">{blog.category}</p>
-            <h3 className="md:text-lg text-base font-semibold leading-snug mb-3 text-gray">
+            <p className="text-xs text-gray2 mb-1">{blog.category}</p>
+            <h3 className="md:text-lg text-sm font-semibold leading-snug mb-3 text-gray">
               {blog.title}
             </h3>
 
-            <ul className="md:text-sm text-xs text-gray2 mb-4 list-disc list-inside space-y-1">
+            <ul className="md:text-sm text-[9px] text-gray2 mb-4 list-disc list-inside space-y-1">
               {blog.points.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}

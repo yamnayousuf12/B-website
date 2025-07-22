@@ -12,10 +12,10 @@ const Highlight: React.FC = () => {
       </div>
 
       {/* Main Sentence */}
-      <h2 className="text-sm md:text-3xl text-gradient font-medium leading-relaxed md:max-w-4xl max-w-64 mb-5 ">We make it easy for companies and their employees to setup, contribute to and manage complex benefits
+      <h2 className="text-[12px] md:text-3xl text-gradient font-medium leading-relaxed md:max-w-4xl max-w-64 mb-5 ">We make it easy for companies and their employees to setup, contribute to and manage complex benefits
        
       </h2>
-      <p className="md:text-sm text-xs text-gray  md:max-w-4xl max-w-84 ">Hear from businesses who turned their visions into reality with Bitsframe</p>
+      <p className="md:text-sm text-[12px] text-gray  md:max-w-4xl max-w-80 ">Hear from businesses who turned their visions into reality with Bitsframe</p>
 
     
     </div>
