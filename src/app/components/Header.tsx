@@ -49,7 +49,7 @@ const Header = () => {
               <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity</Link>
               <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-Blue">AI Chatbots</Link>
               <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-Blue">Custom Web Development</Link>
-              <Link href="/services/innovative-app-solution" className="block px-4 py-2 hover:bg-Blue">Innovative App Solution</Link>
+              <Link href="/services/ai-automation-solutions" className="block px-4 py-2 hover:bg-Blue">AI Automation Solutions</Link>
               <Link href="/services/cloud-architect" className="block px-4 py-2 hover:bg-Blue">Cloud Architect</Link>
               <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-Blue">Cloud Architecture</Link>
               <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-Blue">Staff Augmentation</Link>
