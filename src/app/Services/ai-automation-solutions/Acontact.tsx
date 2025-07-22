@@ -26,12 +26,11 @@ export default function ContactCTA() {
           </div>
 
           <h2 className="text-xl md:text-4xl font-semibold leading-tight">
-           Augment Your Team Instantly!
+            Build a Custom App That Works for You
           </h2>
 
           <p className="text-white/80 text-xs md:text-lg">
-          Scale your team with skilled developers and boost productivity. Ready to build an expert
-team? Reach out to Bitsframe.
+           Let our experts turn your vision into a powerful app today. Start building now!
           </p>
 
           <div className="flex flex-col sm:flex-row md:gap-4 gap-2 pt-4">

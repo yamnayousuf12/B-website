@@ -1,5 +1,5 @@
 import React from 'react'
-import Shero from './shero'
+import Shero from './Shero'
 import Stext from './Stext'
 import Sserv from './Sserv'
 import Sfaq from './Sfaq'

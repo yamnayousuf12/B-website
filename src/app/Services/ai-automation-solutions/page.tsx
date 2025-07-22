@@ -1,22 +1,23 @@
 import React from 'react'
+import Ahero from './Ahero'
+import Atext from './Atext'
+import Aserv from './Aserv'
+import AFaq from './AFaq'
+import Acontact from './Acontact'
 
-import AIh from './AIh'
-import Aitext from './Aitext'
-import Aiserv from './Aiserv'
-import Aifaq from './Aifaq'
-import Aicontact from './Aicontact'
 
 
 
 const page = () => {
   return (
     <div>
-      <AIh/>
-      <Aitext/>
-      <Aiserv/>
-      <Aifaq/>
-      <Aicontact/>
-   
+      <Ahero/>
+      <Atext/> 
+      <Aserv/>
+      <AFaq/>
+      <Acontact/>
+    
+        
     </div>
   )
 }

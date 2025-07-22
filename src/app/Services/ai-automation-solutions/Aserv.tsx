@@ -10,27 +10,27 @@ interface Step {
 const steps: Step[] = [
   {
     number: "",
-    title: "Vetted Experts",
+    title: "Tailored Features",
     description:
-      "Extend your team with top-tier designers and developers.",
+      "Designed specifically for your business workflow and users.",
   },
   {
     number: "",
-    title: "Cost-Efficient",
+    title: "Cross-Platform Support",
     description:
-      "Get the right talent to deliver value without overspending..",
+      "Runs smoothly on android, iOS, and web.",
   },
   {
     number: "",
-    title: "Flexible Scaling",
+    title: "Smooth Performance",
     description:
-      "Adjust talent where required and boost growth.",
+      "Fast loading times, seamless navigation, and a consistent experience.",
   },
   {
     number: "",
-    title: "Fast Onboarding",
+    title: "Through Testing",
     description:
-      "Deploy talent within days, not weeks.",
+      "Through Testing",
   },
 ];
 
@@ -53,7 +53,8 @@ const Uiserv: React.FC = () => {
     </div>
         
         <h2 className="text-2xl md:text-4xl font-bold mb-4">
-         Top Augmentation Perks
+        Smart Mobile Application
+ Development Services
         </h2>
        
 

@@ -9,27 +9,27 @@ type FAQ = {
 
 const faqs: FAQ[] = [
   {
-    question: 'How does staff augmentation work?',
+    question: 'How do chatbots improve customer support?',
     answer:
-      'We provide skilled talent to join your team temporarily.',
+      'They provide instant, personalized responses, reducing wait times and boosting satisfaction.',
   },
   {
-    question: 'How fast can I get talent?',
+    question: 'Can the chatbot match my brand?',
     answer:
       'Yes, we help ensure your systems meet key regulations including GDPR, HIPAA, and more.',
   },
   {
-    question: 'Can I choose the skills?',
+    question: 'How long does setup take?',
     answer:
       'Our setup begins immediately and most systems are secured within 24-48 hours.',
   },
   {
-    question: 'Is it cost-effective?',
+    question: 'Will it work with my website?',
     answer:
       'We work with businesses of all sizes and offer scalable plans to match your needs.',
   },
   {
-    question: 'Do you support ongoing projects?',
+    question: 'Can I track performance?',
     answer:
       'Yes, we provide 24/7 monitoring, updates, and expert support for continued protection.',
   },
@@ -48,7 +48,7 @@ export default function FAQAccordion() {
         {/* Left Side */}
         <div>
           <h2 className="md:text-4xl text-2xl font-bold mb-2">FAQs</h2>
-          <p className="text-white/80 text-xs md:text-sm">Your Cybersecurity Questions Answered</p>
+          <p className="text-white/80 text-xs md:text-sm">Your Frequently Questions Answered</p>
         </div>
 
         {/* Right Side */}

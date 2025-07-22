@@ -26,12 +26,11 @@ export default function ContactCTA() {
           </div>
 
           <h2 className="text-xl md:text-4xl font-semibold leading-tight">
-           Augment Your Team Instantly!
+            Smarter Conversations Start Here!
           </h2>
 
           <p className="text-white/80 text-xs md:text-lg">
-          Scale your team with skilled developers and boost productivity. Ready to build an expert
-team? Reach out to Bitsframe.
+           Streamline customer service through custom ai chatbot solutions Schedule a demo now!
           </p>
 
           <div className="flex flex-col sm:flex-row md:gap-4 gap-2 pt-4">

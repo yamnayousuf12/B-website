@@ -10,27 +10,27 @@ interface Step {
 const steps: Step[] = [
   {
     number: "",
-    title: "Vetted Experts",
+    title: "Scalable Cloud Infrastructure",
     description:
-      "Extend your team with top-tier designers and developers.",
+      "Grow automatically with high performance and availability.",
   },
   {
     number: "",
-    title: "Cost-Efficient",
+    title: "Security and Compliance",
     description:
-      "Get the right talent to deliver value without overspending..",
+      "Built with IAM encryptions, firewalls, and is compliant with regulatory laws.",
   },
   {
     number: "",
-    title: "Flexible Scaling",
+    title: "Cost Efficiency",
     description:
-      "Adjust talent where required and boost growth.",
+      "Avoid overprovisioning with optimized resources.",
   },
   {
     number: "",
-    title: "Fast Onboarding",
+    title: "AWS Certified",
     description:
-      "Deploy talent within days, not weeks.",
+      "AWS Certified",
   },
 ];
 
@@ -53,7 +53,7 @@ const Uiserv: React.FC = () => {
     </div>
         
         <h2 className="text-2xl md:text-4xl font-bold mb-4">
-         Top Augmentation Perks
+         Work with Leading AI Chatbot Development Company
         </h2>
        
 

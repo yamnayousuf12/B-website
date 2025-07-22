@@ -10,27 +10,27 @@ interface Step {
 const steps: Step[] = [
   {
     number: "",
-    title: "Vetted Experts",
+    title: "Personalized AI Chatbots",
     description:
-      "Extend your team with top-tier designers and developers.",
+      "Innovative chatbots deliver tailored responses, understand queries, and reply promptly.",
   },
   {
     number: "",
-    title: "Cost-Efficient",
+    title: "Advanced AI Technology",
     description:
-      "Get the right talent to deliver value without overspending..",
+      "Built with ultramodern technology to deliver human-like conversation and intelligent responses.",
   },
   {
     number: "",
-    title: "Flexible Scaling",
+    title: "Effortless Integration",
     description:
-      "Adjust talent where required and boost growth.",
+      "Seamless integration into websites, with an easy-to-connect module.",
   },
   {
     number: "",
-    title: "Fast Onboarding",
+    title: "Smart Analytics",
     description:
-      "Deploy talent within days, not weeks.",
+      "Track chats to improve engagement and record customer behavior.",
   },
 ];
 
@@ -53,7 +53,7 @@ const Uiserv: React.FC = () => {
     </div>
         
         <h2 className="text-2xl md:text-4xl font-bold mb-4">
-         Top Augmentation Perks
+         Work with Leading AI Chatbot Development Company
         </h2>
        
 

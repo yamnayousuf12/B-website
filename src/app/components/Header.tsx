@@ -46,14 +46,14 @@ const Header = () => {
                 dropdownOpen ? "block" : "hidden"
               }`}
             >
-              <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity</Link>
-              <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-Blue">AI Chatbots</Link>
               <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-Blue">Custom Web Development</Link>
-              <Link href="/services/ai-automation-solutions" className="block px-4 py-2 hover:bg-Blue">AI Automation Solutions</Link>
-              <Link href="/services/cloud-architect" className="block px-4 py-2 hover:bg-Blue">Cloud Architect</Link>
-              <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-Blue">Cloud Architecture</Link>
-              <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-Blue">Staff Augmentation</Link>
               <Link href="/services/ui-ux" className="block px-4 py-2 hover:bg-Blue">UI/UX</Link>
+              <Link href="/services/innovative-app-solutions" className="block px-4 py-2 hover:bg-Blue"> Innovative App Solutions</Link>
+              <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-Blue">Staff Augmentation</Link>
+              <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity Solutios</Link>
+              <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-Blue">AI Chatbots</Link>
+              <Link href="/services/ai-automation-solutions" className="block px-4 py-2 hover:bg-Blue">AI Automation Solutions</Link>
+              <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-Blue">Cloud Architect</Link>
             </div>
           </div>
 
@@ -85,7 +85,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden mt-4 space-y-2">
+        <div className="md:hidden mt-4 space-y-2 bg-black">
           <Link href="/" className="block">Home</Link>
 
           {/* Mobile Dropdown */}
@@ -98,14 +98,14 @@ const Header = () => {
             </button>
             {dropdownOpen && (
               <div className="ml-4 mt-2 space-y-1 text-sm">
-                <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity</Link>
-                <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-Blue">AI Chatbots</Link>
-                <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-Blue">Custom web development</Link>
-                <Link href="/services/innovative-app-solution" className="block px-4 py-2 hover:bg-Blue">Innovative App Solution</Link>
-                <Link href="/Services/cloud-architect" className="block px-4 py-2 hover:bg-Blue">Cloud Architect</Link>
-                <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-Blue">Cloud Architecture</Link>
-                <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-Blue">Staff Augmentation</Link>
+                <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-Blue">Custom Web Development</Link>
                 <Link href="/services/ui-ux" className="block px-4 py-2 hover:bg-Blue">UI/UX</Link>
+                <Link href="/services/innovative-app-solutions" className="block px-4 py-2 hover:bg-Blue">Innovative App Solutions</Link>
+                <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-Blue">Staff Augmentation</Link>
+                <Link href="/Services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity Solutios</Link>
+                <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-Blue">AI Chatbots</Link>
+                <Link href="/services/ai-automation-solutions" className="block px-4 py-2 hover:bg-Blue">AI Automation Solutions</Link>
+                <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-Blue">Cloud Architect</Link>
               </div>
             )}
           </div>
