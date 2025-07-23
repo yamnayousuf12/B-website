@@ -23,7 +23,7 @@ export default function DevJourney() {
     
     <section className="relative min-h-screen bg-black text-white px-8 md:px-20 py-0 md:py-4 flex flex-col md:flex-row md:gap-12 gap-14 overflow-hidden" 
     >
-      <div className="absolute -mt-56 -z-1 bg-cover bg-center bg-no-repeat h-full w-full "
+      <div className="absolute -mt-56 -z-1 bg-cover bg-center bg-no-repeat h-full w-full"
        style={{
     backgroundImage: "url('/Hstats.svg')",
   }}/>
@@ -71,8 +71,8 @@ export default function DevJourney() {
               <div
                 className={`rounded-lg md:px-6 md:py-4 px-1 py-2 md:w-full w-44 md:max-w-sm max-w-xs transition-all duration-300 md:mt-16 mt-14  ${
                   idx === 0
-                    ? "bg-gradient-to-r from-Blue/40 to-Blue/10 border border-Blue"
-                    : "bg-white/5 border border-white/10 "
+                    ? "bg-gradient-to-r from-Blue/40 to-Blue/5 border border-Blue shadow-2xl border-e-8 border-y-8   border-e-black border-y-black/10"
+                    : "bg-gradient-to-r  from-white/5 to-black bg-white/5 border border-white/10  border-e-8 border-y-8 border-e-black border-y-black/10"
                 }`}
               >
                 <h3 className="md:text-xl text-sm font-semibold text-gray flex gap-2 items-center">
