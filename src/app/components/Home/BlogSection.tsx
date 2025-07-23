@@ -52,11 +52,11 @@ export default function BlogSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:max-w-6xl max-w-xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:max-w-[1100px] max-w-xl mx-auto">
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="bg-[#141414] rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 p-4 border-white/20 border"
+            className="rounded-xl overflow-hidden shadow-2xl backdrop-blur-3xl shadow-black hover:shadow-xl transition-shadow duration-300 p-4 border-white/20 border-s border-t gradient-line  "
           >                  
             <div className="relative w-full h-48 bg-[#1A1A1A] rounded-lg mb-4">
               {/* <Image

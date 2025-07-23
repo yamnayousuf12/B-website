@@ -29,13 +29,13 @@ export default function CaseStudies() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:max-w-3xl max-w-xs mx-auto bg-black ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:max-w-4xl max-w-xs mx-auto bg-black ">
         {caseStudies.map((study, index) => (
           <div
             key={index}
-            className="bg-black w-80 md:w-96 rounded-xl text-xs md:text-sm overflow-hidden shadow-md border-white/20 border hover:shadow-xl transition-shadow duration-300 p-4"
+            className="rounded-xl overflow-hidden shadow-2xl  shadow-black hover:shadow-xl transition-shadow duration-300 p-4 border-white/20 border-b border-s border-t gradient-line  "
           >
-            <div className="relative w-72 md:w-84 h-56 m-auto bg-[#1A1A1A] rounded-lg mb-4 ">
+            <div className="relative w-72 md:w-96 h-56 m-auto bg-[#1A1A1A] rounded-lg mb-4 ">
              
              
               <div className="absolute rounded-md top-2 right-2 bg-Blue text-white1 text-xs px-3 py-1 ">

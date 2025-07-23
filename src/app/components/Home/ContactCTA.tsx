@@ -5,7 +5,7 @@ import { PhoneCall, Star, Award } from "lucide-react";
 
 export default function ContactCTA() {
   return (
-    <div className="relative overflow-hidden md:rounded-3xl md:rounded-b text-white p-2 md:p-1 md:max-w-6xl max-w-50 mx-auto mt-1 shadow-lg h-72 ">
+    <div className="bg-black relative overflow-hidden md:rounded-3xl md:rounded-b text-white p-2 md:p-1 md:max-w-6xl max-w-50 mx-auto mt-1 shadow-lg h-72 ">
       {/* Background Image */}
       <div
         className="absolute inset-1 md:bg-cover md:bg-center z-0  md:border-b-customBlue md:rounded-3xl "

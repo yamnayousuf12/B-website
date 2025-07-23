@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
@@ -11,11 +11,11 @@
 
 body {
   font-family: "Manrope";
-  background-color: black;
+  background-color: white;
 }
 
 .text-gradient {
-  background-image: linear-gradient(to right, #ffffff, #1565EB, #4e61ca); /* same as from-Blue via-darkBlue to-white */
+  background-image: linear-gradient(to right, #ffffff, #1565EB, #4e61ca); 
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -25,4 +25,52 @@ select option {
   background-color: black;
   color: white;
   
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  background-color: black;
+ 
+}
+
+/* Optional: center container with max width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background-image: linear-gradient(to right, #ffffff, #1565EB, #4e61ca);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom select option */
+select option {
+  background-color: black;
+  color: white;
+}
+.gradient-line {
+  background: linear-gradient(to right, #151515, #030507, #000000);
+ 
+ 
 }
