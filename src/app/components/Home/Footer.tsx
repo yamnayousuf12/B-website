@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-black text-gray">
-       <div className="relative mt-1 ">
+       <div className="relative mt-10 ">
   {/* Background image */}
   <div
-    className="absolute md:inset-20 inset-0 mt-96 md:mt-8 bg-cover bg-center z-0 h-44 opacity-80"
+    className="absolute md:inset-20 inset-0 mt-auto md:mt-10 bg-cover bg-center z-0 h-44 opacity-80"
     style={{ backgroundImage: "url('/footer.png')" }}
   ></div>
       <div className="max-w-6xl mx-auto px-6 py-12">
@@ -43,10 +43,10 @@ export default function Footer() {
        
 
   {/* Footer Content */}
-  <div className="border-t border-white/15 mt-8 px-6"></div>
-  <div className="relative z-10 mt-6 px-6 flex flex-col md:flex-row justify-between text-xs text-gray1 backdrop-blur-sm ">
+  <div className="border-t border-white/15 md:mt-8 mt-20 px-6"></div>
+  <div className="relative z-10 md:mt-6 mt-6 px-6 flex flex-col md:flex-row justify-between text-[12px] text-gray1 backdrop-blur-sm ">
     <p>© 2024 Bitsframe. All Rights Reserved.</p>
-    <div className="flex gap-4 mt-2 md:mt-0 text-xs md:sm">
+    <div className="flex gap-4 mt-2 md:mt-0 md:text-sm text-[10px] md:sm">
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
       <a href="#">Cookies Settings</a>
