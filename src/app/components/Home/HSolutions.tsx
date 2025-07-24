@@ -47,14 +47,14 @@ const solutions = [
 
 const Solutions = () => {
   return (
-    <section className="bg-[#0D0D0D] text-white px-6 md:px-12  md:py-9 py-1 rounded-xl max-w-6xl mx-auto shadow-lg">
+    <section className="bg-[#0D0D0D] text-white px-6 md:px-12  md:py-9 py-1 rounded-xl max-w-[1200px] mx-auto shadow-lg md:ml-12  custom-shadow border-white/10 border">
       <div className="mb-12">
         <h2 className="text-lg md:text-4xl font-Medium mb-3 text-white">
           Our Dedicated Managed IT Solutions
         </h2>
         <p className="text-gray text-[10px] md:text-base">
           Explore our full range of services crafted to meet your business goals and fuel growth
-        </p>
+      </p>
       </div>
 
       <div className="space-y-6">
@@ -66,18 +66,18 @@ const Solutions = () => {
       {/* Left section: ID + Title */}
       <div className="flex items-center gap-2 md:gap-4 md:min-w-[30%] min-w-[20%]">
         <span className="md:w-6 font-Medium text-white text-[10px]">{solution.id}</span>
-        <h3 className="text-white font-Medium text-[10px] md:text-lg md:whitespace-nowrap">
+        <h3 className="text-white font-Medium text-[8px] md:text-lg md:whitespace-nowrap">
           {solution.title}
         </h3>
       </div>
 
       {/* Center: Description */}
-      <p className="text-gray1 text-[8px] md:max-w-lg text-balance max-w-xs md:text-sm md:flex-1 md:ml-8 ml-16">{solution.desc}</p>
+      <p className="text-gray1 text-[8px] md:max-w-md  max-w-xs md:text-xs md:flex-1 md:mr-32 ml-16 ">{solution.desc}</p>
 
       {/* Right: Arrow Button */}
       <div className="ml-4">
-        <button className="w-8 h-8 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
-          <ArrowRight className="w-4 h-4" />
+        <button className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+          <ArrowRight className="w-4 h-4 font-normal" />
         </button>
       </div>
     </div>
