@@ -64,6 +64,13 @@ html, body {
   -webkit-text-fill-color: transparent;
 }
 
+.containert {
+  background-image: linear-gradient(to right, #383838, #4b4a4a, #232323);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 /* Custom select option */
 select option {
   background-color: black;

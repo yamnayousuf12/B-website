@@ -23,7 +23,7 @@ export default function DevJourney() {
     
     <section className="relative min-h-screen bg-black text-white px-8 md:px-20 py-0 md:py-4 flex flex-col md:flex-row md:gap-12 gap-14 overflow-hidden" 
     >
-      <div className="absolute -mt-56 -z-1 bg-cover bg-center bg-no-repeat h-full w-full"
+      <div className="absolute -mt-56 -z-1 bg-cover bg-center bg-no-repeat h-full w-full md:-ml-24 shadow-2xl bg-black"
        style={{
     backgroundImage: "url('/Hstats.svg')",
   }}/>
@@ -45,11 +45,11 @@ export default function DevJourney() {
         <div className="absolute md:left-24 left-28 md:top-0 top-16 bottom-0 w-1 bg-white/10 " />
         
 
-        <div className="md:ml-10 ml-12 md:space-y-10 space-y-2">
+        <div className="md:ml-10 ml-12 md:space-y-10 space-y-2 ">
           {steps.map((step, idx) => (
             <motion.div
               key={idx}
-              className="relative ml-20"
+              className="relative ml-20  bg-black "
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
@@ -57,10 +57,10 @@ export default function DevJourney() {
             >
               {/* Dot */}
               <div
-                className={`absolute -left-6 md:top-3 top-8  w-4 h-4 rounded-full border transition-all duration-300 ${
+                className={`absolute -ml-7 md:top-3 top-8 w-3 h-3 rounded-full border transition-all duration-300 ${
                   idx === 0
                     ? "bg-Blue shadow-md border-Blue animate-pulse"
-                    : "bg-white/10 border-white/20"
+                    : "bg-white/20 border-white/20"
                 }`}
                 
               />
@@ -76,10 +76,10 @@ export default function DevJourney() {
                 }`}
               >
                 <h3 className="md:text-xl text-sm font-semibold text-gray flex gap-2 items-center">
-                  <span className="text-white/95 font-bold">{step.number}</span>
+                  <span className="text-white font-bold containert text-3xl">{step.number}</span>
                   {step.title}
                 </h3>
-                <p className="md:text-sm text-xs text-gray3 mt-1">{step.desc}</p>
+                <p className="md:text-sm text-xs text-gray3 md:ml-10 mt-1">{step.desc}</p>
               </div>
               
             </motion.div>
