@@ -13,7 +13,7 @@ export default function ContactCTA() {
       />
 
       {/* Gradient Overlay Content */}
-      <div className="relative z-10 md:max-w-6xl mx-auto m:px-6 md:py-20 px-2 py-14 max-w-lg inset-0 opacity-80 ">
+      <div className="relative z-10 md:max-w-6xl mx-auto m:px-6 md:py-20 px-2 py-14 max-w-lg inset-0  ">
         
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-10 md:ml-10 ml-3 ">
             <div className="flex items-center md:gap-2  text-gray border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-32 md:w-60 md:text-sm text-xs md:-mt-16 -mt-9 ">
