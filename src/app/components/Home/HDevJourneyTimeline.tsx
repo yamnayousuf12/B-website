@@ -76,10 +76,10 @@ export default function DevJourney() {
                 }`}
               >
                 <h3 className="md:text-xl text-sm font-semibold text-gray flex gap-2 items-center">
-                  <span className="text-white font-bold containert text-3xl">{step.number}</span>
+                  <span className="text-white font-bold containert md:text-3xl text-base">{step.number}</span>
                   {step.title}
                 </h3>
-                <p className="md:text-sm text-xs text-gray3 md:ml-10 mt-1">{step.desc}</p>
+                <p className="md:text-sm text-[8px] text-gray3 md:ml-10  ml-7 mt-1">{step.desc}</p>
               </div>
               
             </motion.div>
