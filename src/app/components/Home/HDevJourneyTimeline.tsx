@@ -57,7 +57,7 @@ export default function DevJourney() {
             >
               {/* Dot */}
               <div
-                className={`absolute -ml-7 md:top-3 top-8 w-3 h-3 rounded-full border transition-all duration-300 ${
+                className={`absolute md:-ml-7 -ml-5 md:top-3 top-8 w-3 h-3 rounded-full border transition-all duration-300 ${
                   idx === 0
                     ? "bg-Blue shadow-md border-Blue animate-pulse"
                     : "bg-white/20 border-white/20"
