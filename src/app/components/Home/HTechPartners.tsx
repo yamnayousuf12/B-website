@@ -1,6 +1,5 @@
 
 "use client";
-import Image from "next/image";
 import React from "react";
 
 const brands = [
@@ -35,7 +34,7 @@ const TechDrivenPartnerships: React.FC = () => {
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="w-[100px] h-[50px] md:w-[180px] md:h-[70px] flex items-center justify-center text-xs md:text-base font-light text-gray rounded-md bg-[#0f0f0f] border border-[#1a1a1a] shadow-[0_0_30px_rgba(255,255,255,0.03)] shadow-white/5 hover:bg-[#1c1c1c] transition-all duration-300 bg-gradient from-[#0f0f0f] to-[#1c1c1c] hover:from-[#1c1c1c] hover:to-[#0f0f0f] "
+              className="w-[100px] h-[50px] md:w-[150px] md:h-[70px] flex items-center justify-center text-xs md:text-sm font-light text-gray rounded-md bg-[#0f0f0f] border border-[#1a1a1a] shadow-[0_0_30px_rgba(255,255,255,0.03)] shadow-white/5 hover:bg-[#1c1c1c] transition-all duration-300 bg-gradient from-[#0f0f0f] to-[#1c1c1c] hover:from-[#1c1c1c] hover:to-[#0f0f0f] "
             >
               {brand}
               
@@ -43,15 +42,7 @@ const TechDrivenPartnerships: React.FC = () => {
             
           ))}
         </div>
-         <div className="bg-black p-4 rounded-lg shadow-md  w-fit">
-      <Image
-        src="/Rectangle.png"
-        alt="Partner Logo"
-        width={100}
-        height={60}
-        className="object-contain"
-      />
-    </div>
+         
       </div>
     </section>
   );

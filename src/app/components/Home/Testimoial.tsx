@@ -96,7 +96,7 @@ const Testimonials = () => {
 };
 
 const TestimonialCard = ({ name, title, image, feedback }: Testimonial) => (
-  <div className="bg-white/5 border-white/10 p-2 md:p-6 hover:shadow-lg  duration-300 rounded-xl overflow-hidden shadow-2xl  shadow-black  transition-shadow   border-b border-s border-t gradient-line">
+  <div className="bg-white/5 border-white/10 p-2 md:p-6 hover:shadow-lg  duration-300 rounded-xl overflow-hidden shadow-2xl  shadow-black  transition-shadow border-b border-s border-t gradient-line">
     <div className=" text-sm mb-4">★★★★★</div>
     <p className=" md:text-xs text-[12px] text-gray1 mb-6 ">“{feedback}”</p>
     <div className="flex items-center gap-3">

@@ -25,7 +25,7 @@ export default function DevJourney() {
     >
       <div className="absolute -mt-56 -z-1 bg-cover bg-center bg-no-repeat h-full w-full md:-ml-24 shadow-2xl bg-black"
        style={{
-    backgroundImage: "url('/Hstats.svg')",
+    backgroundImage: "url('/Hstats1.svg')",
   }}/>
   
       {/* Left Floating Panel */}
