@@ -42,7 +42,7 @@ export default function DevJourney() {
 
       {/* Right Timeline */}
       <motion.div className="md:w-1/2  relative pr-4" style={{ y: rightY }}>
-        <div className="absolute md:left-24 left-28 md:top-0 top-16 bottom-0 w-1 bg-white/10 " />
+        <div className="absolute md:left-24 left-28 md:top-0 top-16 bottom-0 w-1 bg-white/15 " />
         
 
         <div className="md:ml-10 ml-12 md:space-y-10 space-y-2 ">
@@ -72,7 +72,7 @@ export default function DevJourney() {
                 className={`rounded-lg md:px-6 md:py-4 px-1 py-2 md:w-full w-44 md:max-w-sm max-w-xs transition-all duration-300 md:mt-16 mt-14  ${
                   idx === 0
                     ? "bg-gradient-to-r from-Blue/40 to-Blue/5 border border-Blue shadow-2xl border-e-8 border-y-1   border-e-black border-y-black/10"
-                    : "bg-gradient-to-r  from-white/10 to-black bg-white/5  border border-white/10  border-e-8 border-y-1 border-e-black border-y-black/5"
+                    : "bg-gradient-to-r  from-white/10 to-black   border border-white/10  border-e-8 border-y-1 border-e-black border-y-black/5"
                 }`}
               >
                 <h3 className="md:text-xl text-sm font-semibold text-gray flex gap-2 items-center">
