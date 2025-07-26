@@ -109,7 +109,9 @@ app.post("/api/contact", async (req, res) => {
 
     // Send email
     const transporter = nodemailer.createTransport({
-      service: "smtp.gmail.com",
+       host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT),
+  secure: false, // use true for port 465, false for 587
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -129,6 +131,7 @@ Phone: ${phone}
 Message: ${message}
       `,
     };
+await transporter.sendMail(mailOptions);
 
     try {
       const info = await transporter.sendMail(mailOptions);
