@@ -109,18 +109,7 @@ const Hero = () => {
               Explore our services →
             </button>
           </Link>
-        
-
         </div>
-          {/* <div className="text-center mb-12 ">
-        <h2 className=" text-gray1 text-xl md:text-4xl font-bold mb-2">
-          How do We Deliver Smart IT Solutions?
-        </h2>
-        <p className="text-gray1 max-w-2xl mx-auto text-xs md:text-xl">
-          As your trusted <span className="text-gray1 font-normal">IT services provider</span>, we combine cutting-edge technology with 4+ years of expertise to
-        </p>
-      </div> */}
-      
       </div>
     </section>
   );

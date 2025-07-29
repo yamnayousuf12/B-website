@@ -16,7 +16,7 @@ export default function ContactCTA() {
       <div className="relative z-10 md:max-w-6xl mx-auto m:px-6 md:py-20 px-2 py-14 max-w-lg inset-0  ">
         
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-10 md:ml-10 ml-3 ">
-            <div className="flex items-center md:gap-2  text-gray border border-gray  rounded-full md:py-2 md:px-3 py-1 px-1 w-32 md:w-60 md:text-sm text-xs md:-mt-16 -mt-9 border-opacity-10 border-e-customBlue">
+            <div className="flex items-center md:gap-2 text-gray border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-32 md:w-60 md:text-sm text-xs md:-mt-16 -mt-9 border-opacity-10 border-e-customBlue">
               <Award className="text-white1 w-3 md:w-6" />
               <p className="text-[9px] md:text-sm"> Trusted by 22+ brands</p>
              

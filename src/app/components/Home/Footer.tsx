@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-black text-gray">
@@ -15,8 +15,11 @@ export default function Footer() {
           <div>
             {/* <h1 className="text-2xl font-bold">BITSFRAME</h1> */}
             <div className="flex items-center space-x-3 md:space-x-2 ">
-                      <Image src="/logo.svg" alt="Logo" width={30} height={60} />
-                       <h1>BITSFRAME</h1>
+                        {/* Logo */}
+                        <Link href="/" className="flex items-center space-x-2">
+                          <Image src="/logo.svg" alt="Logo" width={30} height={60} />
+                          <h1 className="text-white font-bold md:text-2xl text-lg">BITSFRAME</h1>
+                        </Link>
                       </div>
            
           </div>

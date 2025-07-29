@@ -23,11 +23,18 @@ const Header = () => {
     <header className=" absolute bg-transparent text-white px-6 py-4 top-0 left-0 w-full z-50">
  <div className="absolute top-[70px] md:w-[1200px] w-80 border-b border-white/20 z-20 "></div>
       <div className="flex justify-between items-center max-w-7xl mx-auto">
-        {/* Logo */}
-        <div className="flex items-center space-x-2">
+     
+        {/* <div className="flex items-center space-x-2">
           <Image src="/logo.svg" alt="Logo" width={30} height={60} />
           <h1>BITSFRAME</h1>
-        </div>
+        </div> */}
+        <div className="flex items-center space-x-2 md:ml-9">
+  {/* Logo */}
+  <Link href="/" className="flex items-center space-x-2">
+    <Image src="/logo.svg" alt="Logo" width={30} height={60} />
+    <h1 className="text-white font-bold md:text-lg">BITSFRAME</h1>
+  </Link>
+</div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-sm items-center">
