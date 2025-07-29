@@ -78,7 +78,7 @@ export default function BlogSection() {
               ))}
             </ul>
 
-            <button className="md:px-4 md:py-2 px-2 py-1 text-sm rounded-md border border-gray/15 text-white hover:bg-white/10 bg-white/10 transition">
+            <button className="md:px-4 md:py-2 px-2 py-1 text-sm rounded-md border border-gray/15 text-white hover:bg-white/10 bg-white/15 transition">
               Read Now →
             </button>
           </div>

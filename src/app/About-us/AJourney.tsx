@@ -105,10 +105,96 @@
 
 // export default Timeline;
 
+// "use client";
+// import React from "react";
+
+// const events = [
+//   {
+//     year: "Beginning",
+//     title: "The Dream Begins",
+//     description:
+//       "Bitsframe was born from a dream, to make innovative, high-quality IT services accessible and reliable for every business. We embarked on this journey to simplify the digital world for businesses of all sizes.",
+//   },
+//   { year: "2021" },
+//   { year: "2022" },
+//   { year: "2023" },
+//   { year: "2024" },
+//   { year: "Future Projection" },
+// ];
+
+// const Timeline = () => {
+//   return (
+//     <section className="relative bg-[#0f0f0f] text-white px-4 md:px-16 py-20 overflow-hidden rounded-md border border-white/10">
+//       {/* Title */}
+//       <h2 className="text-3xl md:text-5xl font-bold text-center mb-20">
+//         Our Journey at <span className="text-[#2D72FA]">Bitsframe</span>
+//       </h2>
+
+//       {/* Grid Layout */}
+//       <div className="relative grid grid-cols-7 gap-48p border-l border-Blue min-h-[500px] pl-16    ">
+       
+//  <div className="relative">
+//   {/* Horizontal Lines + Year Labels */}
+//   <div className="absolute top-0 right-16 w-full h-full ">
+//     {events.map((event, idx) => (
+//       <div
+//         key={idx}
+//         className="absolute flex items-center "
+//         style={{ top: `${idx * 90}px` }}
+//       >
+//         <div className="w-10 border-t border-[#2D72FA] mr-2"></div>
+//         <span
+//           className={`text-sm ${
+//             event.year === "Beginning" ? "text-[#2D72FA]" : "text-white"
+//           }`}
+//         >
+//           {event.year}
+//         </span>
+//       </div>
+//     ))}
+//   </div>
+// </div>
+
+//        {events.map((event, idx) => (
+//   <div key={idx} className="relative col-span-1  ">
+//     {/* Vertical Line */}
+//     <div
+//       className="absolute -left-24 transform -translate-x-1/2 h-full border-l border-[#2D72FA] "
+//     />
+
+//     {/* Label at Top */}
+//     <div className="absolute top-12 -left-20  text-sm text-Red rotate-90 md:rotate-10">
+//       {event.year}
+//     </div>
+
+//     {/* Show Box only for 'Beginning' */}
+//     {event.title && (
+//       <div className="absolute top-20 left-0 border border-[#2D72FA] bg-[#0f0f0f] text-white w-52 p-4 rounded-md shadow-md text-sm">
+//         <h3 className="font-bold text-sm mb-2">{event.title}</h3>
+//         <p className="text-white text-[9px]">{event.description}</p>
+//       </div>
+//     )}
+//   </div>
+// ))}
+//       </div>
+
+
+//     </section>
+//   );
+// };
+
+// export default Timeline;
+
 "use client";
 import React from "react";
 
-const events = [
+type Event = {
+  year: string;
+  title?: string;
+  description?: string;
+};
+
+const events: Event[] = [
   {
     year: "Beginning",
     title: "The Dream Begins",
@@ -123,62 +209,86 @@ const events = [
 ];
 
 const Timeline = () => {
+  // Extract the first event and the rest
+  const beginningEvent = events[0];
+  const remainingEvents = events.slice(1);
+
   return (
-    <section className="relative bg-[#0f0f0f] text-white px-4 md:px-16 py-20 overflow-hidden rounded-md border border-white/10">
+    <section
+      className="relative bg-[#0f0f0f] text-white px-4 md:px-16 py-20 overflow-hidden rounded-md border border-white/10"
+      style={{
+        backgroundImage: "url('/Hstats.png')", // ✅ your image path
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="absolute inset-10  border-Blue border"></div>
       {/* Title */}
-      <h2 className="text-3xl md:text-5xl font-bold text-center mb-20">
+      <h2 className="text-3xl md:text-5xl font-bold text-center mb-20 ">
         Our Journey at <span className="text-[#2D72FA]">Bitsframe</span>
       </h2>
 
       {/* Grid Layout */}
-      <div className="relative grid grid-cols-7 gap-48p border-l border-Blue min-h-[500px] pl-16    ">
-       
- <div className="relative">
+<div className="relative grid grid-cols-7 gap-44 min-h-[500px] pl-16">
   {/* Horizontal Lines + Year Labels */}
-  <div className="absolute top-0 right-16 w-full h-full ">
-    {events.map((event, idx) => (
-      <div
-        key={idx}
-        className="absolute flex items-center "
-        style={{ top: `${idx * 90}px` }}
-      >
-        <div className="w-10 border-t border-[#2D72FA] mr-2"></div>
-        <span
-          className={`text-sm ${
-            event.year === "Beginning" ? "text-[#2D72FA]" : "text-white"
-          }`}
+  <div className="relative">
+    <div className="absolute top-0 right-16 w-full h-full">
+      {events.map((event, idx) => (
+        <div
+          key={idx}
+          className="absolute flex items-center"
+          style={{ top: `${idx * 90}px` }}
         >
-          {event.year}
-        </span>
+          <div className="w-10 border-t border-[#2D72FA] mr-2"></div>
+          <span
+            className={`text-sm ${
+              event.year === "Beginning"
+                ? "text-[#2D72FA]"
+                : "text-white"
+            }`}
+          >
+            {event.year}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+  <div className="relative grid grid-cols-8 gap-44 min-h-[500px] pl-1">
+    {/* Vertical Lines & Content */}
+    <div className="relative grid grid-cols-8 gap-44 min-h-[500px] pl-1">
+      {/* Beginning Event */}
+      <div className="relative col-span-1">
+        {/* Vertical Line */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-[#2D72FA] via-[#2D72FA]/60 to-transparent" />
+
+        {/* Vertical Rotated Year */}
+        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -rotate-90 origin-left text-sm text-white tracking-wide">
+          {beginningEvent.year}
+        </div>
+
+        {/* Info Box */}
+        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border border-[#2D72FA] bg-black/50 backdrop-blur-md p-4 rounded-md w-64 shadow-xl">
+          <h3 className="font-bold text-white text-base mb-2">
+            {beginningEvent.title}
+          </h3>
+          <p className="text-white text-xs">{beginningEvent.description}</p>
+        </div>
       </div>
-    ))}
+      {remainingEvents.map((event: Event, idx: number) => (
+        <div key={idx} className="relative col-span-1">
+          {/* Vertical Line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-[#2D72FA] via-[#2D72FA]/60 to-transparent" />
+
+          {/* Vertical Rotated Year */}
+          <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -rotate-90 origin-left text-sm text-white tracking-wide">
+            {event.year}
+          </div>
+        </div>
+      ))}
+    </div>
   </div>
 </div>
-
-       {events.map((event, idx) => (
-  <div key={idx} className="relative col-span-1  ">
-    {/* Vertical Line */}
-    <div
-      className="absolute -left-24 transform -translate-x-1/2 h-full border-l border-[#2D72FA] "
-    />
-
-    {/* Label at Top */}
-    <div className="absolute top-12 -left-20  text-sm text-Red rotate-90 md:rotate-10">
-      {event.year}
-    </div>
-
-    {/* Show Box only for 'Beginning' */}
-    {event.title && (
-      <div className="absolute top-20 left-0 border border-[#2D72FA] bg-[#0f0f0f] text-white w-52 p-4 rounded-md shadow-md text-sm">
-        <h3 className="font-bold text-sm mb-2">{event.title}</h3>
-        <p className="text-white text-[9px]">{event.description}</p>
-      </div>
-    )}
-  </div>
-))}
-      </div>
-
-
     </section>
   );
 };
