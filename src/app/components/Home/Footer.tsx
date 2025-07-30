@@ -18,7 +18,7 @@ export default function Footer() {
                         {/* Logo */}
                         <Link href="/" className="flex items-center space-x-2">
                           <Image src="/logo.svg" alt="Logo" width={30} height={60} />
-                          <h1 className="text-white font-bold md:text-2xl text-lg">BITSFRAME</h1>
+                          <h1 className="text-white font-bold md:text-xl text-lg">BITSFRAME</h1>
                         </Link>
                       </div>
            
