@@ -47,8 +47,8 @@ const solutions = [
 
 const Solutions = () => {
   return (
-    <section className="bg-[#0D0D0D] text-white px-6 md:px-12  md:py-9 py-1 rounded-xl max-w-[1200px] mx-auto shadow-lg md:ml-12  custom-shadow border-white/10 border">
-      <div className="mb-12">
+    <section className="bg-[#0D0D0D] text-white px-4 sm:px-6 md:px-12 py-10 md:py-14 rounded-xl shadow-lg md:max-w-6xl mx-auto space-y-8 border border-white/10">
+      <div className="mb-12 ">
         <h2 className="text-lg md:text-4xl font-Medium mb-3 text-white">
           Our Dedicated Managed IT Solutions
         </h2>
@@ -57,11 +57,11 @@ const Solutions = () => {
       </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-6 ">
   {solutions.map((solution) => (
     <div
       key={solution.id}
-      className="flex items-center justify-between border-b border-white/10 pb-5"
+      className="flex items-center justify-between border-b border-white/10 pb-5 "
     >
       {/* Left section: ID + Title */}
       <div className="flex items-center gap-2 md:gap-4 md:min-w-[30%] min-w-[20%]">

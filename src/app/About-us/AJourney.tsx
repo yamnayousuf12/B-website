@@ -233,14 +233,14 @@ const Timeline = () => {
 <div className="relative grid grid-cols-7 gap-44 min-h-[500px] pl-16">
   {/* Horizontal Lines + Year Labels */}
   <div className="relative">
-    <div className="absolute top-0 right-16 w-full h-full">
+    <div className="absolute top-0 right-20 w-full h-full">
       {events.map((event, idx) => (
         <div
           key={idx}
           className="absolute flex items-center"
           style={{ top: `${idx * 90}px` }}
         >
-          <div className="w-10 border-t border-[#2D72FA] mr-2"></div>
+          <div className="w-10 border-t border-[#2D72FA] mr-4"></div>
           <span
             className={`text-sm ${
               event.year === "Beginning"

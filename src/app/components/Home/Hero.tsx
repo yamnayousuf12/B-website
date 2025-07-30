@@ -62,7 +62,7 @@ import { Award } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative md:h-[700px] md:w-full h-[600px] text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left overflow-hidden  ">
+    <section className="relative md:h-[700px] md:max-w-7xl mx-auto h-[600px] text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left overflow-hidden  ">
 
       {/* Background Video */}
       <video
@@ -104,6 +104,7 @@ const Hero = () => {
               Book a free consultation →
             </button>
           </Link>
+          
           <Link href="/services">
             <button className="bg-white border border-gray text-black md:px-6 md:py-3 px-2 py-2 rounded-lg font-medium hover:bg-Blue text-xs md:text-base">
               Explore our services →

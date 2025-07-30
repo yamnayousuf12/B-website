@@ -32,8 +32,8 @@ const services = [
 export default function SmartITSolutions() {
   return (
     <section
-      className=" flex bg-cover -mt-9 bg-center bg-repeat text-white h-[550px] md:h-[500px] py-24 px-6 md:px-20 bg-[url(/Hstats.png)] "
-      // style={{ backgroundImage: "url('/Hstats.png')" }}
+      className="max-w-7xl mx-auto  flex bg-cover -mt-9 bg-center bg-repeat text-white h-[550px] md:h-[500px] py-24 px-6 md:px-20 bg-[url(/Hstats.png)] "
+    
     >
       
       <div className="text-center mb-12 md:-mt-52 -mt-40 rounded-md border border-white/10 hadow-lg relative z-20 md:max-w-7xl md:ml-10 h-[350px] rounded-t-lg border-b-black ">
@@ -66,7 +66,7 @@ export default function SmartITSolutions() {
         </div>
 
         {/* Stats Section */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-36 text-center ml-10 md:-ml-9">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-36 text-center ml-0 md:-ml-9 -mt-5 md:mt-0">
           {[
             ["50+", "Projects Delivered"],
             ["22+", "Trusted Partners"],

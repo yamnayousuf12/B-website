@@ -20,19 +20,19 @@ const Header = () => {
   return (
     <div>
     {/* // <header className="bg-black text-white px-6 py-4 border-b border-white mb-6"> */}
-    <header className=" absolute bg-transparent text-white px-6 py-4 top-0 left-0 w-full z-50">
- <div className="absolute top-[70px] md:w-[1200px] w-80 border-b border-white/20 z-20 "></div>
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
+    <header className=" absolute bg-transparent text-white md:px-6 md:py-4 px-2  py-2 -top-10 left-0 w-full z-50 ">
+ <div className="absolute top-[70px]  md:w-[1200px] w-80 border-b border-white/20 z-20 mx-auto left-1/2 transform -translate-x-1/2 " >
+      <div className="flex justify-between items-center md:max-w-7xl md:mx-auto mb-2">
      
         {/* <div className="flex items-center space-x-2">
           <Image src="/logo.svg" alt="Logo" width={30} height={60} />
           <h1>BITSFRAME</h1>
         </div> */}
-        <div className="flex items-center space-x-2 md:ml-9">
+        <div className="flex items-center space-x-2 md:ml-9 md:-mt-3 -mt-2 ">
   {/* Logo */}
   <Link href="/" className="flex items-center space-x-2">
     <Image src="/logo.svg" alt="Logo" width={30} height={60} />
-    <h1 className="text-white font-bold md:text-lg">BITSFRAME</h1>
+    <h1 className="text-white font-bold md:text-lg text-sm">BITSFRAME</h1>
   </Link>
 </div>
 
@@ -44,7 +44,7 @@ const Header = () => {
           <div className="relative group">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center gap-1 hover:text-blue-300"
+              className="flex items-center gap-1 hover:text-Blue"
             >
               Services <ChevronDown size={14} />
             </button>
@@ -76,14 +76,15 @@ const Header = () => {
             <Mail className="text-white hover:text-black w-4 h-4" />
           </button>
           <Link href="/contact-us">
-            <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-Blue">
+            <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-Blue md:mb-2 md:transition">
               Contact Us →
             </button>
           </Link>
         </div>
+        </div>
 
         {/* Mobile Toggle Button */}
-        <div className="md:hidden">
+        <div className="md:hidden ml-72 max-w-7xl mx-auto -mt-8">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X /> : <Menu />}
           </button>
@@ -92,7 +93,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden mt-4 space-y-2 bg-black">
+        <div className="md:hidden mt-4 space-y-2  bg-black">
           <Link href="/" className="block">Home</Link>
 
           {/* Mobile Dropdown */}
