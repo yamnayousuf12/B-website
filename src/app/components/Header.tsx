@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const pathname = usePathname(); // ✅ used to detect route changes
+  const pathname = usePathname(); //used to detect route changes
 
   // Automatically close dropdown and mobile menu when route changes
   useEffect(() => {
@@ -19,15 +19,12 @@ const Header = () => {
 
   return (
     <div>
-    {/* // <header className="bg-black text-white px-6 py-4 border-b border-white mb-6"> */}
+   
     <header className=" absolute bg-transparent text-white md:px-6 md:py-4 px-2  py-2 -top-10 left-0 w-full z-50 ">
  <div className="absolute top-[70px]  md:w-[1150px] w-80 border-b border-white/20 z-20 mx-auto left-1/2 transform -translate-x-1/2 " >
       <div className="flex justify-between items-center md:max-w-7xl md:mx-auto mb-2">
      
-        {/* <div className="flex items-center space-x-2">
-          <Image src="/logo.svg" alt="Logo" width={30} height={60} />
-          <h1>BITSFRAME</h1>
-        </div> */}
+      
         <div className="flex items-center space-x-2 md:ml-0 md:-mt-3 -mt-2 ">
   {/* Logo */}
   <Link href="/" className="flex items-center space-x-2">
