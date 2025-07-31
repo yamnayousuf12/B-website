@@ -4,14 +4,14 @@ import Link from "next/link";
 
 const HCustom = () => {
   return (
-    <section className="bg-black text-white md:px-6 md:py-20 px-3 py-5 text-center md:text-left relative"
+    <section className="bg-black text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left relative md:h-[500px]  overflow-hidden bg-cover bg-center bg-no-repeat md:max-w-7xl mx-auto"
     style={{
         backgroundImage: "url('/about.png')", // Optional background wave
       }} >
 
     
 
-      <div className="max-w-5xl mx-auto  ">
+      <div className="max-w-5xl mx-auto mt-20  ">
         <div className="mb-8 flex justify-center md:justify-start">
        <div className=" inline-flex items-center gap-2 md:px-4 md:py-1.5 px-2 py-2 rounded-full bg-Blue text-white text-sm font-medium shadow-sm">
       
