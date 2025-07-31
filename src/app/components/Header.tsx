@@ -93,7 +93,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden mt-4 space-y-2  bg-black">
+        <div className="md:hidden mt-14 space-y-3  bg-black px-3 py-4 rounded-lg shadow-lg absolute top-16 left-1/2 transform -translate-x-1/2 w-80 z-50">
           <Link href="/" className="block">Home</Link>
 
           {/* Mobile Dropdown */}
@@ -110,7 +110,7 @@ const Header = () => {
                 <Link href="/services/ui-ux" className="block px-4 py-2 hover:bg-Blue">UI/UX</Link>
                 <Link href="/services/innovative-app-solutions" className="block px-4 py-2 hover:bg-Blue">Innovative App Solutions</Link>
                 <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-Blue">Staff Augmentation</Link>
-                <Link href="/Services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity Solutios</Link>
+                <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity Solutios</Link>
                 <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-Blue">AI Chatbots</Link>
                 <Link href="/services/ai-automation-solutions" className="block px-4 py-2 hover:bg-Blue">AI Automation Solutions</Link>
                 <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-Blue">Cloud Architect</Link>
