@@ -4,7 +4,7 @@ import Link from "next/link";
 import { PhoneCall } from "lucide-react";
 const Hero = () => {
   return (
-    <section className="bg-black text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left relative md:h-[500px]  overflow-hidden bg-cover bg-center bg-no-repeat"
+    <section className="bg-black text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left relative md:h-[500px]  overflow-hidden bg-cover bg-center bg-no-repeat md:max-w-7xl mx-auto"
     style={{
         backgroundImage: "url('/about.svg')", // Optional background wave
       }} >

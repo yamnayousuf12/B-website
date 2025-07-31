@@ -57,7 +57,7 @@ html, body {
 
 /* Gradient text utility */
 .text-gradient {
-  background-image: linear-gradient(to right, #ffffff, #1565EB, #4e61ca);
+  background-image: linear-gradient(to right, #ffffff, #528aeb, #0b59e1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

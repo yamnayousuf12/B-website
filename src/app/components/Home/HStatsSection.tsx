@@ -74,7 +74,7 @@ export default function SmartITSolutions() {
             ["95%", "Client Satisfaction"],
           ].map(([stat, label], index) => (
             <div key={index}>
-              <p className="text-lg md:text-3xl font-bold text-white">{stat}</p>
+              <p className="text-lg md:text-3xl font-normal text-white">{stat}</p>
               <p className="text-[6px] md:text-sm text-gray">{label}</p>
             </div>
           ))}

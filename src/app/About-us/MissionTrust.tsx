@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const MissionTrust = () => {
   return (
-    <section className="bg-black text-white md:py-6 px-6 md:px-24 py-12">
+    <section className="bg-black text-white md:py-6 px-6 md:px-24 py-12 md:max-w-7xl mx-auto">
         
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12 gap-3">
         {/* Our Mission Card */}
