@@ -19,13 +19,13 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("✅ MongoDB connected successfully"))
+  .then(() => console.log(" MongoDB connected successfully"))
   .catch((err) => {
-    console.error("❌ MongoDB connection error:", err.message);
+    console.error(" MongoDB connection error:", err.message);
     process.exit(1);
   });
 
-/* ✅ Mongoose schema */
+/*  Mongoose schema */
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
@@ -35,7 +35,7 @@ const contactSchema = new mongoose.Schema({
 });
 const Contact = mongoose.model("Contact", contactSchema);
 
-/* ✅ Contact form POST route */
+/*  Contact form POST route */
 app.post("/api/contact", async (req, res) => {
   const { name, email, company, phone, message } = req.body;
 
@@ -47,7 +47,7 @@ app.post("/api/contact", async (req, res) => {
   try {
     const newContact = new Contact({ name, email, company, phone, message });
     await newContact.save();
-    console.log("✅ Contact saved to DB");
+    console.log("Contact saved to DB");
 
     // Send email
     const transporter = nodemailer.createTransport({
@@ -84,7 +84,7 @@ await transporter.sendMail(mailOptions);
       res.status(500).json({ error: "Failed to send message." });
     }
   } catch (error) {
-    console.error("❌ Error saving/sending:", error);
+    console.error(" Error saving/sending:", error);
     res.status(500).json({ error: "Failed to process the request." });
   }
 });
