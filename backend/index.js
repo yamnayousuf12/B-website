@@ -47,7 +47,7 @@ app.post("/api/contact", async (req, res) => {
   try {
     const newContact = new Contact({ name, email, company, phone, message });
     await newContact.save();
-    console.log("✅ Contact saved to DB");
+    console.log("Contact saved to DB");
 
     // Send email
     const transporter = nodemailer.createTransport({
@@ -84,7 +84,7 @@ await transporter.sendMail(mailOptions);
       res.status(500).json({ error: "Failed to send message." });
     }
   } catch (error) {
-    console.error("❌ Error saving/sending:", error);
+    console.error(" Error saving/sending:", error);
     res.status(500).json({ error: "Failed to process the request." });
   }
 });

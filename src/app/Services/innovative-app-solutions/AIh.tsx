@@ -11,7 +11,11 @@ const AIh = () => {
 
     
 
+<<<<<<< HEAD
       <div className="max-w-5xl mx-auto mt-20 ">
+=======
+      <div className="max-w-5xl mx-auto mt-20  ">
+>>>>>>> 8c400f1fb329d5d8d647e714a08c6553495c6a62
         <div className="mb-8 flex justify-center md:justify-start">
        <div className=" inline-flex items-center gap-2 md:px-4 md:py-1.5 px-2 py-2 rounded-full bg-Blue text-white text-sm font-medium shadow-sm">
       
