@@ -32,11 +32,11 @@ const services = [
 export default function SmartITSolutions() {
   return (
     <section
-      className="max-w-7xl mx-auto  flex bg-cover -mt-9 bg-center bg-repeat text-white h-[550px] md:h-[500px] py-24 px-6 md:px-20 bg-[url(/Hstats.png)] "
+      className="max-w-7xl mx-auto md:max-w-full lg:max-w-full flex bg-cover -mt-9 bg-center bg-repeat text-white h-[550px] md:h-[500px] py-24 px-6 md:px-20  bg-[url(/Hstats.png)] "
     
     >
       
-      <div className="text-center mb-12 md:-mt-52 -mt-40 rounded-md border border-white/10 hadow-lg relative z-20 md:max-w-7xl md:ml-10 h-[350px] rounded-t-lg border-b-black ">
+      <div className=" max-w-7xl mx-auto text-center mb-12 md:-mt-52 -mt-40 rounded-md border border-white/10 hadow-lg relative z-20 md:max-w-7xl h-[350px] rounded-t-lg border-b-black ">
       <div className="max-w-7xl mx-auto px-6 md:px-20 py-20 md:py-28 -mt-28">
         {/* Heading Section */}
         <div className="text-center md:mb-12 mb-4 m-10">

@@ -21,7 +21,7 @@ export default function DevJourney() {
 
   return (
     
-    <section className="relative min-h-screen bg-black text-white px-8 md:px-20 py-0 md:py-4 flex flex-col md:flex-row md:gap-12 gap-14 overflow-hidden  max-w-7xl mx-auto" 
+    <section className="relative min-h-screen bg-black text-white px-8 md:px-20 py-0 md:py-4 flex flex-col md:flex-row md:gap-12 gap-14 overflow-hidden max-w-7xl mx-auto md:max-w-[95%]" 
     >
       <div className="absolute -mt-56 -z-1 bg-cover bg-center bg-no-repeat h-full w-full md:-ml-24 shadow-2xl bg-black"
        style={{

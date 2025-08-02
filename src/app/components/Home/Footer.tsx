@@ -7,10 +7,10 @@ export default function Footer() {
        <div className="relative mt-10 ">
   {/* Background image */}
   <div
-    className="absolute md:inset-20 inset-0 mt-auto md:mt-10 bg-cover bg-center z-0 h-44 opacity-80"
+    className="absolute md:inset-20 inset-0 mt-auto md:mt-10 bg-cover bg-center z-0 h-44 "
     style={{ backgroundImage: "url('/footer.png')" }}
   ></div>
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-6xl md:max-w-[95%] mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-5">
           <div>
             {/* <h1 className="text-2xl font-bold">BITSFRAME</h1> */}

@@ -67,7 +67,7 @@ const firstRow = testimonials.slice(0, 3); // For lg:grid-cols-3
 
 const Testimonials = () => {
   return (
-    <section className="bg-black text-white py-2 px-4 md:px-12">
+    <section className="bg-black max-w-7xl md:max-w-[95%] text-white py-2 px-4 md:px-16 md:py-10 mx-auto">
       {/* <div className="text-center mb-12">
         <h2 className="text-xl md:text-4xl font-bold mb-3">
           What Our Clients Say About Us

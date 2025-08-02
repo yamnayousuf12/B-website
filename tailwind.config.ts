@@ -45,6 +45,7 @@ const config: Config = {
       backgroundClip: {
         text: 'text', // Enables bg-clip-text explicitly
       },
+      
     },
   },
   plugins: [

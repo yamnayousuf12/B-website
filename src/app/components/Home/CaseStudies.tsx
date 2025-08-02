@@ -21,7 +21,7 @@ const caseStudies = [
 
 export default function CaseStudies() {
   return (
-    <section className="bg-black text-white md:py-2 md:px-4">
+    <section className="bg-black text-white md:py-2 md:px-4 md:max-w-4xl max-w-xs mx-auto ">
       <div className="max-w-7xl mx-auto text-center mb-6 ">
         <h2 className="md:text-3xl text-lg font-Medium mb-2 text-white">Real Results, Real Impact</h2>
         <p className="text-gray md:text-sm text-[12px] ">

@@ -46,13 +46,13 @@ const StatsSection = () => {
       }}
     >
       <div className="relative z-10 max-w-5xl mx-auto ml-6">
-        <p className="text-sm md:text-lg font-light mb-4 text-gray1">
+        <p className="text-xs md:text-lg font-light mb-4 text-gray1">
           Struggling with an unresolved tech challenge? Or want to transform your ideas into reality?
         </p>
-        <p className="text-sm md:text-lg font-light mb-4 text-gray1">
+        <p className="text-xs md:text-lg font-light mb-4 text-gray1">
           We hear you! Let&apos;s collaborate to find <span className="text-white font-medium">managed IT solutions</span> for your business IT queries. Our team is ready to craft custom apps, AI solutions, or secure Shopify stores that drive your success.
         </p>
-        <p className="text-sm md:text-lg font-light mb-4 text-gray1">
+        <p className="text-xs md:text-lg font-light mb-4 text-gray1">
           Complete the form or send us an email.
         </p>
 
@@ -76,7 +76,7 @@ const StatsSection = () => {
 
           {/* Contact Form */}
           <div className="max-w-2xl md:max-w-6xl">
-            <h2 className="text-2xl font-bold mb-4 text-white">Send a Message</h2>
+            <h2 className="text-xl font-bold mb-4 md:text-2xl text-white">Send a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -133,12 +133,20 @@ const StatsSection = () => {
                   className="w-full bg-white/15 text-white border border-white p-3 rounded outline-none"
                 />
               </div>
-              <button
+              {/* <button
                 type="submit"
                 className="bg-Blue text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ml-24 md:ml-0"
               >
                 Send Message
-              </button>
+              </button> */}
+              <button 
+  type="submit"
+  className="bg-Blue text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ml-24 md:ml-0"
+  aria-label="Send message to the team"
+>
+  Send Message
+</button>
+
             </form>
           </div>
         </div>

@@ -18,8 +18,8 @@ const brands = [
 
 const TechDrivenPartnerships: React.FC = () => {
   return (
-    <section className="text-white py-14 px-6 ">
-      <div className="max-w-7xl mx-auto text-center   ">
+    <section className="text-white py-14 px-6  md:max-w-[95%]">
+      <div className="max-w-7xl  mx-auto text-center   ">
         {/* Headings */}
         <h2 className="text-xl md:text-5xl font-Medium mb-3 text-white ">
           Tech-Driven Partnerships
