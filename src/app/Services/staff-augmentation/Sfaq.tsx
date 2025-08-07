@@ -11,7 +11,7 @@ const faqs: FAQ[] = [
   {
     question: 'How does staff augmentation work?',
     answer:
-      'We provide skilled talent to join your team temporarily.',
+      'Most sites are ready in 4–8 weeks, depending on complexity.',
   },
   {
     question: 'How fast can I get talent?',
@@ -31,7 +31,7 @@ const faqs: FAQ[] = [
   {
     question: 'Do you support ongoing projects?',
     answer:
-      'Yes, we provide 24/7 monitoring, updates, and expert support for continued protection.',
+      'Can I update content easily?',
   },
 ];
 
@@ -44,19 +44,19 @@ export default function FAQAccordion() {
 
   return (
     <section className="bg-black text-white py-16 px-6 md:px-20">
-      <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start md:-ml-3">
         {/* Left Side */}
-        <div>
-          <h2 className="md:text-4xl text-2xl font-bold mb-2">FAQs</h2>
-          <p className="text-white/80 text-xs md:text-sm">Your Cybersecurity Questions Answered</p>
+        <div >
+          <h2 className="md:text-4xl  text-xl font-normal mb-2">FAQs</h2>
+          <p className="text-gray text-xs md:text-sm">Your Frequently Questions Answered</p>
         </div>
 
         {/* Right Side */}
-        <div className="space-y-4">
+        <div className="space-y-3 md:w-[550px]">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-[#111] rounded-lg p-5 transition-all duration-300"
+              className=" bg-[#111]  rounded-lg p-5 border border-white/20 border-r-black  transition-all duration-300"
             >
               <button
                 className="flex justify-between items-center w-full text-left md:text-lg text-xs font-medium"
