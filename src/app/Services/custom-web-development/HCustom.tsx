@@ -11,7 +11,7 @@ const HCustom = () => {
 
     
 
-      <div className="max-w-5xl mx-auto  mt-20">
+      <div className="max-w-5xl mx-auto  mt-44">
         <div className="mb-8 flex justify-center md:justify-start">
        <div className=" inline-flex items-center gap-2 md:px-4 md:py-1.5 px-2 py-2 rounded-full bg-Blue text-white text-sm font-medium shadow-sm">
       
