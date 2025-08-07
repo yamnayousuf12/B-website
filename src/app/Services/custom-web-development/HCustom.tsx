@@ -1,10 +1,10 @@
 // components/Hero.tsx
-import Link from "next/link";
+
 // import { Award } from "lucide-react";
 
 const HCustom = () => {
   return (
-    <section className="bg-black text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left relative md:h-[500px]  overflow-hidden bg-cover bg-center bg-no-repeat md:max-w-7xl mx-auto"
+    <section className="bg-black text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left relative md:h-[500px]  overflow-hidden bg-cover bg-center bg-no-repeat md:max-w-full max-w-7xl mx-auto"
     style={{
         backgroundImage: "url('/about.png')", // Optional background wave
       }} >
@@ -24,14 +24,7 @@ Custom Web Development Services</h1>
         Personalise your websites to boost user experience with top-tier UX/UI
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-          <Link href="/contact-us">
-            <button className="bg-white text-black md:px-6 md:py-3 px-3 py-1 rounded-lg font-medium hover:bg-Blue">
-              Contact Us →
-            </button>
-          </Link>
-          
-        </div>
+       
       </div>
     </section>
   );

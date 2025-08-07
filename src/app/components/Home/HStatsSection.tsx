@@ -32,7 +32,7 @@ const services = [
 export default function SmartITSolutions() {
   return (
     <section
-      className="max-w-7xl mx-auto md:max-w-full lg:max-w-full flex bg-cover -mt-9 bg-center bg-repeat text-white h-[550px] md:h-[500px] py-24 px-6 md:px-20  bg-[url(/Hstats.png)] "
+      className="max-w-7xl mx-auto md:max-w-full lg:max-w-full flex bg-cover -mt-9 bg-center bg-repeat text-white h-[550px] md:h-[500px] py-24 px-6 md:px-20 bg-[url(/Hstats.png)] "
     
     >
       
