@@ -68,7 +68,7 @@ const Header = () => {
         </nav>
 
         {/* Right Icons */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4  md:-mr-8">
           <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
             <Mail className="text-white hover:text-black w-4 h-4" />
           </button>

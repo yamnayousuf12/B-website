@@ -1,6 +1,7 @@
     "use client";
 import React, { useState } from "react";
 import { Phone, Mail } from "lucide-react";
+import Image from "next/image";
 
 const StatsSection = () => {
   const [formData, setFormData] = useState({
@@ -39,14 +40,27 @@ const StatsSection = () => {
   };
 
   return (
-    <section
-      className="relative py-14 px-6 md:px-16 bg-no-repeat bg-center bg-cover min-h-screen"
-      style={{
-        backgroundImage: "url('/Hstats.png')",
-      }}
-    >
-      <div className="relative z-10 max-w-5xl mx-auto ml-6">
-        <p className="text-xs md:text-lg font-light mb-4 text-gray1">
+    
+ <section className="relative bg-black text-white overflow-hidden min-h-[1010px] md:min-h-[750px] py-14 px-6 md:px-16">
+
+<div
+  className="absolute inset-0 bg-right -ml-20 bg-cover z-0 max-w-[90%] w-full sm:max-w-md md:max-w-lg lg:max-w-xl aspect-[3/4] mx-auto mt-16 rotated-image shadow-xl"
+  style={{
+    backgroundImage: "url('/info.png')",
+  }}
+/>
+
+  {/* Moving image (floating or sliding) */}
+  <Image
+    src="/info.svg"
+    alt="wave"
+    layout="fill"
+    objectFit="cover"
+    className="absolute left-0  w-12 h-auto z-10 opacity-90 -mt-56 md:-mt-40 lg:-mt-40 xl:-mt-40 2xl:-mt-40 transition-transform duration-500 transform "
+  />
+ 
+      <div className=" max-w-7xl mx-auto px-4 py-7 absolute inset-0  z-0">
+        <p className="text-xs md:text-lg font-light mb-4 text-gray1 ">
           Struggling with an unresolved tech challenge? Or want to transform your ideas into reality?
         </p>
         <p className="text-xs md:text-lg font-light mb-4 text-gray1">
@@ -56,9 +70,9 @@ const StatsSection = () => {
           Complete the form or send us an email.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl  md:max-w-6xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="md:space-y-6 space-y-3">
             <h2 className="md:text-2xl text-lg font-bold mb-4 text-white">Contact Info</h2>
             <div className="flex items-center gap-4 text-gray1">
               <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
@@ -73,9 +87,10 @@ const StatsSection = () => {
               <span className="md:text-base text-sm">+92 336 2042506</span>
             </div>
           </div>
+         
 
           {/* Contact Form */}
-          <div className="max-w-2xl md:max-w-6xl">
+          <div className="max-w-2xl md:max-w-6xl bg-black p-6 rounded-lg shadow-lg">
             <h2 className="text-xl font-bold mb-4 md:text-2xl text-white">Send a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -133,12 +148,7 @@ const StatsSection = () => {
                   className="w-full bg-white/15 text-white border border-white p-3 rounded outline-none"
                 />
               </div>
-              {/* <button
-                type="submit"
-                className="bg-Blue text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ml-24 md:ml-0"
-              >
-                Send Message
-              </button> */}
+              
               <button 
   type="submit"
   className="bg-Blue text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ml-24 md:ml-0"
@@ -149,8 +159,10 @@ const StatsSection = () => {
 
             </form>
           </div>
+        
         </div>
       </div>
+      
     </section>
   );
 };

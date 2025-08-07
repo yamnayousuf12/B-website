@@ -19,7 +19,7 @@ const MissionTrust = () => {
           </div>
           <div className="mt-8">
             <Image
-              src="/mission.png" // replace with your actual path
+              src="/mission.svg" // replace with your actual path
               alt="Our Mission"
               width={200}
               height={200}
@@ -41,7 +41,7 @@ const MissionTrust = () => {
           </div>
           <div className="mt-8 mb-24">
             <Image
-              src="/trust.png" // replace with your actual path
+              src="/trust.svg" // replace with your actual path
               alt="Why Trust Us"
               width={200}
               height={200}
