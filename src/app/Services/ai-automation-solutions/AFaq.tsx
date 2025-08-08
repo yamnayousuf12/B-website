@@ -9,29 +9,30 @@ type FAQ = {
 
 const faqs: FAQ[] = [
   {
-    question: 'How do chatbots improve customer support?',
+    question: 'What are services in mobile application development?',
     answer:
-      'They provide instant, personalized responses, reducing wait times and boosting satisfaction.',
+      'Here are the services that we offer in mobile app development:\n\nApp designing\nCoding\nTesting the app\nDeployment',
   },
   {
-    question: 'Can the chatbot match my brand?',
+    question: 'What are the seven stages of app development?',
     answer:
-      'Yes, we help ensure your systems meet key regulations including GDPR, HIPAA, and more.',
+      'The seven stages of app development are:\n\nIdea and concept\nResearch and planning\nDesign\nDevelopment\nTesting\nLaunch\nPost-launch maintenance',
+  },
+  
+    {
+    question: "What is a mobile application development framework?",
+    answer:
+      "A mobile application development framework is a set of tools and libraries that simplify the process of building apps. ",
   },
   {
-    question: 'How long does setup take?',
+    question: 'Which language is used for mobile app development?',
     answer:
-      'Our setup begins immediately and most systems are secured within 24-48 hours.',
+      'Languages commonly used for mobile app development are:\n\nJava\nKotlin\nSwift\nJavaScript',
   },
   {
-    question: 'Will it work with my website?',
+    question: 'How does Bitsframe develop secure, scalable mobile apps?',
     answer:
-      'We work with businesses of all sizes and offer scalable plans to match your needs.',
-  },
-  {
-    question: 'Can I track performance?',
-    answer:
-      'Yes, we provide 24/7 monitoring, updates, and expert support for continued protection.',
+      'Bitsframe develops secure, scalable mobile apps by using industry-standard encryption, robust testing, and scalable architecture. They ensure that apps can handle growth and protect user data.',
   },
 ];
 
@@ -44,19 +45,19 @@ export default function FAQAccordion() {
 
   return (
     <section className="bg-black text-white py-16 px-6 md:px-20">
-      <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start md:-ml-3">
         {/* Left Side */}
-        <div>
-          <h2 className="md:text-4xl text-2xl font-bold mb-2">FAQs</h2>
-          <p className="text-white/80 text-xs md:text-sm">Your Frequently Questions Answered</p>
+        <div >
+          <h2 className="md:text-4xl  text-xl font-normal mb-2">FAQs</h2>
+          <p className="text-gray text-xs md:text-sm">Your Cybersecurity Questions Answered</p>
         </div>
 
         {/* Right Side */}
-        <div className="space-y-4">
+        <div className="space-y-3 md:w-[550px]">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-[#111] rounded-lg p-5 transition-all duration-300"
+              className=" bg-[#111]  rounded-lg p-5 border border-white/20 border-r-black  transition-all duration-300"
             >
               <button
                 className="flex justify-between items-center w-full text-left md:text-lg text-xs font-medium"
@@ -70,7 +71,8 @@ export default function FAQAccordion() {
                 )}
               </button>
               {openIndex === index && (
-                <p className="mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
+                <p className="whitespace-pre-line mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
+                // <p className="mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
               )}
             </div>
           ))}

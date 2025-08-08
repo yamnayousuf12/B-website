@@ -1,79 +1,83 @@
 'use client';
-import React from "react";
+import { useState } from 'react';
+import {  Plus, Minus } from 'lucide-react';
 
-interface Step {
-  number: string;
-  title: string;
-  description: string;
-}
+type FAQ = {
+  question: string;
+  answer: string;
+};
 
-const steps: Step[] = [
+const faqs: FAQ[] = [
   {
-    number: "",
-    title: "Personalized AI Chatbots",
-    description:
-      "Innovative chatbots deliver tailored responses, understand queries, and reply promptly.",
+    question: 'What are cloud architecture and services?',
+    answer:
+      'Cloud structure refers to the configuration of cloud computing systems, encompassing tools, assets, and applications. Cloud solutions provide instant access to resources such as data storage, internet connections, and computing power.',
   },
   {
-    number: "",
-    title: "Advanced AI Technology",
-    description:
-      "Built with ultramodern technology to deliver human-like conversation and intelligent responses.",
+    question: 'What are the four types of cloud architecture?',
+    answer:
+      'The four types of cloud architecture are:\n\nPublic Cloud\nPrivate Cloud\nHybrid Cloud\nMulti-cloud.',
+  },
+  
+    {
+    question: "What are the four layers of cloud architecture?",
+    answer:
+      "The four layers of cloud architecture are:\n\nInfrastructure as a Service (IaaS)\Platform as a Service (PaaS)\nSoftware as a Service (SaaS)\nNetwork and security layer",
   },
   {
-    number: "",
-    title: "Effortless Integration",
-    description:
-      "Seamless integration into websites, with an easy-to-connect module.",
+    question: 'What are the six pillars of cloud architecture?',
+    answer:
+      'The six pillars of cloud architecture are:\n\nOperational excellence\nSecurity\nReliability\nPerformance efficiency\nCost optimization\nSustainability',
   },
   {
-    number: "",
-    title: "Smart Analytics",
-    description:
-      "Track chats to improve engagement and record customer behavior.",
+    question: 'Do Bitsframe offer long-term support for a secure cloud architect?',
+    answer:
+      'Yes, Bitsframe offers long-term support for secure cloud architecture. They provide ongoing maintenance, updates, and troubleshooting to ensure your cloud infrastructure remains secure and efficient.',
   },
 ];
 
-const Uiserv: React.FC = () => {
+export default function FAQAccordion() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const toggle = (index: number) => {
+    setOpenIndex(index === openIndex ? null : index);
+  };
+
   return (
-    
-       <section
-      className="relative text-white md:py-24 px-6 md:px-16 bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/process.png')", // Optional background wave
-      }}
-    >
-     
-    
-     
+    <section className="bg-black text-white py-16 px-6 md:px-20">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start md:-ml-3">
+        {/* Left Side */}
+        <div >
+          <h2 className="md:text-4xl  text-xl font-normal mb-2">FAQs</h2>
+          <p className="text-gray text-xs md:text-sm">Your Cybersecurity Questions Answered</p>
+        </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto text-center ">
-         <div className=" inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-Blue text-white text-sm font-medium shadow-sm mb-6">
-   Features
-    </div>
-        
-        <h2 className="text-2xl md:text-4xl font-bold mb-4">
-         Work with Leading AI Chatbot Development Company
-        </h2>
-       
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {steps.map((step, index) => (
+        {/* Right Side */}
+        <div className="space-y-3 md:w-[550px]">
+          {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-[#0b0b0b] bg-opacity-90 p-6 rounded-lg shadow-md transition hover:shadow-Blue text-left"
+              className=" bg-[#111]  rounded-lg p-5 border border-white/20 border-r-black  transition-all duration-300"
             >
-              <div className="w-10 h-10 mb-4 rounded-full bg-white/5 flex items-center justify-center text-sm font-semibold text-white">
-                {step.number}
-              </div>
-              <h3 className="md:text-xl text-sm font-semibold mb-2">{step.title}</h3>
-              <p className="text-gray2 md:text-sm text-xs">{step.description}</p>
+              <button
+                className="flex justify-between items-center w-full text-left md:text-lg text-xs font-medium"
+                onClick={() => toggle(index)}
+              >
+                {faq.question}
+                {openIndex === index ? (
+                  <Minus className="w-5 h-5" />
+                ) : (
+                  <Plus className="w-5 h-5" />
+                )}
+              </button>
+              {openIndex === index && (
+                <p className="whitespace-pre-line mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
+                // <p className="mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
+              )}
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default Uiserv;
+}

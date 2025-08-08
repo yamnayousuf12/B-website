@@ -48,7 +48,7 @@ export default function FAQAccordion() {
         {/* Left Side */}
         <div >
           <h2 className="md:text-4xl  text-xl font-normal mb-2">FAQs</h2>
-          <p className="text-gray text-xs md:text-sm">Your Frequently Questions Answered</p>
+          <p className="text-gray text-xs md:text-sm">Your Cybersecurity Questions Answered</p>
         </div>
 
         {/* Right Side */}
