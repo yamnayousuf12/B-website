@@ -9,29 +9,29 @@ type FAQ = {
 
 const faqs: FAQ[] = [
   {
-    question: 'Why is UI/UX important?',
+    question: 'What is meant by UI and UX?',
     answer:
-      'Great design improves engagement and conversions.',
+      'UI stands for user interface. It is the external interface that users see and interact with. UX stands for user experience, referring to the ease with which a user can navigate and utilize features.',
   },
   {
-    question: 'Do you test designs?',
+    question: 'What are the seven principles of UX design',
     answer:
-     'Yes, we help ensure your systems meet key regulations including GDPR, HIPAA, and more.',
+     'The seven principles of UX design are:\n\n1) Usability\n2) Clarity\n3)  Consistency\n4) Feedback\n5) Simplicity\n7) Flexibility',
   },
   {
-    question: 'Do you test designs?',
+    question: 'What is required for UI/UX?',
     answer:
-      'Our setup begins immediately and most systems are secured within 24-48 hours.',
+      'UI/UX design requires creativity and thorough research. It also involves rigorous testing and technical expertise. ',
   },
   {
-    question: 'Will it match my brand?',
+    question: 'How does Bitsframe deliver high-end UI/UX designs?',
     answer:
-      'We work with businesses of all sizes and offer scalable plans to match your needs.',
+      'Bitsframe delivers high-end UI/UX designs by focusing on engaging interfaces, and seamless user experiences. We combine modern design trends with innovative solutions to meet client goals.',
   },
   {
-    question: 'Can you redesign existing interfaces?',
+    question: 'Can we redesign existing interfaces?',
     answer:
-      'Yes, we provide 24/7 monitoring, updates, and expert support for continued protection.',
+      'Yes, our designers can modify old interfaces without compromising on your brand identity.',
   },
 ];
 
@@ -70,7 +70,7 @@ export default function FAQAccordion() {
                 )}
               </button>
               {openIndex === index && (
-                <p className="mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
+               <p className="whitespace-pre-line mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
               )}
             </div>
           ))}

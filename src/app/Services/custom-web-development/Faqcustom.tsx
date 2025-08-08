@@ -9,29 +9,30 @@ type FAQ = {
 
 const faqs: FAQ[] = [
   {
-    question: 'How long does a website take to build?',
+    question: 'What is custom web development and design?',
     answer:
-      'Most sites are ready in 4–8 weeks, depending on complexity.',
+      'Custom web development and design means creating websites tailored to your business needs. It ensures your website is functional and meets specific goals.',
   },
   {
-    question: 'Will my site work on mobile?',
+    question: 'How is a custom website distinguished from a website builder?',
     answer:
-      'Yes, we help ensure your systems meet key regulations including GDPR, HIPAA, and more.',
+      'A custom website is built from scratch by professionals to fit your exact needs. In contrast, a website builder uses templates that are quicker but less flexible.',
+  },
+  
+    {
+    question: "What are the seven steps of web development?",
+    answer:
+      "The seven steps of web development are:\n\n1) Planning\n2) Design\n3) Content Creation\n4) Coding\n5) Testing\n6) Launch\n7) Maintenance",
   },
   {
-    question: 'Can you improve my SEO?',
+    question: 'Can we make your website secure and easy to navigate?',
     answer:
-      'Our setup begins immediately and most systems are secured within 24-48 hours.',
+      'Yes, we ensure your website is secure with the latest encryption methods. We also design user-friendly interfaces that make navigation smooth for your visitors.',
   },
   {
-    question: 'Is my site secure?',
+    question: 'How long does Bitsframe take to build a website?',
     answer:
-      'We work with businesses of all sizes and offer scalable plans to match your needs.',
-  },
-  {
-    question: 'Can I update content easily?',
-    answer:
-      'Can I update content easily?',
+      'We deliver complete websites within a few weeks, meeting the client’s requirements and deadlines.',
   },
 ];
 
@@ -70,7 +71,8 @@ export default function FAQAccordion() {
                 )}
               </button>
               {openIndex === index && (
-                <p className="mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
+                <p className="whitespace-pre-line mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
+                // <p className="mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
               )}
             </div>
           ))}

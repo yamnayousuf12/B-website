@@ -9,29 +9,29 @@ type FAQ = {
 
 const faqs: FAQ[] = [
   {
-    question: 'How does staff augmentation work?',
+    question: 'What are staff augmentation services?',
     answer:
-      'Most sites are ready in 4–8 weeks, depending on complexity.',
+      'Staff augmentation is outsourcing talented staff from outside the company. The augmented staff complete specific projects with efficient planning and monitoring. ',
   },
   {
-    question: 'How fast can I get talent?',
+    question: 'What is an augmented employee?',
     answer:
-      'Yes, we help ensure your systems meet key regulations including GDPR, HIPAA, and more.',
+      'An augmented employee is a temporary professional hired to support your team. They bring specialized skills to help with specific tasks, ensuring seamless workflow.',
   },
   {
-    question: 'Can I choose the skills?',
+    question: 'In what ways are business process outsourcing and staff augmentation different?',
     answer:
-      'Our setup begins immediately and most systems are secured within 24-48 hours.',
+      'Business process outsourcing is assigning specific tasks to external factors for a particular project. On the other hand, staff augmentation is seeking external staff for the company.',
   },
   {
-    question: 'Is it cost-effective?',
+    question: 'What is the role of augmented staff?',
     answer:
-      'We work with businesses of all sizes and offer scalable plans to match your needs.',
+      'The role of augmented staff is to enhance your team’s capabilities by providing specific skills and expertise. They help complete projects faster without long-term commitments.',
   },
   {
-    question: 'Do you support ongoing projects?',
+    question: 'What are the benefits of augmenting staff from Bitsframe?',
     answer:
-      'Can I update content easily?',
+      'Bitsframe offers skilled, flexible professionals who seamlessly integrate with your team. Our staff augmentation services ensure quick scaling, reduced hiring costs, and expertise tailored to your needs.',
   },
 ];
 
@@ -70,7 +70,7 @@ export default function FAQAccordion() {
                 )}
               </button>
               {openIndex === index && (
-                <p className="mt-3 text-gray2 md:text-sm text-xs">{faq.answer}</p>
+                <p className="mt-3 text-gray2 md:text-sm text-xs ">{faq.answer}</p>
               )}
             </div>
           ))}
