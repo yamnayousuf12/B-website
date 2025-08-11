@@ -11,7 +11,7 @@ const MissionTrust = () => {
         <div className="bg-[#111111] p-8 rounded-xl shadow-md flex flex-col justify-between -mt-10 py-2 px-4 md:px-12 md:py-10 md:mt-8">
           <div>
             <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">Our Mission</h2>
-            <p className="text-sm leading-relaxed text-gray1">
+            <p className="md:text-sm text-xs leading-relaxed text-gray1">
               We aim to empower businesses to thrive through innovative and systematic<strong className='text-white'> IT solutions</strong>.
               From cybersecurity to UI/UX, we strive to deliver tools that solve real challenges and fuel growth,
               all while keeping things affordable and collaborative.
@@ -32,7 +32,7 @@ const MissionTrust = () => {
         <div className="bg-[#111111] p-8 rounded-xl shadow-md flex flex-col justify-between  -mt-10 py-2 px-4 md:px-12 md:py-10 md:mt-8">
           <div>
             <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">Why Trust Us</h2>
-            <p className="text-sm leading-relaxed text-gray1">
+            <p className="md:text-sm text-xs leading-relaxed text-gray1">
               We are certified in AWS and ISO 27001, and we bring proven expertise to every IT solution we deliver.
               Trusted by 22+ international partners, we have completed 50+ projects with a 95% client satisfaction rate.
               We are a group of professionals driven by precision and a commitment to excellence, helping businesses
