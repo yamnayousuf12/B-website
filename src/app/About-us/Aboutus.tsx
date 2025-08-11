@@ -10,27 +10,7 @@ type Testimonial = {
 };
 
 const testimonials: Testimonial[] = [
-  // {
-  //   name: "Sarah T.",
-  //   title: "CTO, TechScale Solutions",
-  //   image: "/Ellipse 12(1).png",
-  //   feedback:
-  //     "Bitsframe’s custom chatbot transformed how we engage customers. Their team was fast, creative, and a true partner.",
-  // },
-  // {
-  //   name: "Mark R.",
-  //   title: "Founder, Innovate App",
-  //   image: "/Ellipse 12.png",
-  //   feedback:
-  //     "Their AI solution gave us a competitive edge. Bitsframe delivered beyond expectations, on time and on budget.",
-  // },
-  // {
-  //   name: "Priya S.",
-  //   title: "CEO, Global Retail Co.",
-  //   image: "/Ellipse 12(1).png",
-  //   feedback:
-  //     "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
-  // },
+  
   {
     name: "Sarah T.",
     title: "CTO, TechScale Solutions",
@@ -52,13 +32,7 @@ const testimonials: Testimonial[] = [
     feedback:
       "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
   },
-  // {
-  //   name: "Priya S.",
-  //   title: "CEO, Global Retail Co.",
-  //   image: "/Ellipse (2).png",
-  //   feedback:
-  //     "From Shopify design to cloud architecture, Bitsframe made our e-commerce launch seamless. Highly recommend!",
-  // },
+  
 ];
 
 // Split testimonials
@@ -67,7 +41,7 @@ const firstRow = testimonials.slice(0, 3); // For lg:grid-cols-3
 
 const Testimonials = () => {
   return (
-    <section className="bg-black text-white py-16 px-4 md:px-12">
+    <section className="bg-black text-white md:py-16 px-4 md:px-12 py-1">
       <div className="text-center mb-12">
         <h2 className="text-xl md:text-4xl font-Medium mb-2 text-white">
           What Our Clients Say About Us
@@ -97,7 +71,7 @@ const Testimonials = () => {
 const TestimonialCard = ({ name, title, image, feedback }: Testimonial) => (
   <div className="bg-white/5 border-white/10 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
     <div className=" text-lg mb-4">★★★★★</div>
-    <p className="text-sm text-white mb-6">“{feedback}”</p>
+    <p className="md:text-sm text-xs text-white mb-6">“{feedback}”</p>
     <div className="flex items-center gap-3">
       <Image
         src={image}
@@ -107,8 +81,8 @@ const TestimonialCard = ({ name, title, image, feedback }: Testimonial) => (
         className="rounded-full"
       />
       <div>
-        <p className="font-semibold">{name}</p>
-        <p className="text-xs text-gray2">{title}</p>
+        <p className="font-semibold md:text-xs text-[12px]">{name}</p>
+        <p className="md:text-xs text-[8px] text-gray2">{title}</p>
       </div>
     </div>
   </div>
