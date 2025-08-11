@@ -569,7 +569,7 @@ const Timeline = () => {
 
               {/* Vertical label rotated */}
               <motion.div
-                className={`absolute top-1 ${
+                className={`absolute -top-3 ${
                   idx === 0
                     ? "left-1/2 transform -translate-x-1/2"
                     : "left-7 cursor-pointer"
