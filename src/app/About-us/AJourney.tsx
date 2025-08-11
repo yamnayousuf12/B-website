@@ -598,12 +598,12 @@ const Timeline = () => {
                 //   transition={{ duration: 0.5, delay: idx * 0.3 + 0.5 }}
                 // >
                 <motion.div
-    className="border border-[#2D72FA] bg-black backdrop-blur-md p-4 rounded-md w-32 h-32 md:w-44 shadow-xl mt-20"
+    className="border border-[#2D72FA] bg-black backdrop-blur-md p-4 rounded-md w-32 h-32 md:h-40 md:w-44 shadow-xl mt-20"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
   >
-                  <h3 className="font-normal text-white md:text-sm text-[10px] mb-2 -mt-3">
+                  <h3 className="font-normal text-white md:text-sm text-[10px] mb-2 -mt-3 md:-mt-1">
                     {event.title}
                   </h3>
                   <p className="text-white md:text-[9px] text-[6px] text-start ">{event.description}</p>
