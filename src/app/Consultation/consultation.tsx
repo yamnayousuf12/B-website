@@ -7,7 +7,7 @@ import {
   ListboxOption,
   ListboxOptions,
 } from "@headlessui/react";
-import { ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import { ChevronDown } from 'lucide-react';
 
 const timingOptions = ["09:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "02:00 PM"];
 const timezoneOptions = [
@@ -77,7 +77,7 @@ export default function ConsultationForm() {
             <ListboxButton className="w-full cursor-pointer rounded-md bg-black border border-Blue py-3 pl-4 pr-10 text-left text-white focus:outline-none focus:ring-2 focus:ring-Blue">
               {formData.timing}
               <span className="absolute inset-y-0 right-0 flex items-center pr-3">
-                <ChevronUpDownIcon className="h-5 w-5 text-white" />
+                <ChevronDown className="h-5 w-5 text-white" />
               </span>
             </ListboxButton>
             <ListboxOptions className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-black border border-Blue py-1 text-white shadow-lg focus:outline-none z-10">
@@ -108,7 +108,7 @@ export default function ConsultationForm() {
             <ListboxButton className="w-full  rounded-md bg-black border border-Blue py-3 pl-4 pr-10 text-left text-white focus:outline-none focus:ring-2 focus:ring-Blue">
               {formData.timezone}
               <span className="absolute inset-y-0 right-0 flex items-center pr-3 ">
-                <ChevronUpDownIcon className="h-5 w-5 text-white" />
+                <ChevronDown className="h-5 w-5 text-white" />
               </span>
             </ListboxButton>
             <ListboxOptions className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-black border border-Blue py-1 text-white shadow-lg focus:outline-none z-10">
