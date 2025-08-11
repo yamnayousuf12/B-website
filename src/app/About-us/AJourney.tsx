@@ -598,7 +598,7 @@ const Timeline = () => {
                 //   transition={{ duration: 0.5, delay: idx * 0.3 + 0.5 }}
                 // >
                 <motion.div
-    className="border border-[#2D72FA] bg-black backdrop-blur-md p-4 rounded-md w-32 h-32 md:h-40 md:w-44 shadow-xl mt-20"
+    className="border border-[#2D72FA] bg-black backdrop-blur-md p-4 rounded-md w-32 h-32 md:h-40 md:w-48 shadow-xl mt-20 md:ml-12"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
