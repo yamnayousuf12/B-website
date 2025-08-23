@@ -36,6 +36,7 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-sm items-center">
           <Link href="/">Home</Link>
+           <Link href="/About-us" className="block">About us</Link>
 
           {/* Services Dropdown */}
           <div className="relative group">
@@ -61,17 +62,28 @@ const Header = () => {
             </div>
           </div>
 
-          <Link href="/case-studies">Case Studies</Link>
+          {/* <Link href="/case-studies">Case Studies</Link>
           <Link href="/blogs">Blogs</Link>
-          <Link href="/About-us">About Us</Link>
+          <Link href="/About-us">About Us</Link> */}
           <Link href="/contact-us">Contact Us</Link>
         </nav>
 
         {/* Right Icons */}
         <div className="hidden md:flex items-center gap-4  md:-mr-8">
-          <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
-            <Mail className="text-white hover:text-black w-4 h-4" />
-          </button>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hey@bitsframe.com"
+          target="_blank"
+          rel="noopener noreferrer">
+  <button
+    className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300"
+    aria-label="Send email"
+    title="Send email"
+  >
+    <Mail className="text-white hover:text-black w-5 h-5" />
+  </button>
+</a>
+
+
+
           <Link href="/contact-us">
             <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-Blue md:mb-2 md:transition">
               Contact Us →
@@ -92,6 +104,7 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden mt-14 space-y-3  bg-black px-3 py-4 rounded-lg shadow-lg absolute top-16 left-1/2 transform -translate-x-1/2 w-80 z-50">
           <Link href="/" className="block">Home</Link>
+           <Link href="/About-us" className="block">About us</Link>
 
           {/* Mobile Dropdown */}
           <div>
@@ -114,10 +127,6 @@ const Header = () => {
               </div>
             )}
           </div>
-
-          <Link href="/case-studies" className="block">Case Studies</Link>
-          <Link href="/blogs" className="block">Blogs</Link>
-          <Link href="/About-us" className="block">About us</Link>
           <Link href="/contact-us" className="block">Contact Us</Link>
         </div>
       )}

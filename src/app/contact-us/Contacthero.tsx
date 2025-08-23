@@ -1,7 +1,7 @@
 // components/Hero.tsx
-import Link from "next/link";
+
 import React from "react";
-import { PhoneCall } from "lucide-react";
+
 const Hero = () => {
   return (
     <section className="bg-black text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left relative md:h-[500px] overflow-hidden bg-cover bg-center bg-no-repeat md:max-w-full mx-auto "
@@ -23,16 +23,6 @@ Lets Create Something Extraordinary with Us</h1>
         <p className="text-gray1 text-[10px] md:text-lg mb-8 md:ml-10">
           Ready to transform your business? Reach out, we are here to help
         </p>
-
-         <div className="flex flex-col md:flex-row gap-4 justify-center md:text-sm text-xs md:justify-start md:ml-10">
-          <Link href="/contact-us">
-            <button className="bg-Blue text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ml-24 md:ml-0">
-               <PhoneCall className="md:text-xl text-xs md:w-7 w-4" />
-              Contact Now 
-            </button>
-          </Link>
-          
-        </div>
       </div>
     </section>
   );

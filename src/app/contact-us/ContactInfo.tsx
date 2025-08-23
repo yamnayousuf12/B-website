@@ -74,18 +74,58 @@ const StatsSection = () => {
           {/* Contact Info */}
           <div className="md:space-y-6 space-y-3">
             <h2 className="md:text-2xl text-lg font-bold mb-4 text-white">Contact Info</h2>
-            <div className="flex items-center gap-4 text-gray1">
+            {/* <div className="flex items-center gap-4 text-gray1">
               <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
                 <Mail className="hover:text-black text-white w-4 h-4" />
               </button>
               <span className="md:text-base text-sm">hey@bitsframe.com</span>
+        
+
             </div>
             <div className="flex items-center gap-4 text-white/80">
               <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
                 <Phone className="hover:text-black text-white w-4 h-4" />
               </button>
-              <span className="md:text-base text-sm">+92 336 2042506</span>
-            </div>
+              <span className="md:text-base text-sm">+92 309 2074390</span>
+            </div> */}
+            {/* Email */}
+<div className="flex items-center gap-4 text-gray1">
+  <a
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=hey@bitsframe.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Send email"
+    title="Send email"
+    className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300 flex items-center justify-center"
+  >
+    <Mail className="hover:text-black text-white w-4 h-4" />
+  </a>
+  <a
+    href="mailto:hey@bitsframe.com"
+    className="md:text-base text-sm hover:underline"
+  >
+    hey@bitsframe.com
+  </a>
+</div>
+
+{/* Phone */}
+<div className="flex items-center gap-4 text-white/80">
+  <a
+    href="tel:+923092074390"
+    className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300 flex items-center justify-center"
+    aria-label="Call phone number"
+    title="Call us"
+  >
+    <Phone className="hover:text-black text-white w-4 h-4" />
+  </a>
+  <a
+    href="tel:+923092074390"
+    className="md:text-base text-sm hover:underline"
+  >
+    +92 309 2074390
+  </a>
+</div>
+
           </div>
          
 
