@@ -51,13 +51,23 @@ const StatsSection = () => {
 />
 
   {/* Moving image (floating or sliding) */}
-  <Image
+  {/* <Image
     src="/info.svg"
     alt="wave"
     layout="fill"
     objectFit="cover"
     className="absolute left-0  w-12 h-auto z-10 opacity-90 -mt-56 md:-mt-40 lg:-mt-40 xl:-mt-40 2xl:-mt-40 transition-transform duration-500 transform "
+  /> */}
+  <div className="relative w-full h-60 md:h-80 lg:h-96 xl:h-[500px] 2xl:h-[600px] md:ml-14 md:mt-7">
+  <Image
+    src="/info.svg"
+    alt="wave"
+    fill
+    style={{ objectFit: "cover" }}
+    className="absolute left-0  w-12 h-auto z-10 opacity-90 -mt-56 md:-mt-40 lg:-mt-40 xl:-mt-40 2xl:-mt-40 transition-transform duration-500 transform"
   />
+</div>
+
  
       <div className=" max-w-7xl mx-auto px-4 py-7 absolute inset-0  z-0">
         <p className="text-xs md:text-lg font-light mb-4 text-gray1 ">
@@ -74,58 +84,33 @@ const StatsSection = () => {
           {/* Contact Info */}
           <div className="md:space-y-6 space-y-3">
             <h2 className="md:text-2xl text-lg font-bold mb-4 text-white">Contact Info</h2>
-            {/* <div className="flex items-center gap-4 text-gray1">
-              <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
-                <Mail className="hover:text-black text-white w-4 h-4" />
-              </button>
-              <span className="md:text-base text-sm">hey@bitsframe.com</span>
-        
+            <div className="flex items-center gap-4 text-gray1">
+              
+         <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=hey@bitsframe.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center space-x-2"
+>
+  <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
+    <Mail className="hover:text-black text-white w-4 h-4" />
+  </button>
+  <span className="md:text-base text-sm hover:underline">hey@bitsframe.com</span>
+</a>
+
 
             </div>
             <div className="flex items-center gap-4 text-white/80">
+            <a
+  href="tel:+923092074390"
+  className="text-gray hover:underline"
+>
               <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
                 <Phone className="hover:text-black text-white w-4 h-4" />
               </button>
               <span className="md:text-base text-sm">+92 309 2074390</span>
-            </div> */}
-            {/* Email */}
-<div className="flex items-center gap-4 text-gray1">
-  <a
-    href="https://mail.google.com/mail/?view=cm&fs=1&to=hey@bitsframe.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Send email"
-    title="Send email"
-    className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300 flex items-center justify-center"
-  >
-    <Mail className="hover:text-black text-white w-4 h-4" />
-  </a>
-  <a
-    href="mailto:hey@bitsframe.com"
-    className="md:text-base text-sm hover:underline"
-  >
-    hey@bitsframe.com
-  </a>
-</div>
-
-{/* Phone */}
-<div className="flex items-center gap-4 text-white/80">
-  <a
-    href="tel:+923092074390"
-    className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300 flex items-center justify-center"
-    aria-label="Call phone number"
-    title="Call us"
-  >
-    <Phone className="hover:text-black text-white w-4 h-4" />
-  </a>
-  <a
-    href="tel:+923092074390"
-    className="md:text-base text-sm hover:underline"
-  >
-    +92 309 2074390
-  </a>
-</div>
-
+              </a>
+            </div>
           </div>
          
 
