@@ -158,3 +158,6 @@ button {
 .rotated-image {
   transform: rotate(99deg);
 }
+html {
+  scroll-behavior: smooth;
+}

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { Award } from "lucide-react";
@@ -46,12 +47,12 @@ const Hero = () => {
               Book a free consultation →
             </button>
           </Link>
-
-          <Link href="/services">
-            <button className="bg-white border border-gray text-black px-2 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg font-medium hover:bg-Blue text-xs sm:text-sm md:text-base">
-              Explore our services →
-            </button>
-          </Link>
+          <Link href="#HSolutions" scroll={true}>
+  <button className="bg-white border border-gray text-black px-2 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg font-medium hover:bg-Blue text-xs sm:text-sm md:text-base">
+    Explore our services →
+  </button>
+</Link>
+          
         </div>
       </div>
     </section>

@@ -31,7 +31,7 @@ export default function Footer() {
     rel="noopener noreferrer"
     aria-label="Send email"
     title="Send email"
-    className=" p-1 backdrop-blur-md shadow-md transition-all duration-300 flex items-center justify-center text-gray hover:underline"
+    className=" p-1 backdrop-blur-md shadow-md transition-all duration-300 flex md:items-center md:justify-center text-gray hover:underline"
   >
 
   hey@bitsframe.com
