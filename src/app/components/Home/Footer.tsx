@@ -56,14 +56,25 @@ export default function Footer() {
 >
   Instagram
 </a></p>
-            <p><a
-  href="https://www.linkedin.com/in/yourprofile"
+            {/* <p><a
+  href="https://www.linkedin.com/in/yamna-yousuf-39181528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   target="_blank"
   rel="noopener noreferrer"
   className="text-gray hover:underline"
 >
   LinkedIn
-</a></p>
+</a></p> */}
+<p>
+  <a
+    href="https://www.linkedin.com/in/yamna-yousuf-39181528b"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray hover:underline"
+  >
+    LinkedIn
+  </a>
+</p>
+
           </div>
           <div className="space-y-1 mr-9 md:text-sm text-xs">
             <h3 className="font-semibold md:text-lg text-sm text-gray1">Quick links</h3>
