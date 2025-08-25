@@ -1,4 +1,4 @@
-    "use client";
+"use client";
 import React, { useState } from "react";
 import { Phone, Mail } from "lucide-react";
 import Image from "next/image";

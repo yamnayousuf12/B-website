@@ -57,7 +57,7 @@ export default function Footer() {
   Instagram
 </a></p>
             {/* <p><a
-  href="https://www.linkedin.com/in/yamna-yousuf-39181528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  href="https://www.linkedin.com/in/yamna-yousuf-39181528b"
   target="_blank"
   rel="noopener noreferrer"
   className="text-gray hover:underline"
@@ -66,7 +66,7 @@ export default function Footer() {
 </a></p> */}
 <p>
   <a
-    href="https://www.linkedin.com/in/yamna-yousuf-39181528b"
+    href="https://www.linkedin.com/company/bitsframe"
     target="_blank"
     rel="noopener noreferrer"
     className="text-gray hover:underline"
