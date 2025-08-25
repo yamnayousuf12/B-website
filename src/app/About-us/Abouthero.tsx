@@ -1,7 +1,6 @@
 // components/Hero.tsx
-import Link from "next/link";
-// import { Award } from "lucide-react";
-import { PhoneCall } from "lucide-react";
+import React from "react";
+
 const Hero = () => {
   return (
     <section className="bg-black text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left relative md:h-[500px]  overflow-hidden bg-cover bg-center bg-no-repeat md:max-w-7xl mx-auto"
@@ -11,7 +10,7 @@ const Hero = () => {
 
     
 
-      <div className="max-w-5xl mx-auto mt-20  ">
+      <div className="max-w-5xl mx-auto mt-20">
         <div className="mb-8 flex justify-center md:justify-start">
        <div className=" inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-Blue text-white text-xs font-medium shadow-sm md:ml-8">
       
@@ -24,14 +23,7 @@ const Hero = () => {
           Turning complex challenges into simple, powerful solutions
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start md:ml-10">
-          <Link href="/contact-us">
-            <button className="bg-Blue text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ml-24 md:text-lg text-sm md:ml-0">
-               <PhoneCall className="md:text-xl text-sm md:w-7 w-4" />
-              Contact Now 
-            </button>
-          </Link>
-           </div>
+       
       </div>
     </section>
   );
