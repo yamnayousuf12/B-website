@@ -1,7 +1,7 @@
 
 "use client";
 import Link from "next/link";
-import { PhoneCall, Star, Award } from "lucide-react";
+import { PhoneCall} from "lucide-react";
 
 export default function ContactCTA() {
   return (
@@ -15,18 +15,7 @@ export default function ContactCTA() {
       {/* Gradient Overlay Content */}
       <div className="relative z-10 mx-auto m:px-6 md:py-20 px-2 py-14 max-w-lg inset-0 md:max-w-[90%] ">
         
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-10 md:ml-10 ml-3 ">
-            <div className="flex items-center md:gap-2 text-gray border border-gray rounded-full md:py-2 md:px-3 py-1 px-1 w-32 md:w-60 md:text-sm text-xs md:-mt-16 -mt-9 border-opacity-10 border-e-customBlue">
-              <Award className="text-white1 w-3 md:w-6" />
-              <p className="text-[9px] md:text-sm"> Trusted by 22+ brands</p>
-             
-            </div>
-            <div className="flex items-center md:gap-2 text-gray border border-gray rounded-full md:py-2 md:px-3 md:mr-auto md:w-72 w-44 py-1 px-1 md:-mt-16 ml-auto md:ml-0 -mt-12 border-opacity-10 border-e-customBlue">
-              <Star className="text-white1 w-3 md:w-6" />
-              <p className="text-[9px] md:text-sm ">
-              &quot;Bitsframe transformed our app!&quot;</p>
-            </div>
-          </div>
+        
 
           <h2 className="text-lg md:text-2xl font-medium leading-tight text-white md:ml-9">
            Unlock Potential With Our IT Solutions

@@ -1,129 +1,196 @@
 "use client";
-
-import Link from "next/link";
+import React, { useState } from "react";
+import { Phone, Mail } from "lucide-react";
 import Image from "next/image";
-import { Mail, Menu, X, ChevronDown } from "lucide-react";
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const pathname = usePathname(); //used to detect route changes
+const StatsSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    message: "",
+  });
 
-  // Automatically close dropdown and mobile menu when route changes
-  useEffect(() => {
-    setDropdownOpen(false);
-    setMenuOpen(false);
-  }, [pathname]);
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.id.toLowerCase()]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", company: "", phone: "", message: "" });
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+      console.error("Error:", error);
+    }
+  };
 
   return (
-    <div>
-   
-    <header className=" absolute bg-transparent text-white md:px-6 md:py-4 px-2 py-2 -top-10 left-0 w-full z-50 ">
- <div className="absolute top-[70px]  md:w-[90%] w-80 items-center border-b border-white/20 z-20 mx-auto left-1/2 transform -translate-x-1/2 " >
-      <div className="flex justify-between items-center md:max-w-[95%] mx-auto mb-2">
-     
-      
-        <div className="flex justify-items-start space-x-2  ">
-  {/* Logo */}
-  <Link href="/" className="flex items-center space-x-2 md:-ml-8">
-    <Image src="/logo.svg" alt="Logo" width={30} height={60} />
-    <h1 className="text-white font-bold md:text-lg text-sm ml-12">BITSFRAME</h1>
-  </Link>
+    
+ <section className="relative bg-black text-white overflow-hidden min-h-[1010px] md:min-h-[750px] py-14 px-6 md:px-16">
+
+<div
+  className="absolute inset-0 bg-right -ml-20 bg-cover z-0 max-w-[90%] w-full sm:max-w-md md:max-w-lg lg:max-w-xl aspect-[3/4] mx-auto mt-16 rotated-image shadow-xl"
+  style={{
+    backgroundImage: "url('/info.png')",
+  }}
+/>
+
+  {/* Moving image (floating or sliding) */}
+  {/* <Image
+    src="/info.svg"
+    alt="wave"
+    layout="fill"
+    objectFit="cover"
+    className="absolute left-0  w-12 h-auto z-10 opacity-90 -mt-56 md:-mt-40 lg:-mt-40 xl:-mt-40 2xl:-mt-40 transition-transform duration-500 transform "
+  /> */}
+  <div className="relative w-full h-60 md:h-80 lg:h-96 xl:h-[500px] 2xl:h-[600px] md:ml-14 md:mt-7">
+  <Image
+    src="/info.svg"
+    alt="wave"
+    fill
+    style={{ objectFit: "cover" }}
+    className="absolute left-0  w-12 h-auto z-10 opacity-90 -mt-56 md:-mt-40 lg:-mt-40 xl:-mt-40 2xl:-mt-40 transition-transform duration-500 transform"
+  />
 </div>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 text-sm items-center">
-          <Link href="/">Home</Link>
+ 
+      <div className=" max-w-7xl mx-auto px-4 py-7 absolute inset-0  z-0">
+        <p className="text-xs md:text-lg font-light mb-4 text-gray1 ">
+          Struggling with an unresolved tech challenge? Or want to transform your ideas into reality?
+        </p>
+        <p className="text-xs md:text-lg font-light mb-4 text-gray1">
+          We hear you! Let&apos;s collaborate to find <span className="text-white font-medium">managed IT solutions</span> for your business IT queries. Our team is ready to craft custom apps, AI solutions, or secure Shopify stores that drive your success.
+        </p>
+        <p className="text-xs md:text-lg font-light mb-4 text-gray1">
+          Complete the form or send us an email.
+        </p>
 
-          {/* Services Dropdown */}
-          <div className="relative group">
-            <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center gap-1 hover:text-Blue"
-            >
-              Services <ChevronDown size={14} />
-            </button>
-            <div
-              className={`absolute left-0 mt-2 bg-black text-white rounded shadow-md  py-2 w-48 z-50 ${
-                dropdownOpen ? "block" : "hidden"
-              }`}
-            >
-              <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-Blue">Custom Web Development</Link>
-              <Link href="/services/ui-ux" className="block px-4 py-2 hover:bg-Blue">UI/UX</Link>
-              <Link href="/services/innovative-app-solutions" className="block px-4 py-2 hover:bg-Blue"> Innovative App Solutions</Link>
-              <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-Blue">Staff Augmentation</Link>
-              <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity Solutios</Link>
-              <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-Blue">AI Chatbots</Link>
-              <Link href="/services/ai-automation-solutions" className="block px-4 py-2 hover:bg-Blue">AI Automation Solutions</Link>
-              <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-Blue">Cloud Architect</Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl  md:max-w-6xl mx-auto">
+          {/* Contact Info */}
+          <div className="md:space-y-6 space-y-3">
+            <h2 className="md:text-2xl text-lg font-bold mb-4 text-white">Contact Info</h2>
+            <div className="flex items-center gap-4 text-gray1">
+              
+         <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=hey@bitsframe.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center space-x-2"
+>
+  <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
+    <Mail className="hover:text-black text-white w-4 h-4" />
+  </button>
+  <span className="md:text-base text-sm hover:underline">hey@bitsframe.com</span>
+</a>
+
+
+            </div>
+            <div className="flex items-center gap-4 text-white/80">
+            <a
+  href="tel:+923092074390"
+  className="text-gray hover:underline"
+>
+              <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
+                <Phone className="hover:text-black text-white w-4 h-4" />
+              </button>
+              <span className="md:text-base text-sm">+92 309 2074390</span>
+              </a>
             </div>
           </div>
+         
 
-          <Link href="/case-studies">Case Studies</Link>
-          <Link href="/blogs">Blogs</Link>
-          <Link href="/About-us">About Us</Link>
-          <Link href="/contact-us">Contact Us</Link>
-        </nav>
+          {/* Contact Form */}
+          <div className="max-w-2xl md:max-w-6xl bg-black p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold mb-4 md:text-2xl text-white">Send a Message</h2>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="name" className="block mb-1 text-white">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="bg-white/15 text-white p-3 rounded outline-none border border-white w-full"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block mb-1 text-white">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="bg-white/15 text-white p-3 rounded outline-none border border-white w-full"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="company" className="block mb-1 text-white">Company</label>
+                  <input
+                    id="company"
+                    type="text"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="bg-white/15 text-white p-3 rounded outline-none border border-white w-full"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="block mb-1 text-white">Phone</label>
+                  <input
+                    id="phone"
+                    type="text"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="bg-white/15 text-white p-3 rounded outline-none border border-white w-full"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="message" className="block mb-1 text-white">Message</label>
+                <textarea
+                  id="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={5}
+                  placeholder="Message"
+                  className="w-full bg-white/15 text-white border border-white p-3 rounded outline-none"
+                />
+              </div>
+              
+              <button 
+  type="submit"
+  className="bg-Blue text-white md:px-6 md:py-3 px-3 py-1 font-medium hover:bg-Blue flex items-center gap-2 border border-gray rounded-full ml-24 md:ml-0"
+  aria-label="Send message to the team"
+>
+  Send Message
+</button>
 
-        {/* Right Icons */}
-        <div className="hidden md:flex items-center gap-4  md:-mr-8">
-          <button className="border border-white p-1 rounded-full bg-white/10 hover:bg-white backdrop-blur-md shadow-md transition-all duration-300">
-            <Mail className="text-white hover:text-black w-4 h-4" />
-          </button>
-          <Link href="/contact-us">
-            <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-Blue md:mb-2 md:transition">
-              Contact Us →
-            </button>
-          </Link>
-        </div>
-        </div>
-
-        {/* Mobile Toggle Button */}
-        <div className="md:hidden ml-72 max-w-7xl mx-auto -mt-8">
-          <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <X /> : <Menu />}
-          </button>
+            </form>
+          </div>
+        
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden mt-14 space-y-3  bg-black px-3 py-4 rounded-lg shadow-lg absolute top-16 left-1/2 transform -translate-x-1/2 w-80 z-50">
-          <Link href="/" className="block">Home</Link>
-
-          {/* Mobile Dropdown */}
-          <div>
-            <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center gap-1 w-full"
-            >
-              Services <ChevronDown size={14} />
-            </button>
-            {dropdownOpen && (
-              <div className="ml-4 mt-2 space-y-1 text-sm">
-                <Link href="/services/custom-web-development" className="block px-4 py-2 hover:bg-Blue">Custom Web Development</Link>
-                <Link href="/services/ui-ux" className="block px-4 py-2 hover:bg-Blue">UI/UX</Link>
-                <Link href="/services/innovative-app-solutions" className="block px-4 py-2 hover:bg-Blue">Innovative App Solutions</Link>
-                <Link href="/services/staff-augmentation" className="block px-4 py-2 hover:bg-Blue">Staff Augmentation</Link>
-                <Link href="/services/cybersecurity" className="block px-4 py-2 hover:bg-Blue">Cybersecurity Solutios</Link>
-                <Link href="/services/ai-chatbots" className="block px-4 py-2 hover:bg-Blue">AI Chatbots</Link>
-                <Link href="/services/ai-automation-solutions" className="block px-4 py-2 hover:bg-Blue">AI Automation Solutions</Link>
-                <Link href="/services/cloud-architecture" className="block px-4 py-2 hover:bg-Blue">Cloud Architect</Link>
-              </div>
-            )}
-          </div>
-
-          <Link href="/case-studies" className="block">Case Studies</Link>
-          <Link href="/blogs" className="block">Blogs</Link>
-          <Link href="/About-us" className="block">About us</Link>
-          <Link href="/contact-us" className="block">Contact Us</Link>
-        </div>
-      )}
-    </header>
-    </div>
+      
+    </section>
   );
 };
 
-export default Header;
+export default StatsSection;
+ 

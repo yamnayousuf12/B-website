@@ -47,7 +47,7 @@ const solutions = [
 
 const Solutions = () => {
   return (
-    <section className="bg-[#0D0D0D] text-white px-4 sm:px-6 md:px-12 py-10 md:py-14 rounded-xl shadow-lg md:max-w-[97%] min-w-[20%] mx-auto space-y-8 border border-white/10">
+    <section  id="HSolutions"className="bg-[#0D0D0D] text-white px-4 sm:px-6 md:px-12 py-10 md:py-14 rounded-xl shadow-lg md:max-w-[97%] min-w-[20%] mx-auto space-y-8 border border-white/10">
       <div className="mb-12 ">
         <h2 className="text-lg md:text-4xl font-Medium mb-3 text-white">
           Our Dedicated Managed IT Solutions

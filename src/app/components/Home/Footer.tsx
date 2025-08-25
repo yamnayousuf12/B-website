@@ -7,7 +7,7 @@ export default function Footer() {
        <div className="relative mt-10 ">
   {/* Background image */}
   <div
-    className="absolute md:inset-20 inset-0 mt-auto md:mt-10 bg-cover bg-center z-0 h-44 "
+    className="absolute md:inset-20 inset-0 mt-auto md:mt-10 bg-cover bg-center z-0 h-48 "
     style={{ backgroundImage: "url('/footer.png')" }}
   ></div>
       <div className="max-w-6xl md:max-w-[95%] mx-auto px-6 py-12">
@@ -18,42 +18,79 @@ export default function Footer() {
                         {/* Logo */}
                         <Link href="/" className="flex items-center space-x-2">
                           <Image src="/logo.svg" alt="Logo" width={30} height={60} />
-                          <h1 className="text-white font-bold md:text-xl text-lg">BITSFRAME</h1>
+                          
                         </Link>
                       </div>
            
           </div>
           <div className="space-y-1 md:text-sm text-xs md:ml-96  ">
             <h3 className="font-semibold md:text-lg text-sm text-gray1">Contact</h3>
-            <p className="text-gray">hey@bitsframe.com</p>
-            <p className="text-gray">+92 309 2074390</p>
+            
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hey@bitsframe.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Send email"
+    title="Send email"
+    className=" p-1 backdrop-blur-md shadow-md transition-all duration-300 flex md:items-center md:justify-center text-gray hover:underline"
+  >
+
+  hey@bitsframe.com
+</a>
+
+<a
+  href="tel:+923092074390"
+  className="text-gray hover:underline"
+>
+  +92 309 2074390
+</a>
+
           </div>
           <div className="space-y-1 md:text-sm text-xs ">
             <h3 className="font-semibold md:text-lg text-sm text-gray1">Socials</h3>
-            <p className="text-gray">Facebook</p>
-            <p className="text-gray">Instagram</p>
-            <p className="text-gray">LinkedIn</p>
+            
+            <p ><a
+  href="https://www.instagram.com/bitsframe/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray hover:underline"
+>
+  Instagram
+</a></p>
+            {/* <p><a
+  href="https://www.linkedin.com/in/yamna-yousuf-39181528b"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray hover:underline"
+>
+  LinkedIn
+</a></p> */}
+<p>
+  <a
+    href="https://www.linkedin.com/company/bitsframe"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray hover:underline"
+  >
+    LinkedIn
+  </a>
+</p>
+
           </div>
           <div className="space-y-1 mr-9 md:text-sm text-xs">
-            <h3 className="font-semibold md:text-lg text-sm text-gray1">Company</h3>
-            <p className="text-gray">About Us</p>
-            <p className="text-gray">Careers</p>
-            <p className="text-gray">Blog</p>
-            <p className="text-gray">Contact Us</p>
+            <h3 className="font-semibold md:text-lg text-sm text-gray1">Quick links</h3>
+          <Link href="/About-us" className="block">About us</Link>
+            
+            <Link href="/contact-us">Contact Us</Link>
           </div>
         </div>
        
        
 
   {/* Footer Content */}
-  <div className="border-t border-white/15 md:mt-8 mt-20 px-6"></div>
-  <div className="relative z-10 md:mt-6 mt-6 px-6 flex flex-col md:flex-row justify-between text-[12px] text-gray1 backdrop-blur-sm ">
-    <p>© 2024 Bitsframe. All Rights Reserved.</p>
-    <div className="flex gap-4 mt-2 md:mt-0 md:text-sm text-[10px] md:sm">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Cookies Settings</a>
-    </div>
+  <div className="border-t border-white/15 md:mt-24 mt-24 px-6"></div>
+  <div className="relative z-10 md:mt-6 mt-6 px-6 flex flex-col md:flex-row justify-center text-[12px] text-[#fcfbfd] backdrop-blur-sm  ">
+    <p >© 2025 Bitsframe. All Rights Reserved.</p>
+   
   </div>
 </div>
 

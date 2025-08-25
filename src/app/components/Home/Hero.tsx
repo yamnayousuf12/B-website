@@ -1,67 +1,4 @@
-
-
-
-// import Link from "next/link";
-// import { Award } from "lucide-react";
-
-// const Hero = () => {
-//   return (
-//     <section className="relative md:h-[700px] md:max-w-7xl mx-auto h-[600px] text-white md:px-6 md:py-20 px-3 py-10 text-center md:text-left overflow-hidden  ">
-
-//       {/* Background Video */}
-//       <video
-//         autoPlay
-//         loop
-//         muted
-//         playsInline
-//         className="absolute inset-0 w-full h-full object-cover z-20  "
-//       >
-//         <source src="/Untitled design.mp4" type="video/mp4" />
-//         Your browser does not support the video tag.
-//       </video>
-
-//       {/* Overlay to darken video */}
-//       <div className="absolute inset-0 bg-black/60 z-10" />
-
-//       {/* Content */}
-//       <div className="relative z-20 max-w-4xl mx-auto">
-//         <div className="mb-9 flex justify-center md:justify-start mt-20">
-//           <div className="inline-flex items-center md:gap-2 gap-0 md:px-4 px-1 py-1 md:py-1.5 rounded-full bg-Blue text-white1 md:text-sm text-xs font-medium shadow-sm ">
-//             <Award className="w-4 h-4" />
-//             Trusted by 22+ brands
-//           </div>
-//         </div>
-
-//         <h1 className="text-gray1 text-xl md:text-4xl font-Medium mb-2 text-pretty">
-//           Dominate Your Market with
-//         </h1>
-//         <h1 className="text-gray1 text-xl md:text-4xl font-Medium mb-3 text-pretty">
-//           Scalable Managed IT Solutions
-//         </h1>
-//         <p className="text-gray1 md:text-sm text-xs mb-6">
-//           Your dedicated IT services provider, delivering managed IT solutions from AI to custom web development
-//         </p>
-
-//         <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-//           <Link href="/Consultation">
-//             <button className="bg-Blue text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-medium hover:bg-black text-xs md:text-base">
-//               Book a free consultation →
-//             </button>
-//           </Link>
-          
-//           <Link href="/services">
-//             <button className="bg-white border border-gray text-black md:px-6 md:py-3 px-2 py-2 rounded-lg font-medium hover:bg-Blue text-xs md:text-base">
-//               Explore our services →
-//             </button>
-//           </Link>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
+"use client";
 import React from "react";
 import Link from "next/link";
 import { Award } from "lucide-react";
@@ -110,12 +47,12 @@ const Hero = () => {
               Book a free consultation →
             </button>
           </Link>
-
-          <Link href="/services">
-            <button className="bg-white border border-gray text-black px-2 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg font-medium hover:bg-Blue text-xs sm:text-sm md:text-base">
-              Explore our services →
-            </button>
-          </Link>
+          <Link href="#HSolutions" scroll={true}>
+  <button className="bg-white border border-gray text-black px-2 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg font-medium hover:bg-Blue text-xs sm:text-sm md:text-base">
+    Explore our services →
+  </button>
+</Link>
+          
         </div>
       </div>
     </section>
