@@ -46,7 +46,7 @@ export default function Footer() {
 
           </div>
           <div className="space-y-1 md:text-sm text-xs ">
-            <h3 className="font-semibold md:text-lg text-sm text-gray1">Socials</h3>
+            <h3 className="font-semibold md:text-lg text-sm text-white">Socials</h3>
             
             <p ><a
   href="https://www.instagram.com/bitsframe/"
@@ -78,9 +78,9 @@ export default function Footer() {
           </div>
           <div className="space-y-1 mr-9 md:text-sm text-xs">
             <h3 className="font-semibold md:text-lg text-sm text-white">Quick links</h3>
-          <Link href="/About-us" className="block">About us</Link>
+          <Link href="/About-us" className="block text-white">About us</Link>
             
-            <Link href="/contact-us">Contact Us</Link>
+            <Link href="/contact-us" className="block text-white">Contact Us</Link>
           </div>
         </div>
        
