@@ -24,14 +24,14 @@ export default function Footer() {
            
           </div>
           <div className="space-y-1 md:text-sm text-xs md:ml-96  ">
-            <h3 className="font-semibold md:text-lg text-sm text-gray1">Contact</h3>
+            <h3 className="font-semibold md:text-lg text-sm text-white">Contact</h3>
             
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hey@bitsframe.com"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Send email"
     title="Send email"
-    className=" p-1 backdrop-blur-md shadow-md transition-all duration-300 flex md:items-center md:justify-center text-gray hover:underline"
+    className=" p-1 backdrop-blur-md shadow-md transition-all duration-300 flex md:items-center md:justify-center text-white hover:underline"
   >
 
   hey@bitsframe.com
@@ -39,7 +39,7 @@ export default function Footer() {
 
 <a
   href="tel:+923092074390"
-  className="text-gray hover:underline"
+  className="text-white hover:underline"
 >
   +92 309 2074390
 </a>
@@ -52,7 +52,7 @@ export default function Footer() {
   href="https://www.instagram.com/bitsframe/"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-gray hover:underline"
+  className="text-white hover:underline"
 >
   Instagram
 </a></p>
@@ -69,7 +69,7 @@ export default function Footer() {
     href="https://www.linkedin.com/company/bitsframe"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-gray hover:underline"
+    className="text-white hover:underline"
   >
     LinkedIn
   </a>
@@ -77,7 +77,7 @@ export default function Footer() {
 
           </div>
           <div className="space-y-1 mr-9 md:text-sm text-xs">
-            <h3 className="font-semibold md:text-lg text-sm text-gray1">Quick links</h3>
+            <h3 className="font-semibold md:text-lg text-sm text-white">Quick links</h3>
           <Link href="/About-us" className="block">About us</Link>
             
             <Link href="/contact-us">Contact Us</Link>
