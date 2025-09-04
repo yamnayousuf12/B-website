@@ -15,7 +15,7 @@ const Highlight: React.FC = () => {
       <h2 className="text-[12px] md:text-2xl text-gradient font-medium leading-relaxed md:max-w-3xl max-w-64 mb-2 ">We make it easy for companies and their employees to setup, contribute to and manage complex benefits
        
       </h2>
-      <p className="md:text-sm text-[12px] text-gray md:max-w-4xl max-w-80 md:mb-9">Hear from businesses who turned their visions into reality with Bitsframe</p>
+      <p className="md:text-sm text-[12px] text-gray2/55 md:max-w-4xl max-w-80 md:mb-9">Hear from businesses who turned their visions into reality with Bitsframe</p>
 
     
     </div>

@@ -36,7 +36,7 @@ export default function DevJourney() {
       >
         <h1 className="text-lg md:text-3xl mb-2 font-medium text-white mt-20"
         >From Spark to Software</h1>
-        <p className="text-gray md:text-sm text-[8px]">Bitsframe  Development Journey</p>
+        <p className="text-white/85 md:text-sm text-[8px]">Bitsframe  Development Journey</p>
         
       </motion.div>
 
@@ -75,7 +75,7 @@ export default function DevJourney() {
                     : "bg-gradient-to-r  from-white/10 to-black   border border-white/10  border-e-8 border-y-1 border-e-black border-y-black/5"
                 }`}
               >
-                <h3 className="md:text-xl text-sm font-semibold text-gray flex gap-2 items-center">
+                <h3 className="md:text-xl text-sm font-semibold text-gray2/45 flex gap-2 items-center">
                   <span className="text-white font-bold containert md:text-3xl text-base">{step.number}</span>
                   {step.title}
                 </h3>

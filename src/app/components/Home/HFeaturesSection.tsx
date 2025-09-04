@@ -32,7 +32,7 @@ const FeaturesSection = () => {
         <h2 className="text-lg md:text-4xl font-bold mb-3 text-white">
          WHY CHOOSE OUR MANAGED IT SOLUTIONS
         </h2>
-        <p className="text-gray md:mb-12 mb-7 text-[10px] md:text-base">
+        <p className="text-white/85 md:mb-12 mb-7 text-[10px] md:text-base">
          Discover the strengths that set Bitsframe apart in delivering tech solutions that work
         </p>
 

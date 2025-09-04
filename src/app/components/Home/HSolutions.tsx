@@ -52,7 +52,7 @@ const Solutions = () => {
         <h2 className="text-lg md:text-4xl font-Medium mb-3 text-white">
           Our Dedicated Managed IT Solutions
         </h2>
-        <p className="text-gray text-[10px] md:text-base">
+        <p className="text-white/85 text-[10px] md:text-base">
           Explore our full range of services crafted to meet your business goals and fuel growth
       </p>
       </div>

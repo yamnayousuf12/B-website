@@ -43,8 +43,8 @@ export default function SmartITSolutions() {
           <h2 className="text-sm md:text-3xl font-bold md:mb-2 mb-2 mt-9 md:mt-3">
             How do We Deliver Smart IT Solutions?
           </h2>
-          <p className="text-gray text-[8px] md:text-sm max-w-2xl mx-auto font-normal">
-            As your trusted <span className="font-extrabold md:text-sm">IT services provider</span>, we combine cutting-edge technology with 4+ years of expertise to
+          <p className="text-white/85 text-[8px] md:text-sm max-w-2xl mx-auto font-normal">
+            As your trusted <span className="font-extrabold md:text-sm text-white">IT services provider</span>, we combine cutting-edge technology with 4+ years of expertise to
           </p>
         </div>
         
@@ -60,7 +60,7 @@ export default function SmartITSolutions() {
                 <Image src={service.imgSrc} alt={service.title} width={30} height={30} />
               </div>
               <h3 className="text-[8px] md:text-sm md:max-w-44 font-medium mb-2">{service.title}</h3>
-              <p className="text-gray text-[8px] md:text-[12px]">{service.description}</p>
+              <p className="text-white/85 text-[8px] md:text-[12px]">{service.description}</p>
             </div>
           ))}
         </div>
@@ -75,7 +75,7 @@ export default function SmartITSolutions() {
           ].map(([stat, label], index) => (
             <div key={index}>
               <p className="text-lg md:text-3xl font-normal text-white">{stat}</p>
-              <p className="text-[6px] md:text-sm text-gray">{label}</p>
+              <p className="text-[6px] md:text-sm text-white/85">{label}</p>
             </div>
           ))}
         </div>
